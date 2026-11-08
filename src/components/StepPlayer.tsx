@@ -54,13 +54,13 @@ export function StepPlayer({
       {step.kind === "theory" && (
         <>
           <Prose paragraphs={step.body.map((p) => t(p, locale))} />
-          {step.figure && (
-            <figure>
+          {[...(step.figures ?? []), ...(step.figure ? [step.figure] : [])].map((f) => (
+            <figure key={f.src}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={step.figure.src} alt={t(step.figure.caption, locale)} className="w-full rounded-lg border border-zinc-200 dark:border-zinc-800" />
-              <figcaption className="mt-2 text-sm text-zinc-500">{t(step.figure.caption, locale)}</figcaption>
+              <img src={f.src} alt={t(f.caption, locale)} loading="lazy" className="w-full rounded-lg border border-zinc-200 dark:border-zinc-800" />
+              <figcaption className="mt-2 text-sm text-zinc-500">{t(f.caption, locale)}</figcaption>
             </figure>
-          )}
+          ))}
         </>
       )}
 

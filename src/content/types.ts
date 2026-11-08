@@ -11,7 +11,15 @@ export interface TheoryStep {
   title: L10n;
   /** Paragraphs. A paragraph starting with "- " lines is rendered as a list. */
   body: L10n[];
-  figure?: { src: string; caption: L10n };
+  /** Illustrations under the text. Files live in public/courses/<courseId>/. */
+  figures?: Figure[];
+  /** @deprecated use figures */
+  figure?: Figure;
+}
+
+export interface Figure {
+  src: string;
+  caption: L10n;
 }
 
 export interface SimStep {

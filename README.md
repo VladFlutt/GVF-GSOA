@@ -20,6 +20,8 @@ Courses are data, not code. Each course is a folder in `content/courses/<id>/`:
 | `course.json` | Course → modules → steps. A step is `theory` (paragraphs), `sim` (simulator + scenario + task) or `quiz` (question ids, questions per attempt, pass mark, attempts). Every text is `{ "ru", "en", "el" }`. |
 | `questions.json` | Question bank: single or multiple choice, with an explanation for each question. |
 
+Illustrations go in `public/courses/<id>/` and are listed on a theory step as `figures: [{ "src": "/courses/<id>/file.webp", "caption": { … } }]`.
+
 Add the folder, rebuild, and the course appears in the catalog. Types are in `src/content/types.ts`.
 
 ## Simulators
