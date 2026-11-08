@@ -1,0 +1,1169 @@
+[
+ {
+  "id": "q-intro-1",
+  "type": "single",
+  "prompt": {
+   "ru": "Кто отвечает за работу VSAT-терминала после ухода монтажника?",
+   "en": "Who keeps the VSAT terminal running after the installer leaves?",
+   "el": "Ποιος φροντίζει το τερματικό VSAT μετά την αποχώρηση του τεχνικού;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Экипаж судна",
+     "en": "The ship's crew",
+     "el": "Το πλήρωμα του πλοίου"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Оператор спутника",
+     "en": "The satellite operator",
+     "el": "Ο φορέας του δορυφόρου"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Производитель антенны удалённо",
+     "en": "The antenna maker, remotely",
+     "el": "Ο κατασκευαστής της κεραίας, εξ αποστάσεως"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Повседневную эксплуатацию в море ведёт экипаж: радиооператор, ИТ-специалист или другой ответственный.",
+   "en": "Day-to-day operation at sea is the crew's job: the radio officer, IT staff or another responsible crew member.",
+   "el": "Την καθημερινή λειτουργία εν πλω την αναλαμβάνει το πλήρωμα: ασυρματιστής, IT ή άλλο υπεύθυνο μέλος."
+  }
+ },
+ {
+  "id": "q-intro-2",
+  "type": "single",
+  "prompt": {
+   "ru": "Чем VSAT-система отличается от TVRO?",
+   "en": "How does a VSAT system differ from TVRO?",
+   "el": "Σε τι διαφέρει ένα σύστημα VSAT από ένα TVRO;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "VSAT принимает и передаёт данные, TVRO только принимает ТВ",
+     "en": "VSAT receives and transmits data; TVRO only receives TV",
+     "el": "Το VSAT λαμβάνει και εκπέμπει δεδομένα, το TVRO μόνο λαμβάνει TV"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "VSAT работает только в порту",
+     "en": "VSAT only works in port",
+     "el": "Το VSAT λειτουργεί μόνο στο λιμάνι"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Разницы нет, это маркетинговые названия",
+     "en": "No difference, just marketing names",
+     "el": "Καμία διαφορά, απλώς εμπορικές ονομασίες"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "TVRO — Television Receive Only. VSAT обеспечивает двусторонний канал данных.",
+   "en": "TVRO means Television Receive Only. VSAT provides a two-way data link.",
+   "el": "TVRO σημαίνει Television Receive Only. Το VSAT παρέχει αμφίδρομη ζεύξη δεδομένων."
+  }
+ },
+ {
+  "id": "q-intro-3",
+  "type": "single",
+  "prompt": {
+   "ru": "Почему навыки работы с v100 подходят к другим моделям серии v?",
+   "en": "Why do v100 skills apply to other v-series models?",
+   "el": "Γιατί οι δεξιότητες στο v100 ισχύουν και για άλλα μοντέλα της σειράς v;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Модели серии v устроены и управляются одинаково",
+     "en": "v-series models are built and operated the same way",
+     "el": "Τα μοντέλα της σειράς v είναι δομημένα και λειτουργούν με τον ίδιο τρόπο"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "У всех моделей одинаковый размер рефлектора",
+     "en": "All models have the same reflector size",
+     "el": "Όλα τα μοντέλα έχουν τον ίδιο ανακλαστήρα"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Они используют один и тот же спутник",
+     "en": "They all use the same satellite",
+     "el": "Χρησιμοποιούν όλα τον ίδιο δορυφόρο"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Размеры отличаются, но органы управления и логика работы одинаковы.",
+   "en": "Sizes differ, but the controls and operating logic are the same.",
+   "el": "Τα μεγέθη διαφέρουν, αλλά τα χειριστήρια και η λογική λειτουργίας είναι ίδια."
+  }
+ },
+ {
+  "id": "q-intro-4",
+  "type": "multi",
+  "prompt": {
+   "ru": "Какие темы входят в курс? Выберите все.",
+   "en": "Which topics does the course cover? Select all.",
+   "el": "Ποια θέματα καλύπτει το μάθημα; Επιλέξτε όλα."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Индикация и штатная работа",
+     "en": "Indicators and normal operation",
+     "el": "Ενδείξεις και κανονική λειτουργία"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Поиск неисправностей",
+     "en": "Troubleshooting",
+     "el": "Αντιμετώπιση βλαβών"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Профилактика",
+     "en": "Preventive maintenance",
+     "el": "Προληπτική συντήρηση"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ru": "Монтаж антенны на мачту",
+     "en": "Mounting the antenna on the mast",
+     "el": "Τοποθέτηση της κεραίας στον ιστό"
+    }
+   }
+  ],
+  "correct": [
+   "a",
+   "b",
+   "c"
+  ],
+  "explanation": {
+   "ru": "Монтаж — задача сертифицированного монтажника, а курс посвящён эксплуатации.",
+   "en": "Installation is the certified installer's job; this course is about operation.",
+   "el": "Η εγκατάσταση είναι δουλειά πιστοποιημένου τεχνικού· το μάθημα αφορά τη λειτουργία."
+  }
+ },
+ {
+  "id": "q-intro-5",
+  "type": "single",
+  "prompt": {
+   "ru": "Какой курс GVF рекомендован перед этим?",
+   "en": "Which GVF course is recommended before this one?",
+   "el": "Ποιο μάθημα GVF συνιστάται πριν από αυτό;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "GVF561, основы морского VSAT",
+     "en": "GVF561, marine VSAT fundamentals",
+     "el": "GVF561, βασικές αρχές ναυτιλιακού VSAT"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Никакой",
+     "en": "None",
+     "el": "Κανένα"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Курс по спутниковому ТВ",
+     "en": "A satellite TV course",
+     "el": "Μάθημα δορυφορικής TV"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "GVF561 объясняет основы спутниковой связи и особенности VSAT на судах.",
+   "en": "GVF561 explains satellite communication basics and the specifics of VSAT on ships.",
+   "el": "Το GVF561 εξηγεί τις βασικές αρχές δορυφορικών επικοινωνιών και τις ιδιαιτερότητες του VSAT στα πλοία."
+  }
+ },
+ {
+  "id": "q-sys-1",
+  "type": "single",
+  "prompt": {
+   "ru": "Что означает ADE?",
+   "en": "What does ADE stand for?",
+   "el": "Τι σημαίνει ADE;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Оборудование над палубой",
+     "en": "Above-decks equipment",
+     "el": "Εξοπλισμός πάνω από το κατάστρωμα"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Автоматическое устройство наведения",
+     "en": "Automatic direction equipment",
+     "el": "Αυτόματος εξοπλισμός κατεύθυνσης"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Антенный цифровой энкодер",
+     "en": "Antenna digital encoder",
+     "el": "Ψηφιακός κωδικοποιητής κεραίας"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "ADE — Above-Decks Equipment, BDE — Below-Decks Equipment.",
+   "en": "ADE is Above-Decks Equipment; BDE is Below-Decks Equipment.",
+   "el": "ADE = Above-Decks Equipment, BDE = Below-Decks Equipment."
+  }
+ },
+ {
+  "id": "q-sys-2",
+  "type": "multi",
+  "prompt": {
+   "ru": "Какие устройства относятся к BDE? Выберите все.",
+   "en": "Which units are part of the BDE? Select all.",
+   "el": "Ποιες μονάδες ανήκουν στο BDE; Επιλέξτε όλες."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Блок управления антенной (ACU)",
+     "en": "Antenna control unit (ACU)",
+     "el": "Μονάδα ελέγχου κεραίας (ACU)"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Спутниковый модем",
+     "en": "Satellite modem",
+     "el": "Δορυφορικό μόντεμ"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "LNB",
+     "en": "LNB",
+     "el": "LNB"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ru": "Датчиковая коробка",
+     "en": "Sensor box",
+     "el": "Κουτί αισθητήρων"
+    }
+   }
+  ],
+  "correct": [
+   "a",
+   "b"
+  ],
+  "explanation": {
+   "ru": "LNB и датчиковая коробка стоят на антенне под радомом.",
+   "en": "The LNB and sensor box are on the antenna under the radome.",
+   "el": "Το LNB και το κουτί αισθητήρων βρίσκονται στην κεραία κάτω από το radome."
+  }
+ },
+ {
+  "id": "q-sys-3",
+  "type": "single",
+  "prompt": {
+   "ru": "Для чего нужен BUC?",
+   "en": "What does the BUC do?",
+   "el": "Τι κάνει το BUC;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Преобразует и усиливает сигнал на передачу",
+     "en": "Up-converts and amplifies the transmit signal",
+     "el": "Μετατρέπει και ενισχύει το σήμα εκπομπής"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Принимает сигнал с низким шумом",
+     "en": "Receives with low noise",
+     "el": "Λαμβάνει με χαμηλό θόρυβο"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Подаёт питание на моторы",
+     "en": "Powers the motors",
+     "el": "Τροφοδοτεί τους κινητήρες"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "BUC — Block Up-Converter, передающая часть. Приём — задача LNB.",
+   "en": "BUC is the Block Up-Converter, the transmit side. Receive is the LNB's job.",
+   "el": "BUC = Block Up-Converter, η πλευρά εκπομπής. Η λήψη είναι δουλειά του LNB."
+  }
+ },
+ {
+  "id": "q-sys-4",
+  "type": "single",
+  "prompt": {
+   "ru": "Почему компоненты на рефлекторе размещены особым образом?",
+   "en": "Why are the parts on the reflector placed the way they are?",
+   "el": "Γιατί τα εξαρτήματα στον ανακλαστήρα είναι τοποθετημένα με συγκεκριμένο τρόπο;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Их масса уравновешивает антенну",
+     "en": "Their weight balances the antenna",
+     "el": "Το βάρος τους ισορροπεί την κεραία"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Так проще их красить",
+     "en": "It makes them easier to paint",
+     "el": "Είναι πιο εύκολο να βαφτούν"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Чтобы уменьшить радом",
+     "en": "To make the radome smaller",
+     "el": "Για μικρότερο radome"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Хороший баланс снижает нагрузку на моторы и улучшает удержание луча.",
+   "en": "Good balance reduces motor load and improves pointing.",
+   "el": "Η καλή ισορροπία μειώνει το φορτίο των κινητήρων και βελτιώνει τη σκόπευση."
+  }
+ },
+ {
+  "id": "q-sys-5",
+  "type": "single",
+  "prompt": {
+   "ru": "Откуда ACU получает курс судна?",
+   "en": "Where does the ACU get the ship's heading?",
+   "el": "Από πού παίρνει η ACU την πορεία του πλοίου;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "От гирокомпаса",
+     "en": "From the gyro compass",
+     "el": "Από τη γυροπυξίδα"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "От модема",
+     "en": "From the modem",
+     "el": "Από το μόντεμ"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "От спутника",
+     "en": "From the satellite",
+     "el": "Από τον δορυφόρο"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Курс от гирокомпаса позволяет сразу навестись на расчётный азимут.",
+   "en": "Gyro heading lets the ACU point straight at the computed azimuth.",
+   "el": "Η πορεία από τη γυροπυξίδα επιτρέπει άμεση στόχευση στο υπολογισμένο αζιμούθιο."
+  }
+ },
+ {
+  "id": "q-sys-6",
+  "type": "single",
+  "prompt": {
+   "ru": "Какие светодиоды есть на передней панели ACU?",
+   "en": "Which LEDs are on the ACU front panel?",
+   "el": "Ποιες λυχνίες υπάρχουν στην πρόσοψη της ACU;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "POWER, TRACKING, ERROR",
+     "en": "POWER, TRACKING, ERROR",
+     "el": "POWER, TRACKING, ERROR"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "RX, TX, NET",
+     "en": "RX, TX, NET",
+     "el": "RX, TX, NET"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "LINK, ACT, FAULT",
+     "en": "LINK, ACT, FAULT",
+     "el": "LINK, ACT, FAULT"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "RX, TX и NET — индикаторы модема.",
+   "en": "RX, TX and NET are modem indicators.",
+   "el": "Τα RX, TX και NET είναι ενδείξεις του μόντεμ."
+  }
+ },
+ {
+  "id": "q-op-1",
+  "type": "single",
+  "prompt": {
+   "ru": "Что делает ACU, когда луч входит в запрограммированную зону блокировки?",
+   "en": "What does the ACU do when the beam enters a programmed blockage zone?",
+   "el": "Τι κάνει η ACU όταν η δέσμη μπει σε προγραμματισμένη ζώνη εμπλοκής;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Показывает BLOCKING и глушит передачу модема",
+     "en": "Shows BLOCKING and mutes the modem transmitter",
+     "el": "Δείχνει BLOCKING και σιγεί την εκπομπή του μόντεμ"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Выключает систему",
+     "en": "Shuts the system down",
+     "el": "Απενεργοποιεί το σύστημα"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Сразу начинает поиск другого спутника",
+     "en": "Immediately searches for another satellite",
+     "el": "Αναζητά αμέσως άλλο δορυφόρο"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Передача глушится, чтобы не облучать людей и не мешать другим системам. После выхода из зоны всё восстанавливается автоматически.",
+   "en": "Transmit is muted to protect people and avoid interference. Everything recovers automatically after leaving the zone.",
+   "el": "Η εκπομπή σιγεί για προστασία ανθρώπων και αποφυγή παρεμβολών. Όλα επανέρχονται αυτόματα μετά την έξοδο από τη ζώνη."
+  }
+ },
+ {
+  "id": "q-op-2",
+  "type": "multi",
+  "prompt": {
+   "ru": "Какие места программируют как зоны блокировки? Выберите все.",
+   "en": "Which areas are programmed as blockage zones? Select all.",
+   "el": "Ποιες περιοχές προγραμματίζονται ως ζώνες εμπλοκής; Επιλέξτε όλες."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Труба и рубка",
+     "en": "Funnel and wheelhouse",
+     "el": "Φουγάρο και γέφυρα"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Солнечная палуба с людьми",
+     "en": "Sun deck with people",
+     "el": "Ηλιακό κατάστρωμα με ανθρώπους"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Сектор радара",
+     "en": "Radar sector",
+     "el": "Τομέας ραντάρ"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ru": "Направление на спутник",
+     "en": "Direction to the satellite",
+     "el": "Κατεύθυνση προς τον δορυφόρο"
+    }
+   }
+  ],
+  "correct": [
+   "a",
+   "b",
+   "c"
+  ],
+  "explanation": {
+   "ru": "Блокируют препятствия, места с людьми и источники помех.",
+   "en": "Obstructions, people and interference sources are blocked.",
+   "el": "Αποκλείονται εμπόδια, σημεία με ανθρώπους και πηγές παρεμβολών."
+  }
+ },
+ {
+  "id": "q-op-3",
+  "type": "single",
+  "prompt": {
+   "ru": "Ливень оборвал связь. Что делать оператору?",
+   "en": "Heavy rain has dropped the link. What should the operator do?",
+   "el": "Η νεροποντή διέκοψε τη ζεύξη. Τι πρέπει να κάνει ο χειριστής;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Ничего, система восстановится, когда дождь ослабнет",
+     "en": "Nothing; the system recovers as the rain eases",
+     "el": "Τίποτα· το σύστημα επανέρχεται όταν εξασθενήσει η βροχή"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Перезагрузить ACU",
+     "en": "Restart the ACU",
+     "el": "Επανεκκίνηση ACU"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Сменить спутник",
+     "en": "Switch satellite",
+     "el": "Αλλαγή δορυφόρου"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Дождевое замирание временное: ACU ищет и сам возвращается к сопровождению.",
+   "en": "Rain fade is temporary: the ACU searches and returns to tracking by itself.",
+   "el": "Η εξασθένηση λόγω βροχής είναι προσωρινή: η ACU αναζητά και επιστρέφει μόνη της σε παρακολούθηση."
+  }
+ },
+ {
+  "id": "q-op-4",
+  "type": "single",
+  "prompt": {
+   "ru": "Какой набор признаков означает исправную работу?",
+   "en": "Which set of signs means healthy operation?",
+   "el": "Ποιο σύνολο ενδείξεων σημαίνει σωστή λειτουργία;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "TRACKING, ERROR не горит, у модема RX LOCK и передача",
+     "en": "TRACKING, ERROR off, modem has RX LOCK and is transmitting",
+     "el": "TRACKING, ERROR σβηστό, το μόντεμ έχει RX LOCK και εκπέμπει"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "BLOCKING и горит TX",
+     "en": "BLOCKING with TX on",
+     "el": "BLOCKING με TX αναμμένο"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "SEARCH3 и высокий сигнал",
+     "en": "SEARCH3 with high signal",
+     "el": "SEARCH3 με υψηλό σήμα"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "В BLOCKING передача заглушена, а SEARCH3 означает, что спутник ещё не найден.",
+   "en": "In BLOCKING transmit is muted, and SEARCH3 means the satellite is not yet found.",
+   "el": "Σε BLOCKING η εκπομπή είναι σε σίγαση και το SEARCH3 σημαίνει ότι ο δορυφόρος δεν έχει βρεθεί."
+  }
+ },
+ {
+  "id": "q-op-5",
+  "type": "single",
+  "prompt": {
+   "ru": "Через какое меню вручную меняют спутник?",
+   "en": "Which menu is used to change satellite manually?",
+   "el": "Από ποιο μενού αλλάζει χειροκίνητα ο δορυφόρος;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "MENU → LOAD SATELLITE",
+     "en": "MENU → LOAD SATELLITE",
+     "el": "MENU → LOAD SATELLITE"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "FUNCTION → RESET",
+     "en": "FUNCTION → RESET",
+     "el": "FUNCTION → RESET"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Через веб-интерфейс модема",
+     "en": "The modem web interface",
+     "el": "Από το web interface του μόντεμ"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Пункт доступен, только если инженер разрешил ручной выбор. Нужны разрешение и покрытие.",
+   "en": "Available only if the engineer enabled manual selection. You need authorisation and coverage.",
+   "el": "Διαθέσιμο μόνο αν ο μηχανικός ενεργοποίησε τη χειροκίνητη επιλογή. Απαιτείται εξουσιοδότηση και κάλυψη."
+  }
+ },
+ {
+  "id": "q-ts-1",
+  "type": "multi",
+  "prompt": {
+   "ru": "Какие оси участвуют в стабилизации антенны? Выберите все.",
+   "en": "Which axes take part in stabilisation? Select all.",
+   "el": "Ποιοι άξονες συμμετέχουν στη σταθεροποίηση; Επιλέξτε όλους."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Азимут",
+     "en": "Azimuth",
+     "el": "Αζιμούθιο"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Угол места",
+     "en": "Elevation",
+     "el": "Ανύψωση"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Крен (cross-level)",
+     "en": "Cross-level",
+     "el": "Εγκάρσια κλίση (cross-level)"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ru": "Поляризация",
+     "en": "Polarisation",
+     "el": "Πόλωση"
+    }
+   }
+  ],
+  "correct": [
+   "a",
+   "b",
+   "c"
+  ],
+  "explanation": {
+   "ru": "Мотор поляризации работает лишь эпизодически и в стабилизации не участвует.",
+   "en": "The polarisation motor runs only occasionally and is not part of stabilisation.",
+   "el": "Ο κινητήρας πόλωσης λειτουργεί μόνο περιστασιακά και δεν συμμετέχει στη σταθεροποίηση."
+  }
+ },
+ {
+  "id": "q-ts-2",
+  "type": "single",
+  "prompt": {
+   "ru": "В каком порядке проходят этапы запуска с гирокомпасом?",
+   "en": "In what order does a gyro-equipped start-up go?",
+   "el": "Με ποια σειρά γίνεται η εκκίνηση με γυροπυξίδα;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "INITIALIZE → SAT POSITION → TRACKING",
+     "en": "INITIALIZE → SAT POSITION → TRACKING",
+     "el": "INITIALIZE → SAT POSITION → TRACKING"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "TRACKING → SEARCH3 → INITIALIZE",
+     "en": "TRACKING → SEARCH3 → INITIALIZE",
+     "el": "TRACKING → SEARCH3 → INITIALIZE"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "SEARCH3 → INITIALIZE → TRACKING",
+     "en": "SEARCH3 → INITIALIZE → TRACKING",
+     "el": "SEARCH3 → INITIALIZE → TRACKING"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Сначала калибровка, затем наведение на расчётную точку, затем сопровождение (иногда через короткий SEARCH1).",
+   "en": "Calibration first, then targeting the computed point, then tracking (sometimes via a short SEARCH1).",
+   "el": "Πρώτα βαθμονόμηση, μετά στόχευση στο υπολογισμένο σημείο, μετά παρακολούθηση (μερικές φορές μέσω σύντομου SEARCH1)."
+  }
+ },
+ {
+  "id": "q-ts-3",
+  "type": "single",
+  "prompt": {
+   "ru": "Система с гирокомпасом постоянно уходит в SEARCH3 перед захватом. Вероятная причина?",
+   "en": "A gyro-equipped system keeps going into SEARCH3 before locking. Likely cause?",
+   "el": "Σύστημα με γυροπυξίδα πέφτει συνέχεια σε SEARCH3 πριν κλειδώσει. Πιθανή αιτία;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Неверно откалиброваны Bow Offset или Elevation Adjust",
+     "en": "Bow Offset or Elevation Adjust mis-calibrated",
+     "el": "Λάθος βαθμονόμηση Bow Offset ή Elevation Adjust"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Сильный дождь",
+     "en": "Heavy rain",
+     "el": "Δυνατή βροχή"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Неисправен модем",
+     "en": "Faulty modem",
+     "el": "Βλάβη μόντεμ"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Сообщите об этом технической поддержке: параметры настраивает инженер.",
+   "en": "Report it to technical support: the engineer sets these parameters.",
+   "el": "Ενημερώστε την τεχνική υποστήριξη: τις παραμέτρους τις ρυθμίζει ο μηχανικός."
+  }
+ },
+ {
+  "id": "q-ts-4",
+  "type": "single",
+  "prompt": {
+   "ru": "Что означает COMMUNICATIONS ERROR на ACU?",
+   "en": "What does COMMUNICATIONS ERROR on the ACU mean?",
+   "el": "Τι σημαίνει COMMUNICATIONS ERROR στην ACU;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "ACU не связывается с антенной",
+     "en": "The ACU cannot talk to the antenna",
+     "el": "Η ACU δεν επικοινωνεί με την κεραία"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Модем потерял сеть",
+     "en": "The modem lost the network",
+     "el": "Το μόντεμ έχασε το δίκτυο"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Нет связи со спутником из-за дождя",
+     "en": "Rain has cut the satellite link",
+     "el": "Η βροχή έκοψε τη δορυφορική ζεύξη"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Первые шаги: проверить кабели и разъёмы, затем перезапустить систему.",
+   "en": "First steps: check cables and connectors, then restart the system.",
+   "el": "Πρώτα βήματα: έλεγχος καλωδίων και συνδέσμων, μετά επανεκκίνηση."
+  }
+ },
+ {
+  "id": "q-ts-5",
+  "type": "single",
+  "prompt": {
+   "ru": "Как заставить систему заново навестись на спутник?",
+   "en": "How do you force the system to re-target the satellite?",
+   "el": "Πώς αναγκάζετε το σύστημα να επαναστοχεύσει τον δορυφόρο;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Выключить и снова включить питание (ACU или ADE)",
+     "en": "Cycle the power (ACU or ADE) off and on",
+     "el": "Απενεργοποίηση και επανενεργοποίηση (ACU ή ADE)"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Нажать MENU три раза",
+     "en": "Press MENU three times",
+     "el": "Πατήστε MENU τρεις φορές"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Отключить модем",
+     "en": "Unplug the modem",
+     "el": "Αποσυνδέστε το μόντεμ"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "После перезапуска антенна идёт в расчётную точку и ищет оттуда.",
+   "en": "After a restart the antenna moves to the computed position and searches from there.",
+   "el": "Μετά την επανεκκίνηση η κεραία πηγαίνει στη υπολογισμένη θέση και αναζητά από εκεί."
+  }
+ },
+ {
+  "id": "q-mt-1",
+  "type": "single",
+  "prompt": {
+   "ru": "Почему перед осмотром радома нужно обесточить ADE?",
+   "en": "Why must the ADE be powered off before inspecting the radome?",
+   "el": "Γιατί πρέπει να απενεργοποιηθεί το ADE πριν την επιθεώρηση του radome;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Передатчик создаёт радиационную опасность",
+     "en": "The transmitter is a radiation hazard",
+     "el": "Ο πομπός αποτελεί κίνδυνο ακτινοβολίας"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Чтобы сбросить ошибки",
+     "en": "To clear errors",
+     "el": "Για να μηδενιστούν τα σφάλματα"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Чтобы сэкономить энергию",
+     "en": "To save power",
+     "el": "Για εξοικονόμηση ενέργειας"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Вблизи излучающей антенны находиться опасно.",
+   "en": "Being near a transmitting antenna is dangerous.",
+   "el": "Η παρουσία κοντά σε κεραία που εκπέμπει είναι επικίνδυνη."
+  }
+ },
+ {
+  "id": "q-mt-2",
+  "type": "single",
+  "prompt": {
+   "ru": "В каких условиях выполнять осмотр с отключённым ADE?",
+   "en": "When should an inspection with the ADE off be done?",
+   "el": "Πότε πρέπει να γίνεται επιθεώρηση με το ADE σβηστό;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "При спокойном море, затем сразу включить питание",
+     "en": "In calm seas, restoring power right after",
+     "el": "Με ήρεμη θάλασσα, επαναφέροντας αμέσως την τροφοδοσία"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "В шторм, когда связь всё равно плохая",
+     "en": "In a storm, when the link is poor anyway",
+     "el": "Σε καταιγίδα, όταν η ζεύξη είναι ήδη κακή"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "В любое время",
+     "en": "Any time",
+     "el": "Οποτεδήποτε"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Без питания стабилизация не работает, и при качке механизм может пострадать.",
+   "en": "Without power stabilisation stops and the mechanism can be damaged in a seaway.",
+   "el": "Χωρίς τροφοδοσία η σταθεροποίηση σταματά και ο μηχανισμός μπορεί να πάθει ζημιά με κυματισμό."
+  }
+ },
+ {
+  "id": "q-mt-3",
+  "type": "single",
+  "prompt": {
+   "ru": "Кто ремонтирует трещины и повреждения покрытия радома?",
+   "en": "Who repairs cracks or coating damage on the radome?",
+   "el": "Ποιος επισκευάζει ρωγμές ή φθορές επικάλυψης στο radome;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Только обученный сертифицированный специалист",
+     "en": "Only a trained, certified professional",
+     "el": "Μόνο εκπαιδευμένος πιστοποιημένος τεχνικός"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Любой член экипажа",
+     "en": "Any crew member",
+     "el": "Οποιοδήποτε μέλος πληρώματος"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Ремонт не нужен",
+     "en": "No repair needed",
+     "el": "Δεν χρειάζεται επισκευή"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "Повреждение нужно устранить сразу, но силами сертифицированного специалиста.",
+   "en": "Damage must be repaired promptly, but by a certified professional.",
+   "el": "Η φθορά πρέπει να επισκευαστεί άμεσα, αλλά από πιστοποιημένο τεχνικό."
+  }
+ },
+ {
+  "id": "q-mt-4",
+  "type": "single",
+  "prompt": {
+   "ru": "Для чего переключатель TEST на пьедестале?",
+   "en": "What is the pedestal TEST switch for?",
+   "el": "Σε τι χρησιμεύει ο διακόπτης TEST στο βάθρο;"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Снимает питание с моторов для проверки баланса и свободного хода",
+     "en": "Removes drive power to check balance and free movement",
+     "el": "Αφαιρεί την τροφοδοσία κίνησης για έλεγχο ισορροπίας και ελεύθερης κίνησης"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Запускает самотест модема",
+     "en": "Starts a modem self-test",
+     "el": "Ξεκινά αυτοέλεγχο μόντεμ"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Включает передачу",
+     "en": "Enables transmit",
+     "el": "Ενεργοποιεί την εκπομπή"
+    }
+   }
+  ],
+  "correct": [
+   "a"
+  ],
+  "explanation": {
+   "ru": "В штатной работе TEST должен быть выключен.",
+   "en": "In normal operation TEST must be off.",
+   "el": "Στην κανονική λειτουργία ο TEST πρέπει να είναι κλειστός."
+  }
+ },
+ {
+  "id": "q-mt-5",
+  "type": "multi",
+  "prompt": {
+   "ru": "Что проверяют на ремнях приводов? Выберите все.",
+   "en": "What do you check on the drive belts? Select all.",
+   "el": "Τι ελέγχετε στους ιμάντες κίνησης; Επιλέξτε όλα."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ru": "Трещины",
+     "en": "Cracks",
+     "el": "Ρωγμές"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ru": "Износ зубьев",
+     "en": "Worn teeth",
+     "el": "Φθορά δοντιών"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ru": "Натяжение",
+     "en": "Tension",
+     "el": "Τάνυση"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ru": "Цвет",
+     "en": "Colour",
+     "el": "Χρώμα"
+    }
+   }
+  ],
+  "correct": [
+   "a",
+   "b",
+   "c"
+  ],
+  "explanation": {
+   "ru": "Повреждения записывают и сообщают о них для замены.",
+   "en": "Record any damage and report it for replacement.",
+   "el": "Καταγράψτε κάθε φθορά και αναφέρετέ τη για αντικατάσταση."
+  }
+ }
+]

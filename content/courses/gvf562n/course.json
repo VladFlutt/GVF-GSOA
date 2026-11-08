@@ -1,0 +1,674 @@
+{
+ "id": "gvf562n",
+ "code": "GVF562N",
+ "title": {
+  "ru": "Эксплуатация терминала Intellian v100 и аналогичных",
+  "en": "Operating the Intellian v100 and similar terminals",
+  "el": "Λειτουργία του Intellian v100 και παρόμοιων τερματικών"
+ },
+ "summary": {
+  "ru": "Повседневная работа с морским VSAT-терминалом: устройство, индикация, поиск неисправностей и профилактика, с симулятором блока управления антенной.",
+  "en": "Day-to-day operation of a marine VSAT terminal: system layout, indicators, troubleshooting and maintenance, with an antenna control unit simulator.",
+  "el": "Καθημερινή λειτουργία ναυτιλιακού τερματικού VSAT: δομή, ενδείξεις, αντιμετώπιση βλαβών και συντήρηση, με προσομοιωτή μονάδας ελέγχου κεραίας."
+ },
+ "prerequisites": [
+  {
+   "ru": "GVF561 «Основы морского VSAT для операторов»",
+   "en": "GVF561 Fundamentals for Marine VSAT Operators",
+   "el": "GVF561 Βασικές αρχές ναυτιλιακού VSAT για χειριστές"
+  }
+ ],
+ "modules": [
+  {
+   "id": "intro",
+   "title": {
+    "ru": "Введение",
+    "en": "Introduction",
+    "el": "Εισαγωγή"
+   },
+   "objectives": [
+    {
+     "ru": "Кому и зачем нужен этот курс",
+     "en": "Who this course is for and why",
+     "el": "Σε ποιους απευθύνεται το μάθημα και γιατί"
+    },
+    {
+     "ru": "Какие терминалы Intellian существуют и чем отличается v100",
+     "en": "The Intellian terminal range and what sets the v100 apart",
+     "el": "Η σειρά τερματικών Intellian και τι ξεχωρίζει το v100"
+    }
+   ],
+   "steps": [
+    {
+     "kind": "theory",
+     "id": "why",
+     "title": {
+      "ru": "Зачем этот курс",
+      "en": "Why this course",
+      "el": "Γιατί αυτό το μάθημα"
+     },
+     "body": [
+      {
+       "ru": "Морской VSAT-терминал даёт судну широкополосную связь почти в любой точке океана. Монтажник уходит с борта после установки, а дальше за работой системы следит экипаж.",
+       "en": "A marine VSAT terminal gives a vessel broadband almost anywhere at sea. The installer leaves after commissioning; from then on the crew keeps the system running.",
+       "el": "Ένα ναυτιλιακό τερματικό VSAT δίνει στο πλοίο ευρυζωνική σύνδεση σχεδόν παντού στη θάλασσα. Ο τεχνικός φεύγει μετά την εγκατάσταση και από εκεί και πέρα το πλήρωμα φροντίζει το σύστημα."
+      },
+      {
+       "ru": "Курс учит повседневной эксплуатации: читать индикацию, понимать, что делает антенна, решать типовые проблемы в море и выполнять профилактику. Он рассчитан на радиооператоров, ИТ-специалистов и других членов экипажа, отвечающих за связь.",
+       "en": "The course teaches day-to-day operation: reading the indicators, understanding what the antenna is doing, solving common problems at sea and doing preventive maintenance. It is meant for radio officers, IT staff and other crew responsible for communications.",
+       "el": "Το μάθημα διδάσκει την καθημερινή λειτουργία: ανάγνωση ενδείξεων, κατανόηση της κίνησης της κεραίας, επίλυση συνηθισμένων προβλημάτων εν πλω και προληπτική συντήρηση. Απευθύνεται σε ασυρματιστές, προσωπικό IT και μέλη πληρώματος υπεύθυνα για τις επικοινωνίες."
+      },
+      {
+       "ru": "- Устройство системы над и под палубой\n- Штатная работа и индикация\n- Поиск и устранение неисправностей\n- Профилактическое обслуживание",
+       "en": "- How the system is built above and below deck\n- Normal operation and indicators\n- Troubleshooting\n- Preventive maintenance",
+       "el": "- Πώς είναι δομημένο το σύστημα πάνω και κάτω από το κατάστρωμα\n- Κανονική λειτουργία και ενδείξεις\n- Αντιμετώπιση βλαβών\n- Προληπτική συντήρηση"
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "range",
+     "title": {
+      "ru": "Терминалы Intellian",
+      "en": "The Intellian range",
+      "el": "Η σειρά Intellian"
+     },
+     "body": [
+      {
+       "ru": "Intellian выпускает морские спутниковые антенны двух классов: **TVRO** только принимают спутниковое ТВ, **VSAT** принимают и передают данные. Размер рефлектора выбирают под судно и зону покрытия.",
+       "en": "Intellian builds two classes of marine satellite antennas: **TVRO** systems only receive satellite TV, **VSAT** systems both receive and transmit data. Reflector size is chosen for the vessel and the coverage area.",
+       "el": "Η Intellian κατασκευάζει δύο κατηγορίες ναυτιλιακών δορυφορικών κεραιών: τα **TVRO** λαμβάνουν μόνο δορυφορική TV, ενώ τα **VSAT** λαμβάνουν και εκπέμπουν δεδομένα. Το μέγεθος του ανακλαστήρα επιλέγεται ανάλογα με το πλοίο και την περιοχή κάλυψης."
+      },
+      {
+       "ru": "В курсе изучается **v100** — терминал серии v с рефлектором около 1 м для диапазона Ku (есть комплект перехода на Ka). Остальные модели серии v устроены и управляются так же, поэтому навыки переносятся.",
+       "en": "This course studies the **v100**, a v-series terminal with a ~1 m reflector for Ku-band (a Ka-band conversion kit exists). Other v-series models are built and operated the same way, so the skills carry over.",
+       "el": "Στο μάθημα μελετάμε το **v100**, τερματικό της σειράς v με ανακλαστήρα περίπου 1 m για τη ζώνη Ku (υπάρχει κιτ μετατροπής σε Ka). Τα υπόλοιπα μοντέλα της σειράς v λειτουργούν με τον ίδιο τρόπο, οπότε οι δεξιότητες μεταφέρονται."
+      }
+     ]
+    },
+    {
+     "kind": "quiz",
+     "id": "quiz",
+     "title": {
+      "ru": "Тест по модулю",
+      "en": "Module quiz",
+      "el": "Τεστ ενότητας"
+     },
+     "questions": [
+      "q-intro-1",
+      "q-intro-2",
+      "q-intro-3",
+      "q-intro-4",
+      "q-intro-5"
+     ],
+     "perAttempt": 4,
+     "passMark": 3,
+     "attempts": 2
+    }
+   ]
+  },
+  {
+   "id": "system",
+   "title": {
+    "ru": "Обзор системы",
+    "en": "System overview",
+    "el": "Επισκόπηση συστήματος"
+   },
+   "objectives": [
+    {
+     "ru": "Назвать компоненты над палубой (ADE) и под палубой (BDE)",
+     "en": "Name the above-decks (ADE) and below-decks (BDE) components",
+     "el": "Να αναγνωρίζετε τα στοιχεία πάνω (ADE) και κάτω (BDE) από το κατάστρωμα"
+    },
+    {
+     "ru": "Понимать роль блока управления антенной (ACU) и модема",
+     "en": "Understand the role of the antenna control unit (ACU) and the modem",
+     "el": "Να κατανοείτε τον ρόλο της μονάδας ελέγχου κεραίας (ACU) και του μόντεμ"
+    }
+   ],
+   "steps": [
+    {
+     "kind": "theory",
+     "id": "ade",
+     "title": {
+      "ru": "Оборудование над палубой (ADE)",
+      "en": "Above-decks equipment (ADE)",
+      "el": "Εξοπλισμός πάνω από το κατάστρωμα (ADE)"
+     },
+     "body": [
+      {
+       "ru": "Под радиопрозрачным колпаком — **радомом** — стоит стабилизированная антенна на пьедестале. Радом защищает механику от ветра, воды и соли.",
+       "en": "Under a radio-transparent cover, the **radome**, sits a stabilised antenna on a pedestal. The radome shields the mechanics from wind, water and salt.",
+       "el": "Κάτω από ένα κάλυμμα διαπερατό στα ραδιοκύματα, το **radome**, βρίσκεται μια σταθεροποιημένη κεραία πάνω σε βάθρο. Το radome προστατεύει τα μηχανικά μέρη από αέρα, νερό και αλάτι."
+      },
+      {
+       "ru": "- **Рефлектор и облучатель** — собирают и излучают сигнал\n- **BUC** — усилитель-преобразователь на передачу\n- **LNB** — малошумящий преобразователь на приём\n- **Диплексер** — разделяет приём и передачу в одном тракте\n- **Моторы осей** азимута, угла места и крена (cross-level) и мотор поляризации\n- **Датчиковая коробка** с гироскопами и уровнем — помогает держать оси относительно горизонта\n- **Блок автоматов** на основании радома — позволяет обесточить ADE",
+       "en": "- **Reflector and feed** collect and radiate the signal\n- **BUC** – transmit up-converter and amplifier\n- **LNB** – low-noise receive down-converter\n- **Diplexer** separates transmit and receive on one path\n- **Axis motors** for azimuth, elevation and cross-level, plus the polarisation motor\n- **Sensor box** with gyros and a level – keeps the axes referenced to the horizon\n- **Breaker box** on the radome base – lets you remove power from the ADE",
+       "el": "- **Ανακλαστήρας και τροφοδότης** συλλέγουν και εκπέμπουν το σήμα\n- **BUC** – μετατροπέας και ενισχυτής εκπομπής\n- **LNB** – μετατροπέας λήψης χαμηλού θορύβου\n- **Diplexer** – διαχωρίζει εκπομπή και λήψη στην ίδια διαδρομή\n- **Κινητήρες αξόνων** αζιμουθίου, ανύψωσης και εγκάρσιας κλίσης (cross-level) και κινητήρας πόλωσης\n- **Κουτί αισθητήρων** με γυροσκόπια και αλφάδι – κρατά τους άξονες σε σχέση με τον ορίζοντα\n- **Πίνακας ασφαλειών** στη βάση του radome – για αποσύνδεση της τροφοδοσίας του ADE"
+      },
+      {
+       "ru": "Компоненты на рефлекторе размещены так, чтобы их масса уравновешивала антенну. От баланса зависит, насколько легко моторам удерживать наведение.",
+       "en": "The parts on the reflector are placed so their weight balances the antenna. Balance determines how easily the motors hold the pointing.",
+       "el": "Τα εξαρτήματα στον ανακλαστήρα είναι τοποθετημένα ώστε το βάρος τους να ισορροπεί την κεραία. Από την ισορροπία εξαρτάται πόσο εύκολα οι κινητήρες κρατούν τη σκόπευση."
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "bde",
+     "title": {
+      "ru": "Оборудование под палубой (BDE)",
+      "en": "Below-decks equipment (BDE)",
+      "el": "Εξοπλισμός κάτω από το κατάστρωμα (BDE)"
+     },
+     "body": [
+      {
+       "ru": "Под палубой стоят **блок управления антенной (ACU)** и **спутниковый модем**. ACU связан с антенной коаксиальными и управляющими кабелями, получает курс от гирокомпаса и координаты от GPS.",
+       "en": "Below deck are the **antenna control unit (ACU)** and the **satellite modem**. The ACU connects to the antenna by coax and control cables and takes heading from the gyro compass and position from GPS.",
+       "el": "Κάτω από το κατάστρωμα βρίσκονται η **μονάδα ελέγχου κεραίας (ACU)** και το **δορυφορικό μόντεμ**. Η ACU συνδέεται με την κεραία μέσω ομοαξονικών καλωδίων και καλωδίων ελέγχου και λαμβάνει πορεία από τη γυροπυξίδα και θέση από το GPS."
+      },
+      {
+       "ru": "ACU — это пульт оператора: на передней панели светодиоды POWER, TRACKING и ERROR, двухстрочный дисплей, кнопки навигации и выключатель питания. Модем отвечает за сам канал связи: он принимает и передаёт трафик и сообщает ACU, есть ли захват сигнала.",
+       "en": "The ACU is the operator's console: its front panel has POWER, TRACKING and ERROR LEDs, a two-line display, navigation keys and the power switch. The modem handles the link itself: it receives and transmits traffic and tells the ACU whether it has signal lock.",
+       "el": "Η ACU είναι η κονσόλα του χειριστή: στην πρόσοψη έχει λυχνίες POWER, TRACKING και ERROR, οθόνη δύο γραμμών, πλήκτρα πλοήγησης και διακόπτη τροφοδοσίας. Το μόντεμ χειρίζεται την ίδια τη ζεύξη: λαμβάνει και εκπέμπει κίνηση και ενημερώνει την ACU αν έχει κλείδωμα σήματος."
+      }
+     ]
+    },
+    {
+     "kind": "sim",
+     "id": "acu-tour",
+     "title": {
+      "ru": "Знакомство с панелью ACU",
+      "en": "Getting to know the ACU panel",
+      "el": "Γνωριμία με την πρόσοψη της ACU"
+     },
+     "simulator": "acu-panel",
+     "scenario": "explore-panel",
+     "intro": {
+      "ru": "Перед вами учебная модель панели ACU в штатном режиме. Кнопки ◀ и ▶ переключают экраны состояния: режим и сигнал, положение антенны, навигационные данные.",
+      "en": "This is a training model of the ACU front panel in normal operation. The ◀ and ▶ keys switch between status screens: mode and signal, antenna position, navigation data.",
+      "el": "Αυτό είναι εκπαιδευτικό μοντέλο της πρόσοψης της ACU σε κανονική λειτουργία. Τα πλήκτρα ◀ και ▶ αλλάζουν τις οθόνες κατάστασης: λειτουργία και σήμα, θέση κεραίας, δεδομένα ναυσιπλοΐας."
+     },
+     "task": {
+      "ru": "Откройте все три экрана состояния.",
+      "en": "Open all three status screens.",
+      "el": "Ανοίξτε και τις τρεις οθόνες κατάστασης."
+     }
+    },
+    {
+     "kind": "quiz",
+     "id": "quiz",
+     "title": {
+      "ru": "Тест по модулю",
+      "en": "Module quiz",
+      "el": "Τεστ ενότητας"
+     },
+     "questions": [
+      "q-sys-1",
+      "q-sys-2",
+      "q-sys-3",
+      "q-sys-4",
+      "q-sys-5",
+      "q-sys-6"
+     ],
+     "perAttempt": 4,
+     "passMark": 3,
+     "attempts": 2
+    }
+   ]
+  },
+  {
+   "id": "operation",
+   "title": {
+    "ru": "Штатная работа",
+    "en": "Routine operation",
+    "el": "Κανονική λειτουργία"
+   },
+   "objectives": [
+    {
+     "ru": "Читать экраны состояния и светодиоды",
+     "en": "Read the status screens and LEDs",
+     "el": "Να διαβάζετε τις οθόνες κατάστασης και τις λυχνίες"
+    },
+    {
+     "ru": "Понимать поведение системы в зоне блокировки и под дождём",
+     "en": "Understand system behaviour in a blockage zone and in rain",
+     "el": "Να κατανοείτε τη συμπεριφορά του συστήματος σε ζώνη εμπλοκής και στη βροχή"
+    },
+    {
+     "ru": "Переключать спутник из списка",
+     "en": "Switch satellites from the list",
+     "el": "Να αλλάζετε δορυφόρο από τη λίστα"
+    }
+   ],
+   "steps": [
+    {
+     "kind": "theory",
+     "id": "healthy",
+     "title": {
+      "ru": "Признаки исправной работы",
+      "en": "Signs of healthy operation",
+      "el": "Ενδείξεις σωστής λειτουργίας"
+     },
+     "body": [
+      {
+       "ru": "Система работает нормально, если одновременно выполнено всё ниже:",
+       "en": "The system is healthy when all of the following are true at once:",
+       "el": "Το σύστημα λειτουργεί σωστά όταν ισχύουν ταυτόχρονα όλα τα παρακάτω:"
+      },
+      {
+       "ru": "- ACU в режиме **TRACKING**, светодиод TRACKING горит\n- На дисплее нет **BLOCKING**\n- Светодиод **ERROR** не горит\n- Уровень сигнала ACU заметно выше порога\n- У модема есть захват приёма (RX LOCK), он передаёт и вошёл в сеть\n- Значения AZ, REL и EL меняются, когда судно маневрирует",
+       "en": "- The ACU is in **TRACKING** mode and the TRACKING LED is on\n- **BLOCKING** is not shown\n- The **ERROR** LED is off\n- The ACU signal level is well above threshold\n- The modem has receive lock (RX LOCK), is transmitting and has joined the network\n- AZ, REL and EL update as the ship moves",
+       "el": "- Η ACU είναι σε λειτουργία **TRACKING** και η λυχνία TRACKING ανάβει\n- Δεν εμφανίζεται **BLOCKING**\n- Η λυχνία **ERROR** είναι σβηστή\n- Η στάθμη σήματος ACU είναι αρκετά πάνω από το κατώφλι\n- Το μόντεμ έχει κλείδωμα λήψης (RX LOCK), εκπέμπει και έχει συνδεθεί στο δίκτυο\n- Οι τιμές AZ, REL και EL αλλάζουν καθώς κινείται το πλοίο"
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "blockage-zones",
+     "title": {
+      "ru": "Зоны блокировки",
+      "en": "Blockage zones",
+      "el": "Ζώνες εμπλοκής"
+     },
+     "body": [
+      {
+       "ru": "Инженер при вводе в эксплуатацию программирует в ACU **зоны блокировки** — секторы относительно носа судна, где антенне нельзя или бесполезно излучать.",
+       "en": "During commissioning the engineer programs **blockage zones** into the ACU: sectors relative to the bow where the antenna must not or cannot usefully transmit.",
+       "el": "Κατά τη θέση σε λειτουργία ο μηχανικός προγραμματίζει στην ACU **ζώνες εμπλοκής**: τομείς σε σχέση με την πλώρη όπου η κεραία δεν πρέπει ή δεν μπορεί να εκπέμψει χρήσιμα."
+      },
+      {
+       "ru": "- Физические препятствия: труба, рубка, другие радомы\n- Края препятствий, где передача рассеивается и мешает соседним спутникам\n- Места, где могут быть люди: солнечная палуба, окна кают\n- Радары и другие антенны, с которыми возможны взаимные помехи",
+       "en": "- Physical obstructions: funnel, wheelhouse, other radomes\n- Edges of obstructions where the transmit beam scatters and could interfere with other satellites\n- Places where people may be: sun deck, cabin windows\n- Radars and other antennas that could interfere or be interfered with",
+       "el": "- Φυσικά εμπόδια: φουγάρο, γέφυρα, άλλα radome\n- Άκρες εμποδίων όπου η εκπομπή σκεδάζεται και μπορεί να παρεμβάλει άλλους δορυφόρους\n- Σημεία με παρουσία ανθρώπων: ηλιακό κατάστρωμα, παράθυρα καμπινών\n- Ραντάρ και άλλες κεραίες με πιθανές αμοιβαίες παρεμβολές"
+      },
+      {
+       "ru": "Когда луч входит в такую зону, ACU показывает **BLOCKING** и даёт модему команду заглушить передачу. Если сигнал пропал внутри зоны, антенна не ищет спутник заново, а ждёт выхода из зоны. Вмешательство оператора не требуется.",
+       "en": "When the beam enters such a zone the ACU shows **BLOCKING** and tells the modem to mute its transmitter. If the signal is lost inside the zone, the antenna does not re-target; it waits until it leaves the zone. No operator action is needed.",
+       "el": "Όταν η δέσμη μπει σε τέτοια ζώνη, η ACU δείχνει **BLOCKING** και δίνει εντολή στο μόντεμ να σιγήσει την εκπομπή. Αν το σήμα χαθεί μέσα στη ζώνη, η κεραία δεν επαναστοχεύει αλλά περιμένει να βγει από τη ζώνη. Δεν απαιτείται ενέργεια του χειριστή."
+      }
+     ]
+    },
+    {
+     "kind": "sim",
+     "id": "blockage-sim",
+     "title": {
+      "ru": "Практика: зона блокировки",
+      "en": "Practice: blockage zone",
+      "el": "Πρακτική: ζώνη εμπλοκής"
+     },
+     "simulator": "acu-panel",
+     "scenario": "blockage",
+     "intro": {
+      "ru": "Светло-красный сектор — запрограммированная зона блокировки, тёмно-красный — сама труба. Поворачивайте судно и следите за дисплеем ACU и светодиодом TX модема.",
+      "en": "The light red sector is the programmed blockage zone; the dark red one is the funnel itself. Turn the ship and watch the ACU display and the modem TX LED.",
+      "el": "Ο ανοιχτός κόκκινος τομέας είναι η προγραμματισμένη ζώνη εμπλοκής, ο σκούρος είναι το ίδιο το φουγάρο. Στρίψτε το πλοίο και παρακολουθήστε την οθόνη της ACU και τη λυχνία TX του μόντεμ."
+     },
+     "task": {
+      "ru": "Поверните судно так, чтобы ACU перешёл в BLOCKING, затем выведите его обратно в TRACKING.",
+      "en": "Turn the ship until the ACU shows BLOCKING, then bring it back to TRACKING.",
+      "el": "Στρίψτε το πλοίο ώστε η ACU να δείξει BLOCKING και μετά επαναφέρετέ τη σε TRACKING."
+     }
+    },
+    {
+     "kind": "theory",
+     "id": "rain",
+     "title": {
+      "ru": "Дождевые замирания",
+      "en": "Rain fade",
+      "el": "Εξασθένηση λόγω βροχής"
+     },
+     "body": [
+      {
+       "ru": "Вода поглощает микроволновый сигнал, поэтому сильный ливень может временно оборвать связь. Обычно сигнал пропадает только на пике ливня. ACU переходит в поиск и сам возвращается к сопровождению, когда дождь слабеет.",
+       "en": "Water absorbs the microwave signal, so a heavy downpour can briefly drop the link. Usually only the heaviest part of the storm causes an outage. The ACU starts searching and returns to tracking on its own as the rain eases.",
+       "el": "Το νερό απορροφά το μικροκυματικό σήμα, οπότε μια δυνατή νεροποντή μπορεί να διακόψει προσωρινά τη ζεύξη. Συνήθως μόνο η κορύφωση της καταιγίδας προκαλεί διακοπή. Η ACU ξεκινά αναζήτηση και επιστρέφει μόνη της σε παρακολούθηση όταν η βροχή εξασθενήσει."
+      }
+     ]
+    },
+    {
+     "kind": "sim",
+     "id": "rain-sim",
+     "title": {
+      "ru": "Практика: ливень",
+      "en": "Practice: heavy rain",
+      "el": "Πρακτική: νεροποντή"
+     },
+     "simulator": "acu-panel",
+     "scenario": "rain-fade",
+     "intro": {
+      "ru": "Увеличивайте интенсивность дождя и смотрите, как падает уровень сигнала относительно порога и что происходит с модемом.",
+      "en": "Raise the rain intensity and watch the signal level fall towards the threshold and what the modem does.",
+      "el": "Αυξήστε την ένταση της βροχής και δείτε πώς πέφτει η στάθμη σήματος προς το κατώφλι και τι κάνει το μόντεμ."
+     },
+     "task": {
+      "ru": "Доведите систему до потери сигнала (SEARCH1), затем ослабьте дождь ниже 50% и дождитесь TRACKING.",
+      "en": "Push the system into signal loss (SEARCH1), then reduce rain below 50% and wait for TRACKING.",
+      "el": "Οδηγήστε το σύστημα σε απώλεια σήματος (SEARCH1), μετά μειώστε τη βροχή κάτω από 50% και περιμένετε TRACKING."
+     }
+    },
+    {
+     "kind": "sim",
+     "id": "switch-sat",
+     "title": {
+      "ru": "Практика: смена спутника",
+      "en": "Practice: switching satellites",
+      "el": "Πρακτική: αλλαγή δορυφόρου"
+     },
+     "simulator": "acu-panel",
+     "scenario": "switch-satellite",
+     "intro": {
+      "ru": "Если инженер разрешил ручной выбор, спутник меняют через MENU → LOAD SATELLITE. Делайте это только с разрешения и находясь в зоне покрытия нужного спутника.",
+      "en": "If the engineer has enabled manual selection, change satellite via MENU → LOAD SATELLITE. Only do this when authorised and inside the new satellite's coverage.",
+      "el": "Αν ο μηχανικός έχει ενεργοποιήσει τη χειροκίνητη επιλογή, αλλάξτε δορυφόρο από MENU → LOAD SATELLITE. Κάντε το μόνο με εξουσιοδότηση και εντός κάλυψης του νέου δορυφόρου."
+     },
+     "task": {
+      "ru": "Загрузите спутник HELLAS SAT 3 и дождитесь режима TRACKING.",
+      "en": "Load HELLAS SAT 3 and wait for TRACKING.",
+      "el": "Φορτώστε τον HELLAS SAT 3 και περιμένετε TRACKING."
+     }
+    },
+    {
+     "kind": "quiz",
+     "id": "quiz",
+     "title": {
+      "ru": "Тест по модулю",
+      "en": "Module quiz",
+      "el": "Τεστ ενότητας"
+     },
+     "questions": [
+      "q-op-1",
+      "q-op-2",
+      "q-op-3",
+      "q-op-4",
+      "q-op-5"
+     ],
+     "perAttempt": 4,
+     "passMark": 3,
+     "attempts": 2
+    }
+   ]
+  },
+  {
+   "id": "troubleshooting",
+   "title": {
+    "ru": "Поиск неисправностей",
+    "en": "Troubleshooting",
+    "el": "Αντιμετώπιση βλαβών"
+   },
+   "objectives": [
+    {
+     "ru": "Правильно включать и выключать систему",
+     "en": "Power the system up and down correctly",
+     "el": "Να ενεργοποιείτε και να απενεργοποιείτε σωστά το σύστημα"
+    },
+    {
+     "ru": "Распознавать этапы захвата спутника",
+     "en": "Recognise the stages of satellite acquisition",
+     "el": "Να αναγνωρίζετε τα στάδια εντοπισμού δορυφόρου"
+    },
+    {
+     "ru": "Реагировать на ошибки без вызова техника",
+     "en": "Respond to errors without a technician",
+     "el": "Να αντιδράτε σε σφάλματα χωρίς τεχνικό"
+    }
+   ],
+   "steps": [
+    {
+     "kind": "theory",
+     "id": "axes",
+     "title": {
+      "ru": "Оси и стабилизация",
+      "en": "Axes and stabilisation",
+      "el": "Άξονες και σταθεροποίηση"
+     },
+     "body": [
+      {
+       "ru": "У антенны три оси: **азимут**, **угол места** и **крен (cross-level)**. Качается судно, а не антенна: моторы трёх осей непрерывно компенсируют качку, удерживая луч на спутнике. Это называется стабилизацией.",
+       "en": "The antenna has three axes: **azimuth**, **elevation** and **cross-level**. It is the ship that moves, not the antenna: the three axis motors continuously cancel the motion to keep the beam on the satellite. This is stabilisation.",
+       "el": "Η κεραία έχει τρεις άξονες: **αζιμούθιο**, **ανύψωση** και **εγκάρσια κλίση (cross-level)**. Κινείται το πλοίο, όχι η κεραία: οι κινητήρες των τριών αξόνων αντισταθμίζουν συνεχώς την κίνηση και κρατούν τη δέσμη στον δορυφόρο. Αυτό λέγεται σταθεροποίηση."
+      },
+      {
+       "ru": "Мотор поляризации в стабилизации не участвует. Он поворачивает облучатель при вводе в эксплуатацию и при большом переходе, когда меняется угол поляризации.",
+       "en": "The polarisation motor is not part of stabilisation. It rotates the feed at commissioning and after a long passage changes the polarisation angle.",
+       "el": "Ο κινητήρας πόλωσης δεν συμμετέχει στη σταθεροποίηση. Περιστρέφει τον τροφοδότη κατά τη θέση σε λειτουργία και όταν ένα μεγάλο ταξίδι αλλάζει τη γωνία πόλωσης."
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "acquisition",
+     "title": {
+      "ru": "Включение и захват спутника",
+      "en": "Power-up and acquisition",
+      "el": "Εκκίνηση και εντοπισμός δορυφόρου"
+     },
+     "body": [
+      {
+       "ru": "Включите ACU, питание ADE (если оно подаётся отдельно) и модем. Дальше система проходит этапы:",
+       "en": "Switch on the ACU, the ADE power (if supplied separately) and the modem. The system then goes through these stages:",
+       "el": "Ενεργοποιήστε την ACU, την τροφοδοσία του ADE (αν τροφοδοτείται χωριστά) και το μόντεμ. Το σύστημα περνά από τα εξής στάδια:"
+      },
+      {
+       "ru": "- **INITIALIZE** — калибровка: антенна проходит оси, 30–50 секунд\n- **INITIALIZE – SAT POSITION** — наведение на расчётные азимут и угол места\n- **SEARCH1** — малый поиск вокруг расчётной точки\n- **SEARCH3** — широкий поиск по азимуту\n- **TRACKING** — спутник найден, идёт сопровождение",
+       "en": "- **INITIALIZE** – calibration: the antenna exercises its axes, 30–50 seconds\n- **INITIALIZE – SAT POSITION** – targeting the computed azimuth and elevation\n- **SEARCH1** – a small search around the computed point\n- **SEARCH3** – a wide azimuth search\n- **TRACKING** – satellite found and being tracked",
+       "el": "- **INITIALIZE** – βαθμονόμηση: η κεραία κινεί τους άξονες, 30–50 δευτερόλεπτα\n- **INITIALIZE – SAT POSITION** – στόχευση στο υπολογισμένο αζιμούθιο και ανύψωση\n- **SEARCH1** – μικρή αναζήτηση γύρω από το υπολογισμένο σημείο\n- **SEARCH3** – ευρεία αναζήτηση στο αζιμούθιο\n- **TRACKING** – ο δορυφόρος βρέθηκε και παρακολουθείται"
+      },
+      {
+       "ru": "С гирокомпасом система обычно сразу переходит к сопровождению. Без гирокомпаса ACU не знает истинный азимут и ищет широким поиском. Если с гирокомпасом система регулярно уходит в SEARCH3, вероятно, неверно откалиброваны Bow Offset или Elevation Adjust — сообщите технической поддержке.",
+       "en": "With a gyro the system usually goes straight to tracking. Without one the ACU does not know true azimuth and finds the satellite by a wide search. If a gyro-equipped system keeps falling into SEARCH3, Bow Offset or Elevation Adjust is probably mis-calibrated: report it to technical support.",
+       "el": "Με γυροπυξίδα το σύστημα συνήθως περνά κατευθείαν σε παρακολούθηση. Χωρίς αυτήν η ACU δεν γνωρίζει το αληθές αζιμούθιο και βρίσκει τον δορυφόρο με ευρεία αναζήτηση. Αν σύστημα με γυροπυξίδα πέφτει συχνά σε SEARCH3, πιθανότατα τα Bow Offset ή Elevation Adjust δεν είναι σωστά βαθμονομημένα: ενημερώστε την τεχνική υποστήριξη."
+      }
+     ]
+    },
+    {
+     "kind": "sim",
+     "id": "power-up",
+     "title": {
+      "ru": "Практика: запуск с гирокомпасом",
+      "en": "Practice: start-up with gyro",
+      "el": "Πρακτική: εκκίνηση με γυροπυξίδα"
+     },
+     "simulator": "acu-panel",
+     "scenario": "power-up",
+     "intro": {
+      "ru": "Система выключена. Включите ACU кнопкой ⏻ и наблюдайте за этапами на дисплее и за лучом на виде сверху.",
+      "en": "The system is off. Switch on the ACU with ⏻ and watch the stages on the display and the beam in the top view.",
+      "el": "Το σύστημα είναι σβηστό. Ενεργοποιήστε την ACU με ⏻ και παρακολουθήστε τα στάδια στην οθόνη και τη δέσμη στην κάτοψη."
+     },
+     "task": {
+      "ru": "Включите систему и дождитесь режима TRACKING.",
+      "en": "Power up and wait for TRACKING.",
+      "el": "Ενεργοποιήστε το σύστημα και περιμένετε TRACKING."
+     }
+    },
+    {
+     "kind": "sim",
+     "id": "power-up-no-gyro",
+     "title": {
+      "ru": "Практика: запуск без гирокомпаса",
+      "en": "Practice: start-up without gyro",
+      "el": "Πρακτική: εκκίνηση χωρίς γυροπυξίδα"
+     },
+     "simulator": "acu-panel",
+     "scenario": "power-up-no-gyro",
+     "intro": {
+      "ru": "Тот же запуск, но гирокомпас не подключён. Сравните, как антенна ищет спутник.",
+      "en": "Same start-up, but no gyro is connected. Compare how the antenna finds the satellite.",
+      "el": "Ίδια εκκίνηση, αλλά χωρίς γυροπυξίδα. Συγκρίνετε πώς η κεραία βρίσκει τον δορυφόρο."
+     },
+     "task": {
+      "ru": "Включите систему, дождитесь SEARCH3, затем TRACKING.",
+      "en": "Power up, see SEARCH3, then wait for TRACKING.",
+      "el": "Ενεργοποιήστε, δείτε SEARCH3 και περιμένετε TRACKING."
+     }
+    },
+    {
+     "kind": "theory",
+     "id": "errors",
+     "title": {
+      "ru": "Ошибки и сброс",
+      "en": "Errors and reset",
+      "el": "Σφάλματα και επαναφορά"
+     },
+     "body": [
+      {
+       "ru": "При активной ошибке загорается светодиод **ERROR** и открывается экран ошибок. Стрелки ◀ ▶ переключают экраны, экран ошибок остаётся доступным, пока ошибка активна.",
+       "en": "When an error is active the **ERROR** LED lights and the errors screen opens. ◀ ▶ switch screens; the errors screen stays available while the error is active.",
+       "el": "Όταν υπάρχει ενεργό σφάλμα ανάβει η λυχνία **ERROR** και ανοίγει η οθόνη σφαλμάτων. Τα ◀ ▶ αλλάζουν οθόνες· η οθόνη σφαλμάτων παραμένει διαθέσιμη όσο το σφάλμα είναι ενεργό."
+      },
+      {
+       "ru": "**COMMUNICATIONS ERROR** значит, что ACU не связывается с антенной. Проверьте кабели между ACU, антенной и модемом, переподключите ослабшие разъёмы и перезапустите систему. Перезапуск питания также заставляет антенну заново навестись на спутник. Если не помогло — звоните в техподдержку.",
+       "en": "**COMMUNICATIONS ERROR** means the ACU cannot talk to the antenna. Check the cables between ACU, antenna and modem, reseat loose connectors and restart the system. A power cycle also makes the antenna re-target the satellite. If that does not help, call technical support.",
+       "el": "Το **COMMUNICATIONS ERROR** σημαίνει ότι η ACU δεν επικοινωνεί με την κεραία. Ελέγξτε τα καλώδια μεταξύ ACU, κεραίας και μόντεμ, σφίξτε τους χαλαρούς συνδέσμους και επανεκκινήστε. Η επανεκκίνηση αναγκάζει επίσης την κεραία να επαναστοχεύσει τον δορυφόρο. Αν δεν βοηθήσει, καλέστε την τεχνική υποστήριξη."
+      }
+     ]
+    },
+    {
+     "kind": "sim",
+     "id": "comm-error",
+     "title": {
+      "ru": "Практика: ошибка связи",
+      "en": "Practice: communications error",
+      "el": "Πρακτική: σφάλμα επικοινωνίας"
+     },
+     "simulator": "acu-panel",
+     "scenario": "comm-error",
+     "intro": {
+      "ru": "ACU сообщает об ошибке связи с антенной. Найдите причину и восстановите работу.",
+      "en": "The ACU reports a communications error with the antenna. Find the cause and restore service.",
+      "el": "Η ACU αναφέρει σφάλμα επικοινωνίας με την κεραία. Βρείτε την αιτία και αποκαταστήστε τη λειτουργία."
+     },
+     "task": {
+      "ru": "Проверьте кабели, затяните разъём, перезапустите ACU (выкл. и вкл.) и дождитесь TRACKING.",
+      "en": "Check the cables, tighten the connector, power-cycle the ACU and wait for TRACKING.",
+      "el": "Ελέγξτε τα καλώδια, σφίξτε τον σύνδεσμο, επανεκκινήστε την ACU και περιμένετε TRACKING."
+     }
+    },
+    {
+     "kind": "quiz",
+     "id": "quiz",
+     "title": {
+      "ru": "Тест по модулю",
+      "en": "Module quiz",
+      "el": "Τεστ ενότητας"
+     },
+     "questions": [
+      "q-ts-1",
+      "q-ts-2",
+      "q-ts-3",
+      "q-ts-4",
+      "q-ts-5"
+     ],
+     "perAttempt": 4,
+     "passMark": 3,
+     "attempts": 2
+    }
+   ]
+  },
+  {
+   "id": "maintenance",
+   "title": {
+    "ru": "Профилактика",
+    "en": "Preventive maintenance",
+    "el": "Προληπτική συντήρηση"
+   },
+   "objectives": [
+    {
+     "ru": "Когда и как стопорить антенну",
+     "en": "When and how to stow the antenna",
+     "el": "Πότε και πώς ασφαλίζεται η κεραία"
+    },
+    {
+     "ru": "Осматривать радом, кабели и приводы",
+     "en": "Inspect the radome, cables and drives",
+     "el": "Να επιθεωρείτε radome, καλώδια και μηχανισμούς κίνησης"
+    }
+   ],
+   "steps": [
+    {
+     "kind": "theory",
+     "id": "safety",
+     "title": {
+      "ru": "Безопасность при обслуживании",
+      "en": "Safety during maintenance",
+      "el": "Ασφάλεια κατά τη συντήρηση"
+     },
+     "body": [
+      {
+       "ru": "Не подходите к радому, пока терминал излучает: передатчик создаёт радиационную опасность. Перед осмотром, чисткой или ремонтом обесточьте ADE. Стабилизация при этом отключается, поэтому работайте только при спокойном море и сразу включайте питание после работы.",
+       "en": "Do not approach the radome while the terminal is transmitting: the transmitter is a radiation hazard. Power off the ADE before inspecting, cleaning or repairing. Stabilisation stops when you do, so work only in calm seas and restore power as soon as you finish.",
+       "el": "Μην πλησιάζετε το radome όσο το τερματικό εκπέμπει: ο πομπός αποτελεί κίνδυνο ακτινοβολίας. Απενεργοποιήστε το ADE πριν από επιθεώρηση, καθαρισμό ή επισκευή. Η σταθεροποίηση τότε σταματά, οπότε εργαστείτε μόνο με ήρεμη θάλασσα και επαναφέρετε την τροφοδοσία μόλις τελειώσετε."
+      },
+      {
+       "ru": "Вращая пьедестал вручную, берегите пальцы: в механизме легко защемить руку.",
+       "en": "When rotating the pedestal by hand, mind your fingers: the mechanism can pinch or crush.",
+       "el": "Όταν περιστρέφετε το βάθρο με το χέρι, προσέξτε τα δάχτυλα: ο μηχανισμός μπορεί να τα τραυματίσει."
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "stow",
+     "title": {
+      "ru": "Стопорение антенны",
+      "en": "Stowing the antenna",
+      "el": "Ασφάλιση κεραίας"
+     },
+     "body": [
+      {
+       "ru": "Антенну стопорят на время транспортировки или длительного отключения: через лючок в радоме ставят фиксаторы азимута, крена, угла места и поляризации и подкладывают пену под плечо крена. Перед включением фиксаторы снимают.",
+       "en": "The antenna is stowed for transport or long shutdowns: through the radome hatch you fit the azimuth, cross-level, elevation and polarisation restraints and put foam under the cross-level arm. Remove the restraints before powering up.",
+       "el": "Η κεραία ασφαλίζεται για μεταφορά ή μακρά διακοπή λειτουργίας: από το άνοιγμα του radome τοποθετούνται οι ασφάλειες αζιμουθίου, εγκάρσιας κλίσης, ανύψωσης και πόλωσης και αφρώδες υλικό κάτω από τον βραχίονα cross-level. Αφαιρέστε τις ασφάλειες πριν την ενεργοποίηση."
+      },
+      {
+       "ru": "Переключатель **TEST** на пьедестале снимает питание с моторов и отпускает тормоза. Им проверяют баланс и свободный ход осей. В штатной работе он должен быть выключен.",
+       "en": "The **TEST** switch on the pedestal removes drive power and releases the brakes. It is used to check balance and free movement of the axes. In normal operation it must be off.",
+       "el": "Ο διακόπτης **TEST** στο βάθρο αφαιρεί την τροφοδοσία κίνησης και απελευθερώνει τα φρένα. Χρησιμοποιείται για έλεγχο ισορροπίας και ελεύθερης κίνησης των αξόνων. Στην κανονική λειτουργία πρέπει να είναι κλειστός."
+      }
+     ]
+    },
+    {
+     "kind": "theory",
+     "id": "inspect",
+     "title": {
+      "ru": "Осмотр",
+      "en": "Inspection",
+      "el": "Επιθεώρηση"
+     },
+     "body": [
+      {
+       "ru": "- **Радом**: трещины, вмятины, повреждения покрытия — ремонтирует только сертифицированный специалист; копоть смывают при мойке палубы\n- **Кабели и разъёмы**: затянуты, полностью вставлены, изоляция гибкая, без потёртостей и пережатий\n- **Приводы** азимута, крена, угла места и поляризации: ремни без трещин и износа, натяжение в норме, моторы без ржавчины, крепёж затянут\n- **Датчиковая коробка**: ремень привода, ржавчина, крепёж",
+       "en": "- **Radome**: cracks, dents, coating damage – repaired only by a certified professional; exhaust soot is washed off when the deck is hosed\n- **Cables and connectors**: tight, fully engaged, insulation flexible, not chafed or pinched\n- **Drives** (azimuth, cross-level, elevation, polarisation): belts free of cracks and wear, correct tension, motors free of rust, hardware tight\n- **Sensor box**: drive belt, rust, mounting hardware",
+       "el": "- **Radome**: ρωγμές, βαθουλώματα, φθορές επικάλυψης – επισκευή μόνο από πιστοποιημένο τεχνικό· η αιθάλη ξεπλένεται με το πλύσιμο του καταστρώματος\n- **Καλώδια και σύνδεσμοι**: σφιγμένοι, πλήρως εφαρμοσμένοι, μόνωση εύκαμπτη, χωρίς τριβές ή συνθλίψεις\n- **Μηχανισμοί κίνησης** (αζιμούθιο, cross-level, ανύψωση, πόλωση): ιμάντες χωρίς ρωγμές και φθορά, σωστή τάνυση, κινητήρες χωρίς σκουριά, σφιγμένα εξαρτήματα\n- **Κουτί αισθητήρων**: ιμάντας κίνησης, σκουριά, στερέωση"
+      },
+      {
+       "ru": "Затяните ослабший крепёж. Любое повреждение запишите и сообщите о нём для ремонта или замены.",
+       "en": "Tighten any loose hardware. Record any damage and report it for repair or replacement.",
+       "el": "Σφίξτε όσα εξαρτήματα έχουν χαλαρώσει. Καταγράψτε κάθε φθορά και αναφέρετέ τη για επισκευή ή αντικατάσταση."
+      }
+     ]
+    },
+    {
+     "kind": "quiz",
+     "id": "quiz",
+     "title": {
+      "ru": "Тест по модулю",
+      "en": "Module quiz",
+      "el": "Τεστ ενότητας"
+     },
+     "questions": [
+      "q-mt-1",
+      "q-mt-2",
+      "q-mt-3",
+      "q-mt-4",
+      "q-mt-5"
+     ],
+     "perAttempt": 4,
+     "passMark": 3,
+     "attempts": 2
+    }
+   ]
+  }
+ ]
+}

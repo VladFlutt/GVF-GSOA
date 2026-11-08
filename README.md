@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GVF Academy
 
-## Getting Started
+Interactive preparation platform for GVF / GSOA satellite certification: theory, equipment simulators and quizzes in Russian, English and Greek.
 
-First, run the development server:
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000 → redirects to /ru
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Without Supabase settings the app runs in **local mode**: progress is stored in the browser. To enable accounts and synced progress, create a Supabase project, apply `supabase/migrations/0001_progress.sql`, and set the variables from `.env.example`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding a course
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Courses are data, not code. Each course is a folder in `content/courses/<id>/`:
 
-## Learn More
+| File | Contents |
+| --- | --- |
+| `course.json` | Course → modules → steps. A step is `theory` (paragraphs), `sim` (simulator + scenario + task) or `quiz` (question ids, questions per attempt, pass mark, attempts). Every text is `{ "ru", "en", "el" }`. |
+| `questions.json` | Question bank: single or multiple choice, with an explanation for each question. |
 
-To learn more about Next.js, take a look at the following resources:
+Add the folder, rebuild, and the course appears in the catalog. Types are in `src/content/types.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Simulators
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`src/components/sim/acu/` is a model of a marine VSAT terminal: antenna control unit (front panel, display, LEDs, menus), stabilised antenna with blockage zones, and a satellite modem. The behaviour lives in a pure state machine (`engine.ts`); training scenarios with goals live in `scenarios.ts`:
 
-## Deploy on Vercel
+| Scenario | Goal |
+| --- | --- |
+| `explore-panel` | Open all status screens |
+| `power-up` / `power-up-no-gyro` | Start the system and reach TRACKING |
+| `switch-satellite` | Load another satellite from the menu |
+| `blockage` | Steer the ship into a blockage zone and out again |
+| `rain-fade` | Lose the signal in heavy rain and recover |
+| `comm-error` | Fix an ACU–antenna communications error |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 15 (App Router, static generation), Tailwind CSS 4, Supabase (Auth + Postgres with row-level security), deployable to Vercel.
+
+Course text is original training material written for this platform; it does not reproduce GVF/SatProf course content.
