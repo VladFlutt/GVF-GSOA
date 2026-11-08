@@ -8,7 +8,7 @@ let ready: Promise<void> | null = null;
 /** Neon connection from DATABASE_URL (set by Vercel's Neon integration). Null when not configured. */
 export function getSql() {
   if (sql === undefined) {
-    const url = process.env.DATABASE_URL ?? process.env.POSTGRES_URL;
+    const url = process.env.DATABASE_URL ?? process.env.POSTGRES_URL ?? process.env.STORAGE_URL;
     sql = url ? neon(url) : null;
   }
   return sql;
