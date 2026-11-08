@@ -44,8 +44,13 @@ const ru = {
   signIn: "Войти",
   signOut: "Выйти",
   email: "Электронная почта",
-  sendLink: "Получить ссылку для входа",
-  linkSent: "Ссылка отправлена. Проверьте почту.",
+  password: "Пароль (не короче 8 символов)",
+  register: "Регистрация",
+  noAccount: "Нет аккаунта? Зарегистрироваться",
+  haveAccount: "Уже есть аккаунт? Войти",
+  errExists: "Этот адрес уже зарегистрирован.",
+  errWrong: "Неверная почта или пароль.",
+  errInvalid: "Проверьте почту и пароль (не короче 8 символов).",
   localMode: "Прогресс сохраняется в этом браузере. Войдите, чтобы сохранять его в аккаунте.",
 };
 
@@ -95,8 +100,13 @@ const en: Dictionary = {
   signIn: "Sign in",
   signOut: "Sign out",
   email: "Email",
-  sendLink: "Email me a sign-in link",
-  linkSent: "Link sent. Check your inbox.",
+  password: "Password (8+ characters)",
+  register: "Create account",
+  noAccount: "No account? Create one",
+  haveAccount: "Have an account? Sign in",
+  errExists: "This email is already registered.",
+  errWrong: "Wrong email or password.",
+  errInvalid: "Check the email and password (8+ characters).",
   localMode: "Progress is saved in this browser. Sign in to keep it in your account.",
 };
 
@@ -144,8 +154,13 @@ const el: Dictionary = {
   signIn: "Σύνδεση",
   signOut: "Αποσύνδεση",
   email: "Email",
-  sendLink: "Αποστολή συνδέσμου σύνδεσης",
-  linkSent: "Ο σύνδεσμος στάλθηκε. Ελέγξτε το email σας.",
+  password: "Κωδικός (τουλάχιστον 8 χαρακτήρες)",
+  register: "Εγγραφή",
+  noAccount: "Δεν έχετε λογαριασμό; Εγγραφή",
+  haveAccount: "Έχετε λογαριασμό; Σύνδεση",
+  errExists: "Αυτό το email είναι ήδη εγγεγραμμένο.",
+  errWrong: "Λάθος email ή κωδικός.",
+  errInvalid: "Ελέγξτε το email και τον κωδικό (τουλάχιστον 8 χαρακτήρες).",
   localMode: "Η πρόοδος αποθηκεύεται σε αυτόν τον browser. Συνδεθείτε για να την κρατήσετε στον λογαριασμό σας.",
 };
 

@@ -9,7 +9,7 @@ npm install
 npm run dev        # http://localhost:3000 → redirects to /ru
 ```
 
-Without Supabase settings the app runs in **local mode**: progress is stored in the browser. To enable accounts and synced progress, create a Supabase project, apply `supabase/migrations/0001_progress.sql`, and set the variables from `.env.example`.
+Without a database the app runs in **local mode**: progress is stored in the browser and the sign-in button is hidden. To enable accounts and synced progress, connect a Neon Postgres database to the Vercel project (Storage → Neon), which sets `DATABASE_URL`. Tables are created automatically on the first request (`src/lib/schema.ts`).
 
 ## Adding a course
 
@@ -37,6 +37,6 @@ Add the folder, rebuild, and the course appears in the catalog. Types are in `sr
 
 ## Stack
 
-Next.js 15 (App Router, static generation), Tailwind CSS 4, Supabase (Auth + Postgres with row-level security), deployable to Vercel.
+Next.js 15 (App Router, static generation), Tailwind CSS 4, Neon Postgres (email + password accounts with bcrypt and HTTP-only session cookies, learner progress, quiz attempts), deployed on Vercel.
 
 Course text is original training material written for this platform; it does not reproduce GVF/SatProf course content.

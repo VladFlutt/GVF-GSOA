@@ -1,10 +1,9 @@
 "use client";
 import { useCallback, useEffect, useSyncExternalStore } from "react";
-import { getSupabase } from "./supabase";
 
 /**
  * Learner progress: the set of completed step keys ("<moduleId>/<stepId>") per course,
- * plus quiz attempts. Always kept in localStorage; mirrored to Supabase when signed in.
+ * plus quiz attempts. Always kept in localStorage; mirrored to the server (Neon) when signed in.
  */
 type CourseProgress = { done: string[]; quizAttempts: Record<string, number> };
 type Store = Record<string, CourseProgress>;
@@ -38,31 +37,36 @@ function course(store: Store, id: string): CourseProgress {
 }
 
 async function pushRemote(courseId: string, stepKey: string, kind: "done" | "attempt", passed?: boolean) {
-  const sb = getSupabase();
-  if (!sb) return;
-  const { data } = await sb.auth.getUser();
-  if (!data.user) return;
-  if (kind === "done") {
-    await sb.from("step_progress").upsert({ user_id: data.user.id, course_id: courseId, step_key: stepKey });
-  } else {
-    await sb.from("quiz_attempts").insert({ user_id: data.user.id, course_id: courseId, step_key: stepKey, passed });
+  try {
+    await fetch("/api/progress", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ courseId, stepKey, kind, passed }),
+    });
+  } catch {
+    /* offline or signed out: local progress is kept */
   }
 }
 
-/** Pull completed steps from Supabase into the local store after sign-in. */
+/** Merge completed steps from the server into the local store (after sign-in), and upload local-only ones. */
 export async function syncFromRemote() {
-  const sb = getSupabase();
-  if (!sb) return;
-  const { data } = await sb.auth.getUser();
-  if (!data.user) return;
-  const { data: rows } = await sb.from("step_progress").select("course_id, step_key");
-  if (!rows) return;
+  let rows: { course_id: string; step_key: string }[];
+  try {
+    const res = await fetch("/api/progress");
+    if (!res.ok) return;
+    rows = (await res.json()).rows;
+  } catch {
+    return;
+  }
   const next = { ...load() };
-  for (const r of rows as { course_id: string; step_key: string }[]) {
+  const remote = new Set(rows.map((r) => `${r.course_id}|${r.step_key}`));
+  for (const r of rows) {
     const c = course(next, r.course_id);
     if (!c.done.includes(r.step_key)) next[r.course_id] = { ...c, done: [...c.done, r.step_key] };
   }
   save(next);
+  for (const [courseId, c] of Object.entries(next))
+    for (const key of c.done) if (!remote.has(`${courseId}|${key}`)) void pushRemote(courseId, key, "done");
 }
 
 const empty: Store = {};
