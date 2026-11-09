@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GVF Academy
 
-## Getting Started
+Interactive preparation platform for GVF / GSOA satellite certification: theory, equipment simulators and quizzes in Russian, English and Greek.
 
-First, run the development server:
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000 → redirects to /ru
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Without a database the app runs in **local mode**: progress is stored in the browser and the sign-in button is hidden. To enable accounts and synced progress, connect a Neon Postgres database to the Vercel project (Storage → Neon), which sets `DATABASE_URL`. Tables are created automatically on the first request (`src/lib/schema.ts`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Adding a course
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Courses are data, not code. Each course is a folder in `content/courses/<id>/`:
 
-## Learn More
+| File | Contents |
+| --- | --- |
+| `course.json` | Course → modules → steps. A step is `theory` (paragraphs), `sim` (simulator + scenario + task) or `quiz` (question ids, questions per attempt, pass mark, attempts). Every text is `{ "ru", "en", "el" }`. |
+| `questions.json` | Question bank: single or multiple choice, with an explanation for each question. |
 
-To learn more about Next.js, take a look at the following resources:
+Illustrations go in `public/courses/<id>/` and are listed on a theory step as `figures: [{ "src": "/courses/<id>/file.webp", "caption": { … } }]`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If an illustration has text, translated copies sit next to it as `file.ru.webp` / `file.el.webp` and the figure lists them in `"localized": ["ru", "el"]`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The glossary of terms is `content/glossary.json`, shared by all courses: each entry has a term and a definition in every language, plus `match` patterns that find the term in course text. The first mention of a term on a page gets a popover with the definition; the full list is at `/<locale>/glossary`.
 
-## Deploy on Vercel
+Add the folder, rebuild, and the course appears in the catalog. Types are in `src/content/types.ts`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Simulators
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`src/components/sim/acu/` is a model of a marine VSAT terminal: antenna control unit (front panel, display, LEDs, menus), stabilised antenna with blockage zones, and a satellite modem. The behaviour lives in a pure state machine (`engine.ts`); training scenarios with goals live in `scenarios.ts`:
+
+| Scenario | Goal |
+| --- | --- |
+| `explore-panel` | Open all status screens |
+| `power-up` / `power-up-no-gyro` | Start the system and reach TRACKING |
+| `switch-satellite` | Load another satellite from the menu |
+| `blockage` | Steer the ship into a blockage zone and out again |
+| `rain-fade` | Lose the signal in heavy rain and recover |
+| `comm-error` | Fix an ACU–antenna communications error |
+
+## Stack
+
+Next.js 15 (App Router, static generation), Tailwind CSS 4, Neon Postgres (email + password accounts with bcrypt and HTTP-only session cookies, learner progress, quiz attempts), deployed on Vercel.
+
+Course text is original training material written for this platform; it does not reproduce GVF/SatProf course content.

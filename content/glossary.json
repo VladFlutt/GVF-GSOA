@@ -1,0 +1,935 @@
+[
+  {
+    "id": "vsat",
+    "term": {
+      "ru": "VSAT",
+      "en": "VSAT",
+      "el": "VSAT"
+    },
+    "def": {
+      "ru": "Very Small Aperture Terminal — спутниковый терминал с антенной небольшого диаметра (обычно 0,6–2,4 м), который и принимает, и передаёт данные. На судне даёт широкополосный интернет и телефонию.",
+      "en": "Very Small Aperture Terminal: a satellite terminal with a small dish (usually 0.6–2.4 m) that both receives and transmits data. On a ship it provides broadband internet and voice.",
+      "el": "Very Small Aperture Terminal: δορυφορικό τερματικό με μικρό κάτοπτρο (συνήθως 0,6–2,4 m) που λαμβάνει και εκπέμπει δεδομένα. Στο πλοίο παρέχει ευρυζωνικό internet και τηλεφωνία."
+    },
+    "match": {
+      "ru": [
+        "VSAT"
+      ],
+      "en": [
+        "VSAT"
+      ],
+      "el": [
+        "VSAT"
+      ]
+    }
+  },
+  {
+    "id": "tvro",
+    "term": {
+      "ru": "TVRO",
+      "en": "TVRO",
+      "el": "TVRO"
+    },
+    "def": {
+      "ru": "TV Receive Only — антенна только для приёма спутникового телевидения, без передачи.",
+      "en": "TV Receive Only: an antenna that only receives satellite television and never transmits.",
+      "el": "TV Receive Only: κεραία μόνο για λήψη δορυφορικής τηλεόρασης, χωρίς εκπομπή."
+    },
+    "match": {
+      "ru": [
+        "TVRO"
+      ],
+      "en": [
+        "TVRO"
+      ],
+      "el": [
+        "TVRO"
+      ]
+    }
+  },
+  {
+    "id": "ade",
+    "term": {
+      "ru": "ADE — оборудование над палубой",
+      "en": "ADE — Above-Decks Equipment",
+      "el": "ADE — εξοπλισμός καταστρώματος"
+    },
+    "def": {
+      "ru": "Всё, что стоит снаружи: радом, антенна на пьедестале, ВЧ-блоки (BUC, LNB, диплексер), моторы и датчики.",
+      "en": "Everything mounted outside: the radome, the antenna on its pedestal, the RF units (BUC, LNB, diplexer), motors and sensors.",
+      "el": "Ό,τι είναι τοποθετημένο εξωτερικά: ραντόμ, κεραία στο βάθρο, μονάδες RF (BUC, LNB, διπλέκτης), κινητήρες και αισθητήρες."
+    },
+    "match": {
+      "ru": [
+        "ADE"
+      ],
+      "en": [
+        "ADE",
+        "above[- ]decks equipment"
+      ],
+      "el": [
+        "ADE"
+      ]
+    }
+  },
+  {
+    "id": "bde",
+    "term": {
+      "ru": "BDE — оборудование под палубой",
+      "en": "BDE — Below-Decks Equipment",
+      "el": "BDE — εξοπλισμός κάτω από το κατάστρωμα"
+    },
+    "def": {
+      "ru": "Оборудование внутри судна: блок управления антенной (ACU), спутниковый модем, маршрутизатор, ИБП. Обычно стоит в стойке в радиорубке.",
+      "en": "Equipment inside the vessel: the antenna control unit (ACU), satellite modem, router and UPS, usually in a rack in the radio room.",
+      "el": "Εξοπλισμός μέσα στο πλοίο: μονάδα ελέγχου κεραίας (ACU), δορυφορικό μόντεμ, δρομολογητής, UPS, συνήθως σε ικρίωμα στον ασυρματικό θάλαμο."
+    },
+    "match": {
+      "ru": [
+        "BDE"
+      ],
+      "en": [
+        "BDE",
+        "below[- ]decks equipment"
+      ],
+      "el": [
+        "BDE"
+      ]
+    }
+  },
+  {
+    "id": "acu",
+    "term": {
+      "ru": "ACU — блок управления антенной",
+      "en": "ACU — Antenna Control Unit",
+      "el": "ACU — μονάδα ελέγχου κεραίας"
+    },
+    "def": {
+      "ru": "Блок под палубой, через который оператор управляет антенной и видит её состояние: режим, сигнал, положение, ошибки. Получает курс от гирокомпаса и координаты от GPS, связывается с антенной и модемом.",
+      "en": "The below-decks unit the operator uses to control and monitor the antenna: mode, signal, position, errors. It takes heading from the gyro compass and position from GPS, and talks to the antenna and the modem.",
+      "el": "Η μονάδα κάτω από το κατάστρωμα με την οποία ο χειριστής ελέγχει και παρακολουθεί την κεραία: λειτουργία, σήμα, θέση, σφάλματα. Παίρνει πορεία από τη γυροπυξίδα και θέση από GPS και επικοινωνεί με κεραία και μόντεμ."
+    },
+    "match": {
+      "ru": [
+        "ACU",
+        "блок\\p{L}{0,3} управления антенной"
+      ],
+      "en": [
+        "ACU",
+        "antenna control unit"
+      ],
+      "el": [
+        "ACU",
+        "μονάδα ελέγχου κεραίας"
+      ]
+    }
+  },
+  {
+    "id": "radome",
+    "term": {
+      "ru": "Радом",
+      "en": "Radome",
+      "el": "Ραντόμ"
+    },
+    "def": {
+      "ru": "Радиопрозрачный колпак над антенной. Защищает механику от ветра, воды, соли и солнца, почти не ослабляя сигнал.",
+      "en": "The radio-transparent dome over the antenna. It protects the mechanics from wind, water, salt and sun while barely weakening the signal.",
+      "el": "Ο ραδιοδιαπερατός θόλος πάνω από την κεραία. Προστατεύει τον μηχανισμό από άνεμο, νερό, αλάτι και ήλιο σχεδόν χωρίς να εξασθενεί το σήμα."
+    },
+    "match": {
+      "ru": [
+        "радом\\p{L}{0,3}"
+      ],
+      "en": [
+        "radomes?"
+      ],
+      "el": [
+        "ραντόμ",
+        "radome"
+      ]
+    }
+  },
+  {
+    "id": "pedestal",
+    "term": {
+      "ru": "Пьедестал",
+      "en": "Pedestal",
+      "el": "Βάθρο"
+    },
+    "def": {
+      "ru": "Основание антенны с моторами и осями. На нём рефлектор вращается по азимуту, углу места и крену.",
+      "en": "The base of the antenna that carries the motors and axes; the reflector turns on it in azimuth, elevation and cross-level.",
+      "el": "Η βάση της κεραίας με τους κινητήρες και τους άξονες· πάνω της το κάτοπτρο περιστρέφεται σε αζιμούθιο, ανύψωση και εγκάρσια κλίση."
+    },
+    "match": {
+      "ru": [
+        "пьедестал\\p{L}{0,3}"
+      ],
+      "en": [
+        "pedestals?"
+      ],
+      "el": [
+        "βάθρ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "reflector",
+    "term": {
+      "ru": "Рефлектор",
+      "en": "Reflector",
+      "el": "Κάτοπτρο"
+    },
+    "def": {
+      "ru": "«Тарелка» антенны: параболическое зеркало, которое собирает сигнал спутника в облучатель и направляет передаваемый сигнал к спутнику.",
+      "en": "The antenna dish: a parabolic mirror that focuses the satellite signal into the feed and beams the transmitted signal back to the satellite.",
+      "el": "Το «πιάτο» της κεραίας: παραβολικό κάτοπτρο που συγκεντρώνει το σήμα του δορυφόρου στην τροφοδοσία και στέλνει το εκπεμπόμενο σήμα προς τον δορυφόρο."
+    },
+    "match": {
+      "ru": [
+        "рефлектор\\p{L}{0,3}"
+      ],
+      "en": [
+        "reflectors?"
+      ],
+      "el": [
+        "κατόπτρ\\p{L}{1,2}",
+        "κάτοπτρ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "feed",
+    "term": {
+      "ru": "Облучатель",
+      "en": "Feed horn",
+      "el": "Χοάνη τροφοδοσίας"
+    },
+    "def": {
+      "ru": "Рупор в фокусе рефлектора. Передаёт сигнал между рефлектором и ВЧ-блоками (LNB и BUC) и задаёт поляризацию.",
+      "en": "The horn at the focus of the reflector. It passes the signal between the dish and the RF units (LNB and BUC) and sets the polarization.",
+      "el": "Η χοάνη στο εστιακό σημείο του κατόπτρου. Μεταφέρει το σήμα μεταξύ κατόπτρου και μονάδων RF (LNB και BUC) και καθορίζει την πόλωση."
+    },
+    "match": {
+      "ru": [
+        "облучател\\p{L}{0,3}"
+      ],
+      "en": [
+        "feed horns?",
+        "feed"
+      ],
+      "el": [
+        "χοάν\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "buc",
+    "term": {
+      "ru": "BUC",
+      "en": "BUC",
+      "el": "BUC"
+    },
+    "def": {
+      "ru": "Block Up-Converter — блок на антенне, который переносит сигнал модема вверх по частоте в спутниковый диапазон и усиливает его для передачи.",
+      "en": "Block Up-Converter: the unit on the antenna that shifts the modem's signal up to the satellite band and amplifies it for transmission.",
+      "el": "Block Up-Converter: μονάδα στην κεραία που ανεβάζει τη συχνότητα του σήματος του μόντεμ στη δορυφορική ζώνη και το ενισχύει για εκπομπή."
+    },
+    "match": {
+      "ru": [
+        "BUC"
+      ],
+      "en": [
+        "BUC"
+      ],
+      "el": [
+        "BUC"
+      ]
+    }
+  },
+  {
+    "id": "lnb",
+    "term": {
+      "ru": "LNB",
+      "en": "LNB",
+      "el": "LNB"
+    },
+    "def": {
+      "ru": "Low-Noise Block — малошумящий усилитель-преобразователь: усиливает слабый сигнал со спутника и переносит его вниз по частоте для кабеля и модема.",
+      "en": "Low-Noise Block: amplifies the weak signal from the satellite and shifts it down in frequency for the cable and the modem.",
+      "el": "Low-Noise Block: ενισχύει το ασθενές σήμα του δορυφόρου και κατεβάζει τη συχνότητά του για το καλώδιο και το μόντεμ."
+    },
+    "match": {
+      "ru": [
+        "LNB"
+      ],
+      "en": [
+        "LNBs?"
+      ],
+      "el": [
+        "LNB"
+      ]
+    }
+  },
+  {
+    "id": "diplexer",
+    "term": {
+      "ru": "Диплексер",
+      "en": "Diplexer",
+      "el": "Διπλέκτης"
+    },
+    "def": {
+      "ru": "Фильтр, который позволяет передавать и принимать по одному кабелю или тракту, разделяя сигналы по частоте.",
+      "en": "A filter that lets transmit and receive share one cable or path by separating the signals by frequency.",
+      "el": "Φίλτρο που επιτρέπει εκπομπή και λήψη στο ίδιο καλώδιο ή διαδρομή, διαχωρίζοντας τα σήματα κατά συχνότητα."
+    },
+    "match": {
+      "ru": [
+        "диплексер\\p{L}{0,3}"
+      ],
+      "en": [
+        "diplexers?"
+      ],
+      "el": [
+        "διπλέκτ\\p{L}{1,3}"
+      ]
+    }
+  },
+  {
+    "id": "modem",
+    "term": {
+      "ru": "Спутниковый модем",
+      "en": "Satellite modem",
+      "el": "Δορυφορικό μόντεμ"
+    },
+    "def": {
+      "ru": "Устройство, которое превращает данные в радиосигнал и обратно и держит связь с сетью оператора. Сообщает ACU, есть ли захват сигнала, и отключает передачу по его команде.",
+      "en": "The device that turns data into a radio signal and back and keeps the link with the operator's network. It tells the ACU whether it has signal lock and mutes transmission on its command.",
+      "el": "Η συσκευή που μετατρέπει τα δεδομένα σε ραδιοσήμα και αντίστροφα και διατηρεί τη σύνδεση με το δίκτυο του παρόχου. Ενημερώνει το ACU αν έχει κλείδωμα σήματος και σιγεί την εκπομπή με εντολή του."
+    },
+    "match": {
+      "ru": [
+        "модем\\p{L}{0,3}"
+      ],
+      "en": [
+        "modems?"
+      ],
+      "el": [
+        "μόντεμ"
+      ]
+    }
+  },
+  {
+    "id": "azimuth",
+    "term": {
+      "ru": "Азимут (AZ)",
+      "en": "Azimuth (AZ)",
+      "el": "Αζιμούθιο (AZ)"
+    },
+    "def": {
+      "ru": "Направление на спутник по горизонту, в градусах от севера по часовой стрелке. Одна из осей антенны.",
+      "en": "The horizontal direction to the satellite, in degrees clockwise from north. One of the antenna's axes.",
+      "el": "Η οριζόντια κατεύθυνση προς τον δορυφόρο, σε μοίρες δεξιόστροφα από τον βορρά. Ένας από τους άξονες της κεραίας."
+    },
+    "match": {
+      "ru": [
+        "азимут\\p{L}{0,3}"
+      ],
+      "en": [
+        "azimuth"
+      ],
+      "el": [
+        "αζιμούθι\\p{L}{1,2}",
+        "αζιμουθί\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "relaz",
+    "term": {
+      "ru": "Относительный азимут (REL)",
+      "en": "Relative azimuth (REL)",
+      "el": "Σχετικό αζιμούθιο (REL)"
+    },
+    "def": {
+      "ru": "Направление антенны относительно носа судна. Без гирокомпаса ACU видит только его, и истинный азимут показывается прочерками.",
+      "en": "The antenna's direction relative to the ship's bow. Without a gyro compass this is all the ACU knows, and true azimuth shows as dashes.",
+      "el": "Η κατεύθυνση της κεραίας σε σχέση με την πλώρη. Χωρίς γυροπυξίδα το ACU γνωρίζει μόνο αυτήν και το πραγματικό αζιμούθιο εμφανίζεται με παύλες."
+    },
+    "match": {
+      "ru": [
+        "относительн\\p{L}{1,3} азимут\\p{L}{0,3}"
+      ],
+      "en": [
+        "relative azimuth",
+        "relative az"
+      ],
+      "el": [
+        "σχετικ\\p{L}{1,3} αζιμούθι\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "elevation",
+    "term": {
+      "ru": "Угол места (EL)",
+      "en": "Elevation (EL)",
+      "el": "Ανύψωση (EL)"
+    },
+    "def": {
+      "ru": "Угол подъёма антенны над горизонтом. Чем ближе судно к экватору и к долготе спутника, тем он больше.",
+      "en": "The antenna's angle above the horizon. It is higher the closer the ship is to the equator and to the satellite's longitude.",
+      "el": "Η γωνία της κεραίας πάνω από τον ορίζοντα. Είναι μεγαλύτερη όσο πιο κοντά είναι το πλοίο στον ισημερινό και στο γεωγραφικό μήκος του δορυφόρου."
+    },
+    "match": {
+      "ru": [
+        "угл\\p{L}{0,2} места"
+      ],
+      "en": [
+        "elevation"
+      ],
+      "el": [
+        "ανύψωσ\\p{L}{1,2}",
+        "ανυψώσ\\p{L}{1,3}"
+      ]
+    }
+  },
+  {
+    "id": "crosslevel",
+    "term": {
+      "ru": "Крен (cross-level)",
+      "en": "Cross-level",
+      "el": "Εγκάρσια κλίση (cross-level)"
+    },
+    "def": {
+      "ru": "Третья ось антенны: наклон вбок, перпендикулярно лучу. Компенсирует бортовую качку, чтобы поляризация и наведение не сбивались.",
+      "en": "The antenna's third axis: tilting sideways, across the beam. It compensates for roll so that pointing and polarization stay steady.",
+      "el": "Ο τρίτος άξονας της κεραίας: πλάγια κλίση, κάθετα στη δέσμη. Αντισταθμίζει τον διατοιχισμό ώστε στόχευση και πόλωση να μένουν σταθερές."
+    },
+    "match": {
+      "ru": [
+        "крен\\p{L}{0,2}",
+        "cross-level"
+      ],
+      "en": [
+        "cross[- ]level"
+      ],
+      "el": [
+        "εγκάρσι\\p{L}{1,2} κλίσ\\p{L}{1,2}",
+        "cross-level"
+      ]
+    }
+  },
+  {
+    "id": "polarization",
+    "term": {
+      "ru": "Поляризация (skew)",
+      "en": "Polarization (skew)",
+      "el": "Πόλωση (skew)"
+    },
+    "def": {
+      "ru": "Ориентация плоскости колебаний радиоволны. Облучатель нужно повернуть под угол поляризации спутника; при большом смещении судна мотор поляризации подстраивает его автоматически.",
+      "en": "The orientation of the radio wave's plane. The feed must be turned to match the satellite's polarization; when the ship moves far, the polarization motor adjusts it automatically.",
+      "el": "Ο προσανατολισμός του επιπέδου ταλάντωσης του κύματος. Η τροφοδοσία πρέπει να στραφεί ώστε να ταιριάζει με την πόλωση του δορυφόρου· όταν το πλοίο μετακινηθεί πολύ, ο κινητήρας πόλωσης τη ρυθμίζει αυτόματα."
+    },
+    "match": {
+      "ru": [
+        "поляризаци\\p{L}{1,2}"
+      ],
+      "en": [
+        "polari[sz]ation",
+        "skew"
+      ],
+      "el": [
+        "πόλωσ\\p{L}{1,2}",
+        "πολώσ\\p{L}{1,3}"
+      ]
+    }
+  },
+  {
+    "id": "stabilization",
+    "term": {
+      "ru": "Стабилизация",
+      "en": "Stabilization",
+      "el": "Σταθεροποίηση"
+    },
+    "def": {
+      "ru": "Удержание антенны направленной на спутник, пока судно качается и поворачивает. Датчики измеряют движение, а моторы по трём осям его компенсируют.",
+      "en": "Keeping the antenna pointed at the satellite while the ship rolls, pitches and turns. Sensors measure the motion and the motors on three axes cancel it out.",
+      "el": "Η διατήρηση της κεραίας στραμμένης στον δορυφόρο ενώ το πλοίο κινείται και στρίβει. Οι αισθητήρες μετρούν την κίνηση και οι κινητήρες στους τρεις άξονες την αντισταθμίζουν."
+    },
+    "match": {
+      "ru": [
+        "стабилизаци\\p{L}{1,2}",
+        "стабилизированн\\p{L}{1,3}"
+      ],
+      "en": [
+        "stabili[sz]ation",
+        "stabili[sz]ed"
+      ],
+      "el": [
+        "σταθεροποί\\p{L}{1,4}",
+        "σταθεροποιημέν\\p{L}{1,3}"
+      ]
+    }
+  },
+  {
+    "id": "sensorbox",
+    "term": {
+      "ru": "Датчиковая коробка",
+      "en": "Sensor box",
+      "el": "Κουτί αισθητήρων"
+    },
+    "def": {
+      "ru": "Блок с гироскопами и датчиком уровня на антенне. По нему система понимает, как движется судно, и держит оси относительно горизонта.",
+      "en": "The unit on the antenna with gyros and a level sensor. It tells the system how the ship moves, so the axes can be held level with the horizon.",
+      "el": "Μονάδα με γυροσκόπια και αισθητήρα στάθμης στην κεραία. Δείχνει στο σύστημα πώς κινείται το πλοίο ώστε οι άξονες να μένουν σε σχέση με τον ορίζοντα."
+    },
+    "match": {
+      "ru": [
+        "датчиков\\p{L}{1,2} коробк\\p{L}{1,2}"
+      ],
+      "en": [
+        "sensor box"
+      ],
+      "el": [
+        "κουτί αισθητήρων"
+      ]
+    }
+  },
+  {
+    "id": "gyro",
+    "term": {
+      "ru": "Гирокомпас",
+      "en": "Gyro compass",
+      "el": "Γυροπυξίδα"
+    },
+    "def": {
+      "ru": "Судовой компас, который передаёт ACU курс судна (обычно по NMEA). С ним антенна быстрее находит спутник и показывает истинный азимут.",
+      "en": "The ship's compass that sends the vessel's heading to the ACU (usually over NMEA). With it the antenna finds the satellite faster and shows true azimuth.",
+      "el": "Η πυξίδα του πλοίου που στέλνει την πορεία στο ACU (συνήθως μέσω NMEA). Με αυτήν η κεραία βρίσκει γρηγορότερα τον δορυφόρο και δείχνει πραγματικό αζιμούθιο."
+    },
+    "match": {
+      "ru": [
+        "гирокомпас\\p{L}{0,3}"
+      ],
+      "en": [
+        "gyro ?compass(es)?",
+        "gyro"
+      ],
+      "el": [
+        "γυροπυξίδ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "heading",
+    "term": {
+      "ru": "Курс судна (HDG)",
+      "en": "Heading (HDG)",
+      "el": "Πορεία (HDG)"
+    },
+    "def": {
+      "ru": "Направление носа судна в градусах от севера. ACU получает его от гирокомпаса и пересчитывает в азимут антенны.",
+      "en": "The direction the bow points, in degrees from north. The ACU gets it from the gyro compass and converts it into antenna azimuth.",
+      "el": "Η κατεύθυνση της πλώρης σε μοίρες από τον βορρά. Το ACU τη λαμβάνει από τη γυροπυξίδα και τη μετατρέπει σε αζιμούθιο κεραίας."
+    },
+    "match": {
+      "ru": [
+        "курс\\p{L}{0,2} судна"
+      ],
+      "en": [
+        "heading"
+      ],
+      "el": [
+        "πορεία",
+        "πορείας"
+      ]
+    }
+  },
+  {
+    "id": "tracking",
+    "term": {
+      "ru": "TRACKING — сопровождение",
+      "en": "TRACKING",
+      "el": "TRACKING — παρακολούθηση"
+    },
+    "def": {
+      "ru": "Штатный режим: антенна захватила спутник и непрерывно подстраивает наведение по уровню сигнала. Горит светодиод TRACKING.",
+      "en": "The normal mode: the antenna has found the satellite and keeps fine-tuning its pointing by signal strength. The TRACKING LED is on.",
+      "el": "Η κανονική λειτουργία: η κεραία έχει βρει τον δορυφόρο και διορθώνει συνεχώς τη στόχευση με βάση το σήμα. Η λυχνία TRACKING είναι αναμμένη."
+    },
+    "match": {
+      "ru": [
+        "TRACKING",
+        "сопровождени\\p{L}{1,2}"
+      ],
+      "en": [
+        "TRACKING"
+      ],
+      "el": [
+        "TRACKING",
+        "παρακολούθησ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "search",
+    "term": {
+      "ru": "SEARCH — поиск",
+      "en": "SEARCH",
+      "el": "SEARCH — αναζήτηση"
+    },
+    "def": {
+      "ru": "Режим, в котором антенна ищет спутник, двигаясь по шаблону вокруг расчётного направления. SEARCH1 — узкий поиск, SEARCH3 — широкий. Если система долго не выходит из поиска, проверьте дождь, блокировку и кабели.",
+      "en": "The mode in which the antenna looks for the satellite by sweeping a pattern around the calculated direction. SEARCH1 is narrow, SEARCH3 is wide. If the system stays in search, check for rain, blockage and cables.",
+      "el": "Η λειτουργία όπου η κεραία ψάχνει τον δορυφόρο σαρώνοντας γύρω από την υπολογισμένη κατεύθυνση. SEARCH1 στενή, SEARCH3 ευρεία. Αν το σύστημα μένει σε αναζήτηση, ελέγξτε βροχή, εμπλοκή και καλώδια."
+    },
+    "match": {
+      "ru": [
+        "SEARCH[13]?"
+      ],
+      "en": [
+        "SEARCH[13]?"
+      ],
+      "el": [
+        "SEARCH[13]?"
+      ]
+    }
+  },
+  {
+    "id": "blocking",
+    "term": {
+      "ru": "Зона блокировки (BLOCKING)",
+      "en": "Blockage zone (BLOCKING)",
+      "el": "Ζώνη εμπλοκής (BLOCKING)"
+    },
+    "def": {
+      "ru": "Сектор относительно носа судна, где антенне нельзя или бесполезно излучать: труба, мачта, места с людьми. Когда луч попадает в зону, ACU показывает BLOCKING и глушит передачу модема.",
+      "en": "A sector relative to the bow where the antenna must not or cannot transmit: funnel, mast, places with people. When the beam enters it, the ACU shows BLOCKING and mutes the modem.",
+      "el": "Τομέας σε σχέση με την πλώρη όπου η κεραία δεν πρέπει ή δεν μπορεί να εκπέμψει: καμινάδα, ιστός, χώροι με ανθρώπους. Όταν η δέσμη μπει εκεί, το ACU δείχνει BLOCKING και σιγεί το μόντεμ."
+    },
+    "match": {
+      "ru": [
+        "BLOCKING",
+        "зон\\p{L}{0,2} блокировки"
+      ],
+      "en": [
+        "BLOCKING",
+        "blockage zones?"
+      ],
+      "el": [
+        "BLOCKING",
+        "ζών\\p{L}{1,2} εμπλοκής"
+      ]
+    }
+  },
+  {
+    "id": "rainfade",
+    "term": {
+      "ru": "Дождевое замирание",
+      "en": "Rain fade",
+      "el": "Εξασθένηση λόγω βροχής"
+    },
+    "def": {
+      "ru": "Ослабление сигнала сильным дождём между антенной и спутником. Сильнее всего в диапазонах Ku и Ka. Связь возвращается сама, когда дождь стихает; оборудование чинить не нужно.",
+      "en": "Weakening of the signal by heavy rain between the antenna and the satellite, strongest in Ku and Ka band. The link returns by itself when the rain eases; no repair is needed.",
+      "el": "Εξασθένηση του σήματος από δυνατή βροχή ανάμεσα στην κεραία και τον δορυφόρο, πιο έντονη στις ζώνες Ku και Ka. Η σύνδεση επανέρχεται μόνη της όταν κοπάσει η βροχή."
+    },
+    "match": {
+      "ru": [
+        "дождев\\p{L}{1,3} замирани\\p{L}{1,2}",
+        "замирани\\p{L}{1,2}"
+      ],
+      "en": [
+        "rain fades?"
+      ],
+      "el": [
+        "εξασθένησ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "mute",
+    "term": {
+      "ru": "Глушение передачи (TX mute)",
+      "en": "Transmit mute",
+      "el": "Σίγηση εκπομπής"
+    },
+    "def": {
+      "ru": "Команда ACU модему прекратить передачу: при ошибке наведения, потере спутника или в зоне блокировки. Требуется регуляторами, чтобы не мешать соседним спутникам и не облучать людей.",
+      "en": "The ACU's command to the modem to stop transmitting: on a pointing error, loss of the satellite or in a blockage zone. Regulators require it to protect adjacent satellites and people.",
+      "el": "Εντολή του ACU στο μόντεμ να σταματήσει την εκπομπή: σε σφάλμα στόχευσης, απώλεια δορυφόρου ή σε ζώνη εμπλοκής. Απαιτείται από τις αρχές για προστασία γειτονικών δορυφόρων και ανθρώπων."
+    },
+    "match": {
+      "ru": [
+        "глушени\\p{L}{1,2}",
+        "заглуш\\p{L}{1,5}"
+      ],
+      "en": [
+        "mute[ds]?",
+        "muting"
+      ],
+      "el": [
+        "σίγησ\\p{L}{1,2}",
+        "σιγεί"
+      ]
+    }
+  },
+  {
+    "id": "lock",
+    "term": {
+      "ru": "Захват сигнала (RX LOCK)",
+      "en": "Receive lock (RX LOCK)",
+      "el": "Κλείδωμα λήψης (RX LOCK)"
+    },
+    "def": {
+      "ru": "Состояние модема, когда он уверенно принимает и декодирует сигнал спутника. Без захвата приёма связь не работает, даже если антенна в TRACKING.",
+      "en": "The modem state in which it reliably receives and decodes the satellite signal. Without receive lock there is no link, even if the antenna is TRACKING.",
+      "el": "Η κατάσταση του μόντεμ όταν λαμβάνει και αποκωδικοποιεί σταθερά το σήμα του δορυφόρου. Χωρίς κλείδωμα λήψης δεν υπάρχει σύνδεση, ακόμη κι αν η κεραία είναι σε TRACKING."
+    },
+    "match": {
+      "ru": [
+        "захват\\p{L}{0,2} при[её]ма",
+        "захват\\p{L}{0,2} сигнала",
+        "RX LOCK"
+      ],
+      "en": [
+        "receive lock",
+        "RX LOCK"
+      ],
+      "el": [
+        "κλείδωμα λήψης",
+        "RX LOCK"
+      ]
+    }
+  },
+  {
+    "id": "threshold",
+    "term": {
+      "ru": "Порог сигнала",
+      "en": "Signal threshold",
+      "el": "Κατώφλι σήματος"
+    },
+    "def": {
+      "ru": "Уровень сигнала на ACU, ниже которого спутник считается потерянным и система уходит в поиск. При нормальной работе сигнал заметно выше порога.",
+      "en": "The ACU signal level below which the satellite is considered lost and the system starts searching. In normal operation the signal is well above it.",
+      "el": "Το επίπεδο σήματος στο ACU κάτω από το οποίο ο δορυφόρος θεωρείται χαμένος και το σύστημα ξεκινά αναζήτηση. Σε κανονική λειτουργία το σήμα είναι αρκετά πάνω από αυτό."
+    },
+    "match": {
+      "ru": [
+        "порог\\p{L}{0,2}"
+      ],
+      "en": [
+        "threshold"
+      ],
+      "el": [
+        "κατώφλι\\p{L}{0,2}"
+      ]
+    }
+  },
+  {
+    "id": "ebno",
+    "term": {
+      "ru": "Eb/No и RSL",
+      "en": "Eb/No and RSL",
+      "el": "Eb/No και RSL"
+    },
+    "def": {
+      "ru": "Показатели качества приёма на модеме. Eb/No — отношение энергии бита к шуму (типично около 8 дБ), RSL — уровень принимаемого сигнала в дБм. Запомните нормальные значения при ясной погоде.",
+      "en": "Receive quality figures on the modem. Eb/No is energy per bit to noise (typically about 8 dB); RSL is received signal level in dBm. Note the normal clear-sky values.",
+      "el": "Δείκτες ποιότητας λήψης στο μόντεμ. Eb/No είναι ο λόγος ενέργειας bit προς θόρυβο (τυπικά περίπου 8 dB), RSL το επίπεδο λαμβανόμενου σήματος σε dBm. Σημειώστε τις κανονικές τιμές με αίθριο καιρό."
+    },
+    "match": {
+      "ru": [
+        "Eb/No",
+        "RSL"
+      ],
+      "en": [
+        "Eb/No",
+        "RSL"
+      ],
+      "el": [
+        "Eb/No",
+        "RSL"
+      ]
+    }
+  },
+  {
+    "id": "geo",
+    "term": {
+      "ru": "Геостационарный спутник",
+      "en": "Geostationary satellite",
+      "el": "Γεωστατικός δορυφόρος"
+    },
+    "def": {
+      "ru": "Спутник на орбите около 35 786 км над экватором. Он висит над одной точкой, поэтому антенна указывает на него постоянным азимутом и углом места, пока судно не сместится.",
+      "en": "A satellite about 35,786 km above the equator. It stays over one point, so the antenna points at it with a fixed azimuth and elevation until the ship moves.",
+      "el": "Δορυφόρος περίπου 35.786 km πάνω από τον ισημερινό. Μένει πάνω από ένα σημείο, οπότε η κεραία τον στοχεύει με σταθερό αζιμούθιο και ανύψωση μέχρι να μετακινηθεί το πλοίο."
+    },
+    "match": {
+      "ru": [
+        "геостационарн\\p{L}{1,3}"
+      ],
+      "en": [
+        "geostationary"
+      ],
+      "el": [
+        "γεωστατικ\\p{L}{1,3}"
+      ]
+    }
+  },
+  {
+    "id": "kuka",
+    "term": {
+      "ru": "Диапазоны Ku и Ka",
+      "en": "Ku and Ka band",
+      "el": "Ζώνες Ku και Ka"
+    },
+    "def": {
+      "ru": "Частотные диапазоны спутниковой связи: Ku — примерно 11–14 ГГц, Ka — 20–30 ГГц. Чем выше частота, тем больше скорость и тем сильнее влияние дождя.",
+      "en": "Satellite frequency bands: Ku is roughly 11–14 GHz, Ka is 20–30 GHz. The higher the frequency, the higher the capacity and the stronger the effect of rain.",
+      "el": "Ζώνες συχνοτήτων δορυφορικών επικοινωνιών: Ku περίπου 11–14 GHz, Ka 20–30 GHz. Όσο υψηλότερη η συχνότητα, τόσο μεγαλύτερη η χωρητικότητα και η επίδραση της βροχής."
+    },
+    "match": {
+      "ru": [
+        "Ku",
+        "Ka"
+      ],
+      "en": [
+        "Ku",
+        "Ka"
+      ],
+      "el": [
+        "Ku",
+        "Ka"
+      ]
+    }
+  },
+  {
+    "id": "stow",
+    "term": {
+      "ru": "Стопорение (stow)",
+      "en": "Stowing",
+      "el": "Ακινητοποίηση (stow)"
+    },
+    "def": {
+      "ru": "Фиксация осей антенны транспортными фиксаторами, когда она обесточена в море. Без питания моторы не держат антенну, и качка может её повредить.",
+      "en": "Locking the antenna axes with restraints while it is unpowered at sea. Without power the motors do not hold the antenna and ship motion can damage it.",
+      "el": "Κλείδωμα των αξόνων της κεραίας με στηρίγματα όταν είναι χωρίς ρεύμα στη θάλασσα. Χωρίς ρεύμα οι κινητήρες δεν την κρατούν και η κίνηση μπορεί να τη χαλάσει."
+    },
+    "match": {
+      "ru": [
+        "стопор\\p{L}{0,5}",
+        "застопор\\p{L}{1,5}",
+        "фиксатор\\p{L}{0,3}"
+      ],
+      "en": [
+        "stow(ed|ing)?",
+        "restraints?"
+      ],
+      "el": [
+        "ακινητοποί\\p{L}{1,4}",
+        "στηρίγματ\\p{L}{1,2}"
+      ]
+    }
+  },
+  {
+    "id": "nmea",
+    "term": {
+      "ru": "NMEA",
+      "en": "NMEA",
+      "el": "NMEA"
+    },
+    "def": {
+      "ru": "Стандарт обмена данными между судовыми приборами. По NMEA 0183 ACU получает курс от гирокомпаса и координаты от GPS.",
+      "en": "The data standard used between ship instruments. Over NMEA 0183 the ACU receives heading from the gyro compass and position from GPS.",
+      "el": "Πρότυπο ανταλλαγής δεδομένων μεταξύ οργάνων του πλοίου. Μέσω NMEA 0183 το ACU λαμβάνει πορεία από τη γυροπυξίδα και θέση από GPS."
+    },
+    "match": {
+      "ru": [
+        "NMEA"
+      ],
+      "en": [
+        "NMEA"
+      ],
+      "el": [
+        "NMEA"
+      ]
+    }
+  },
+  {
+    "id": "gps",
+    "term": {
+      "ru": "GPS",
+      "en": "GPS",
+      "el": "GPS"
+    },
+    "def": {
+      "ru": "Спутниковая навигация. ACU берёт из неё широту и долготу судна, чтобы рассчитать углы наведения на спутник.",
+      "en": "Satellite navigation. The ACU takes the ship's latitude and longitude from it to calculate the look angles to the satellite.",
+      "el": "Δορυφορική πλοήγηση. Το ACU παίρνει από αυτήν το γεωγραφικό πλάτος και μήκος του πλοίου για να υπολογίσει τις γωνίες στόχευσης."
+    },
+    "match": {
+      "ru": [
+        "GPS"
+      ],
+      "en": [
+        "GPS"
+      ],
+      "el": [
+        "GPS"
+      ]
+    }
+  },
+  {
+    "id": "commerror",
+    "term": {
+      "ru": "COMMUNICATIONS ERROR",
+      "en": "COMMUNICATIONS ERROR",
+      "el": "COMMUNICATIONS ERROR"
+    },
+    "def": {
+      "ru": "Ошибка ACU: нет связи с антенной. Обычно виноваты кабель или разъём между ACU и ADE либо отключённое питание антенны.",
+      "en": "ACU error: no communication with the antenna. Usually caused by a cable or connector between the ACU and ADE, or by antenna power being off.",
+      "el": "Σφάλμα ACU: δεν υπάρχει επικοινωνία με την κεραία. Συνήθως φταίει καλώδιο ή σύνδεσμος ανάμεσα σε ACU και ADE ή κλειστή τροφοδοσία κεραίας."
+    },
+    "match": {
+      "ru": [
+        "COMMUNICATIONS? ERROR"
+      ],
+      "en": [
+        "COMMUNICATIONS? ERROR"
+      ],
+      "el": [
+        "COMMUNICATIONS? ERROR"
+      ]
+    }
+  },
+  {
+    "id": "retarget",
+    "term": {
+      "ru": "Перенаведение (retarget)",
+      "en": "Retarget",
+      "el": "Επαναστόχευση"
+    },
+    "def": {
+      "ru": "Принудительный новый поиск спутника из расчётного положения: через меню ACU или выключением и включением ADE. Помогает, если антенна сопровождает не тот спутник.",
+      "en": "Forcing a fresh search for the satellite from the calculated position, from the ACU menu or by power-cycling the ADE. Useful if the antenna is tracking the wrong satellite.",
+      "el": "Αναγκαστική νέα αναζήτηση του δορυφόρου από την υπολογισμένη θέση, από το μενού του ACU ή με κλείσιμο-άνοιγμα του ADE. Βοηθά αν η κεραία παρακολουθεί λάθος δορυφόρο."
+    },
+    "match": {
+      "ru": [
+        "перенавед\\p{L}{1,5}",
+        "retarget"
+      ],
+      "en": [
+        "re-?target(ed|ing)?"
+      ],
+      "el": [
+        "επαναστόχευσ\\p{L}{1,2}",
+        "επαναστοχεύ\\p{L}{1,4}"
+      ]
+    }
+  }
+]
