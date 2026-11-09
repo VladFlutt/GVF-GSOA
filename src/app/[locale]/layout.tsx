@@ -30,6 +30,9 @@ export default async function LocaleLayout({ children, params }: { children: Rea
               {d.appName}
             </Link>
             <div className="flex items-center gap-2">
+              <Link href={`/${locale}/glossary`} className="rounded-md px-2 py-1 text-sm text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800">
+                {d.glossary}
+              </Link>
               <LocaleSwitcher locale={locale} />
               <AccountButton locale={locale} />
             </div>

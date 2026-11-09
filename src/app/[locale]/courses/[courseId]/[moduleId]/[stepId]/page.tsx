@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
-import { getCourse, getQuestions, listCourses } from "@/content/loader";
+import { getCourse, getGlossary, getQuestions, listCourses } from "@/content/loader";
 import { t } from "@/content/l10n";
 import { StepPlayer } from "@/components/StepPlayer";
 
@@ -57,7 +57,7 @@ export default async function StepPage({ params }: { params: Promise<{ locale: s
           </Link>{" "}
           · {d.step} {si + 1} {d.of} {mod.steps.length}
         </div>
-        <StepPlayer locale={locale} courseId={course.id} moduleId={mod.id} step={step} questions={questions} prevHref={prevHref} nextHref={nextHref} />
+        <StepPlayer locale={locale} courseId={course.id} moduleId={mod.id} step={step} questions={questions} prevHref={prevHref} nextHref={nextHref} glossary={getGlossary(locale)} />
       </div>
     </div>
   );

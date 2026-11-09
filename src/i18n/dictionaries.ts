@@ -52,6 +52,11 @@ const ru = {
   errWrong: "Неверная почта или пароль.",
   errInvalid: "Проверьте почту и пароль (не короче 8 символов).",
   localMode: "Прогресс сохраняется в этом браузере. Войдите, чтобы сохранять его в аккаунте.",
+  glossary: "Словарь",
+  glossaryTitle: "Словарь терминов",
+  glossaryLead: "Термины спутниковой связи и оборудования VSAT. В тексте курса они подчёркнуты пунктиром: наведите курсор или нажмите, чтобы увидеть объяснение.",
+  inGlossary: "Открыть в словаре",
+  glossarySearch: "Найти термин",
 };
 
 export type Dictionary = typeof ru;
@@ -108,6 +113,11 @@ const en: Dictionary = {
   errWrong: "Wrong email or password.",
   errInvalid: "Check the email and password (8+ characters).",
   localMode: "Progress is saved in this browser. Sign in to keep it in your account.",
+  glossary: "Glossary",
+  glossaryTitle: "Glossary of terms",
+  glossaryLead: "Satellite communication and VSAT equipment terms. In the course text they have a dotted underline: hover or tap to see the explanation.",
+  inGlossary: "Open in glossary",
+  glossarySearch: "Find a term",
 };
 
 const el: Dictionary = {
@@ -162,6 +172,11 @@ const el: Dictionary = {
   errWrong: "Λάθος email ή κωδικός.",
   errInvalid: "Ελέγξτε το email και τον κωδικό (τουλάχιστον 8 χαρακτήρες).",
   localMode: "Η πρόοδος αποθηκεύεται σε αυτόν τον browser. Συνδεθείτε για να την κρατήσετε στον λογαριασμό σας.",
+  glossary: "Γλωσσάριο",
+  glossaryTitle: "Γλωσσάριο όρων",
+  glossaryLead: "Όροι δορυφορικών επικοινωνιών και εξοπλισμού VSAT. Στο κείμενο του μαθήματος έχουν διακεκομμένη υπογράμμιση: περάστε τον δείκτη ή πατήστε για να δείτε την εξήγηση.",
+  inGlossary: "Άνοιγμα στο γλωσσάριο",
+  glossarySearch: "Αναζήτηση όρου",
 };
 
 const dictionaries: Record<Locale, Dictionary> = { ru, en, el };

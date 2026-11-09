@@ -20,6 +20,24 @@ export interface TheoryStep {
 export interface Figure {
   src: string;
   caption: L10n;
+  /** Locales that have a translated copy next to src: foo.webp -> foo.<locale>.webp */
+  localized?: Locale[];
+}
+
+/** A glossary entry (content/glossary.json). match: regex fragments that find the term in course text. */
+export interface GlossaryEntry {
+  id: string;
+  term: L10n;
+  def: L10n;
+  match: Partial<Record<Locale, string[]>>;
+}
+
+/** A glossary entry resolved for one locale, as sent to the browser. */
+export interface GlossaryTerm {
+  id: string;
+  term: string;
+  def: string;
+  match: string[];
 }
 
 export interface SimStep {

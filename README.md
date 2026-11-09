@@ -22,6 +22,10 @@ Courses are data, not code. Each course is a folder in `content/courses/<id>/`:
 
 Illustrations go in `public/courses/<id>/` and are listed on a theory step as `figures: [{ "src": "/courses/<id>/file.webp", "caption": { … } }]`.
 
+If an illustration has text, translated copies sit next to it as `file.ru.webp` / `file.el.webp` and the figure lists them in `"localized": ["ru", "el"]`.
+
+The glossary of terms is `content/glossary.json`, shared by all courses: each entry has a term and a definition in every language, plus `match` patterns that find the term in course text. The first mention of a term on a page gets a popover with the definition; the full list is at `/<locale>/glossary`.
+
 Add the folder, rebuild, and the course appears in the catalog. Types are in `src/content/types.ts`.
 
 ## Simulators

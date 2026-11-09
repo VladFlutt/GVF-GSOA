@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { t } from "@/content/l10n";
-import type { Question, Step } from "@/content/types";
+import type { GlossaryTerm, Question, Step } from "@/content/types";
 import { useProgress } from "@/lib/progress";
 import { AcuSimulator } from "./sim/acu/AcuSimulator";
 import { Quiz } from "./quiz/Quiz";
-import { Prose } from "./Prose";
+import { GlossaryContext, Prose } from "./Prose";
 
 export function StepPlayer({
   locale,
@@ -18,6 +18,7 @@ export function StepPlayer({
   questions,
   prevHref,
   nextHref,
+  glossary,
 }: {
   locale: Locale;
   courseId: string;
@@ -26,6 +27,7 @@ export function StepPlayer({
   questions: Question[];
   prevHref: string | null;
   nextHref: string;
+  glossary: GlossaryTerm[];
 }) {
   const d = getDictionary(locale);
   const key = `${moduleId}/${step.id}`;
@@ -41,7 +43,10 @@ export function StepPlayer({
   const canAdvance = step.kind === "theory" || isDone;
   const kindLabel = { theory: d.theory, sim: d.simulation, quiz: d.quiz }[step.kind];
 
+  const glossaryCtx = useMemo(() => ({ terms: glossary, href: `/${locale}/glossary`, linkLabel: d.inGlossary }), [glossary, locale, d.inGlossary]);
+
   return (
+    <GlossaryContext.Provider value={glossaryCtx}>
     <article className="space-y-6">
       <header>
         <div className="mb-1 flex items-center gap-2 text-xs font-semibold tracking-wide text-sky-700 uppercase dark:text-sky-400">
@@ -54,13 +59,18 @@ export function StepPlayer({
       {step.kind === "theory" && (
         <>
           <Prose paragraphs={step.body.map((p) => t(p, locale))} />
-          {[...(step.figures ?? []), ...(step.figure ? [step.figure] : [])].map((f) => (
-            <figure key={f.src}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={f.src} alt={t(f.caption, locale)} loading="lazy" className="w-full rounded-lg border border-zinc-200 dark:border-zinc-800" />
-              <figcaption className="mt-2 text-sm text-zinc-500">{t(f.caption, locale)}</figcaption>
-            </figure>
-          ))}
+          {[...(step.figures ?? []), ...(step.figure ? [step.figure] : [])].map((f) => {
+            const src = f.localized?.includes(locale) ? f.src.replace(/\.(\w+)$/, `.${locale}.$1`) : f.src;
+            return (
+              <figure key={f.src}>
+                <a href={src} target="_blank" rel="noopener" className="block">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={src} alt={t(f.caption, locale)} loading="lazy" className="w-full rounded-lg border border-zinc-200 dark:border-zinc-800" />
+                </a>
+                <figcaption className="mt-2 text-sm text-zinc-500">{t(f.caption, locale)}</figcaption>
+              </figure>
+            );
+          })}
         </>
       )}
 
@@ -107,5 +117,6 @@ export function StepPlayer({
         </Link>
       </nav>
     </article>
+    </GlossaryContext.Provider>
   );
 }

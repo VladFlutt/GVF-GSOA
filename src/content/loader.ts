@@ -1,7 +1,9 @@
 import "server-only";
 import fs from "node:fs";
 import path from "node:path";
-import type { Course, Question } from "./types";
+import type { Locale } from "@/i18n/config";
+import type { Course, GlossaryEntry, GlossaryTerm, Question } from "./types";
+import { t } from "./l10n";
 
 /**
  * Courses are plain data in /content/courses/<id>/:
@@ -35,4 +37,13 @@ export function getQuestions(courseId: string, ids: string[]): Question[] {
   if (!fs.existsSync(file)) return [];
   const bank = readJson<Question[]>(file);
   return ids.map((id) => bank.find((q) => q.id === id)).filter((q): q is Question => Boolean(q));
+}
+
+/** The shared glossary of terms (content/glossary.json), resolved for one locale. */
+export function getGlossary(locale: Locale): GlossaryTerm[] {
+  const file = path.join(process.cwd(), "content", "glossary.json");
+  if (!fs.existsSync(file)) return [];
+  return readJson<GlossaryEntry[]>(file)
+    .map((e) => ({ id: e.id, term: t(e.term, locale), def: t(e.def, locale), match: e.match[locale] ?? e.match.en ?? [] }))
+    .sort((a, b) => a.term.localeCompare(b.term, locale));
 }

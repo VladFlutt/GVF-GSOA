@@ -102,7 +102,11 @@
                 "ru": "Линейка морских терминалов Intellian",
                 "en": "Intellian maritime terminal line-up",
                 "el": "Σειρά ναυτιλιακών τερματικών Intellian"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/03-about-intellian.webp",
@@ -110,7 +114,11 @@
                 "ru": "Семейство антенн и штаб-квартира Intellian",
                 "en": "Intellian antenna family and headquarters",
                 "el": "Η οικογένεια κεραιών και τα κεντρικά της Intellian"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/04-product-range.webp",
@@ -118,7 +126,11 @@
                 "ru": "Терминалы для малых, средних и крупных судов",
                 "en": "Terminals for small, medium and large vessels",
                 "el": "Τερματικά για μικρά, μεσαία και μεγάλα σκάφη"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -195,7 +207,11 @@
                 "ru": "Типовая установка ADE: радом на мачте",
                 "en": "Typical ADE installation: radome on a mast",
                 "el": "Τυπική εγκατάσταση ADE: ραντόμ σε ιστό"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/06-antenna-rf.webp",
@@ -203,7 +219,11 @@
                 "ru": "ВЧ-компоненты на обратной стороне рефлектора: BUC, LNB, диплексер, кабели",
                 "en": "RF components behind the reflector: BUC, LNBs, diplexer, cables",
                 "el": "Εξαρτήματα RF πίσω από το κάτοπτρο: BUC, LNB, διπλέκτης, καλώδια"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/07-antenna-elevation.webp",
@@ -211,7 +231,11 @@
                 "ru": "Привод угла места и конвертер Ku/Ka",
                 "en": "Elevation gear and Ku/Ka conversion bracket",
                 "el": "Γρανάζι ανύψωσης και βάση μετατροπής Ku/Ka"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -242,7 +266,11 @@
                 "ru": "Типовая установка BDE в стойке",
                 "en": "Typical BDE installation in a rack",
                 "el": "Τυπική εγκατάσταση BDE σε ικρίωμα"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/09-bde-rear.webp",
@@ -250,7 +278,11 @@
                 "ru": "Задние разъёмы ACU и модема",
                 "en": "Rear connections of the ACU and modem",
                 "el": "Πίσω συνδέσεις ACU και μόντεμ"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/10-acu-front-labels.webp",
@@ -258,7 +290,11 @@
                 "ru": "Передняя панель ACU: порты USB и Ethernet для управления",
                 "en": "ACU front panel: USB and Ethernet management ports",
                 "el": "Πρόσθιος πίνακας ACU: θύρες USB και Ethernet διαχείρισης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/11-acu-rear.webp",
@@ -413,7 +449,11 @@
                 "ru": "Признаки исправной работы на ACU и модеме",
                 "en": "Signs of healthy operation on the ACU and modem",
                 "el": "Ενδείξεις σωστής λειτουργίας σε ACU και μόντεμ"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/19-switch-sat-list.webp",
@@ -421,7 +461,11 @@
                 "ru": "Ручная смена спутника из списка",
                 "en": "Switching satellites from a list",
                 "el": "Αλλαγή δορυφόρου από λίστα"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -457,7 +501,11 @@
                 "ru": "Зоны блокировки вокруг судна",
                 "en": "Blockage zones around the vessel",
                 "el": "Ζώνες εμπλοκής γύρω από το σκάφος"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/21-blockage-diagram.webp",
@@ -465,7 +513,11 @@
                 "ru": "Что происходит в зоне блокировки",
                 "en": "What happens in a blockage zone",
                 "el": "Τι συμβαίνει σε ζώνη εμπλοκής"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -512,7 +564,11 @@
                 "ru": "Дождевое замирание сигнала",
                 "en": "Rain fade",
                 "el": "Εξασθένηση λόγω βροχής"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -631,7 +687,11 @@
                 "ru": "Оси движения антенны",
                 "en": "Antenna axes of motion",
                 "el": "Άξονες κίνησης κεραίας"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/24-stabilization.webp",
@@ -639,7 +699,11 @@
                 "ru": "Стабилизация при качке",
                 "en": "Stabilization against ship motion",
                 "el": "Σταθεροποίηση στην κίνηση του πλοίου"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/25-balance.webp",
@@ -647,7 +711,11 @@
                 "ru": "Почему важна балансировка",
                 "en": "Why balance is important",
                 "el": "Γιατί έχει σημασία η ζυγοστάθμιση"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/26-polarization-motor.webp",
@@ -655,7 +723,11 @@
                 "ru": "Мотор поляризации",
                 "en": "Polarization motor",
                 "el": "Κινητήρας πόλωσης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -691,7 +763,11 @@
                 "ru": "Включение: питание ACU и ADE",
                 "en": "Power-up: ACU and ADE power",
                 "el": "Εκκίνηση: τροφοδοσία ACU και ADE"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/28-breaker.webp",
@@ -699,7 +775,11 @@
                 "ru": "Автомат питания под радомом",
                 "en": "Circuit breaker inside the radome",
                 "el": "Ασφάλεια μέσα στο ραντόμ"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/29-observe-power-up.webp",
@@ -707,7 +787,11 @@
                 "ru": "Инициализация антенны после включения",
                 "en": "Antenna initialization after power-up",
                 "el": "Αρχικοποίηση κεραίας μετά την εκκίνηση"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/30-acq-gyro.webp",
@@ -715,7 +799,11 @@
                 "ru": "Захват спутника с гирокомпасом",
                 "en": "Acquisition with a gyro compass",
                 "el": "Λήψη δορυφόρου με γυροπυξίδα"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/31-acq-no-gyro.webp",
@@ -723,7 +811,11 @@
                 "ru": "Захват спутника без гирокомпаса",
                 "en": "Acquisition without a gyro compass",
                 "el": "Λήψη δορυφόρου χωρίς γυροπυξίδα"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/32-power-down.webp",
@@ -731,7 +823,11 @@
                 "ru": "Выключение системы",
                 "en": "Powering down",
                 "el": "Τερματισμός λειτουργίας"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -804,7 +900,11 @@
                 "ru": "Меню модема Comtech",
                 "en": "Comtech modem menu",
                 "el": "Μενού μόντεμ Comtech"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/34-idirect-boot.webp",
@@ -812,7 +912,11 @@
                 "ru": "Индикация модема iDirect",
                 "en": "iDirect modem indications",
                 "el": "Ενδείξεις μόντεμ iDirect"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/35-satlink-leds.webp",
@@ -820,7 +924,11 @@
                 "ru": "Светодиоды модема SatLink",
                 "en": "SatLink modem LEDs",
                 "el": "LED μόντεμ SatLink"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/36-satlink-web.webp",
@@ -828,7 +936,11 @@
                 "ru": "Веб-интерфейс модема SatLink",
                 "en": "SatLink modem web interface",
                 "el": "Διεπαφή web μόντεμ SatLink"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/37-error-details.webp",
@@ -836,7 +948,11 @@
                 "ru": "Просмотр подробностей ошибки",
                 "en": "Viewing error details",
                 "el": "Προβολή λεπτομερειών σφάλματος"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/38-data-log.webp",
@@ -852,7 +968,11 @@
                 "ru": "Сброс и повторное наведение",
                 "en": "Resetting and retargeting",
                 "el": "Επαναφορά και επαναστόχευση"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/40-acq-problems.webp",
@@ -860,7 +980,11 @@
                 "ru": "Проблемы захвата спутника",
                 "en": "Acquisition problems",
                 "el": "Προβλήματα λήψης δορυφόρου"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/41-programmed-zone.webp",
@@ -868,7 +992,11 @@
                 "ru": "В программной зоне блокировки",
                 "en": "In a programmed blockage zone",
                 "el": "Σε προγραμματισμένη ζώνη εμπλοκής"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/42-tx-muted.webp",
@@ -876,7 +1004,11 @@
                 "ru": "Почему заглушена передача",
                 "en": "Why transmit is muted",
                 "el": "Γιατί σίγησε η εκπομπή"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/43-display-frozen.webp",
@@ -900,7 +1032,11 @@
                 "ru": "Блок-схема поиска неисправностей",
                 "en": "Troubleshooting flowchart",
                 "el": "Διάγραμμα ροής αντιμετώπισης βλαβών"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -1014,7 +1150,11 @@
                 "ru": "Точки стопорения: азимут, угол места, крен",
                 "en": "Restraint points: azimuth, elevation, cross-level",
                 "el": "Σημεία ακινητοποίησης: αζιμούθιο, ανύψωση, εγκάρσια"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/47-stow-azimuth.webp",
@@ -1046,7 +1186,11 @@
                 "ru": "Расстопорение: четыре фиксатора",
                 "en": "Un-stowing: the four restraints",
                 "el": "Απελευθέρωση: τα τέσσερα σημεία"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/51-test-switch.webp",
@@ -1062,7 +1206,11 @@
                 "ru": "Проверка свободного вращения по трём осям",
                 "en": "Checking free motion on all three axes",
                 "el": "Έλεγχος ελεύθερης κίνησης στους τρεις άξονες"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
@@ -1093,7 +1241,11 @@
                 "ru": "Осмотр радома",
                 "en": "Radome inspection",
                 "el": "Επιθεώρηση ραντόμ"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/54-radome-bolts.webp",
@@ -1101,7 +1253,11 @@
                 "ru": "Болты крепления радома",
                 "en": "Radome mounting bolts",
                 "el": "Μπουλόνια στερέωσης ραντόμ"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/55-cables-power.webp",
@@ -1117,7 +1273,11 @@
                 "ru": "Кабели на рычаге угла места",
                 "en": "Cables on the elevation arm",
                 "el": "Καλώδια στον βραχίονα ανύψωσης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/57-drives.webp",
@@ -1125,7 +1285,11 @@
                 "ru": "Расположение приводов",
                 "en": "Where the drives are",
                 "el": "Θέσεις των κινητήρων"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/58-drive-azimuth.webp",
@@ -1133,7 +1297,11 @@
                 "ru": "Привод азимута",
                 "en": "Azimuth drive",
                 "el": "Κινητήρας αζιμουθίου"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/59-drive-cross-level.webp",
@@ -1141,7 +1309,11 @@
                 "ru": "Привод крена",
                 "en": "Cross-level drive",
                 "el": "Κινητήρας εγκάρσιας κλίσης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/60-drive-skew.webp",
@@ -1149,7 +1321,11 @@
                 "ru": "Привод поляризации",
                 "en": "Skew drive",
                 "el": "Κινητήρας πόλωσης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/61-drive-elevation.webp",
@@ -1157,7 +1333,11 @@
                 "ru": "Привод угла места и датчики",
                 "en": "Elevation drive and sensor box",
                 "el": "Κινητήρας ανύψωσης και αισθητήρες"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             },
             {
               "src": "/courses/gvf562n/62-drive-elevation-belt.webp",
@@ -1165,7 +1345,11 @@
                 "ru": "Ремень и шкив привода угла места",
                 "en": "Elevation drive belt and pulley",
                 "el": "Ιμάντας και τροχαλία ανύψωσης"
-              }
+              },
+              "localized": [
+                "ru",
+                "el"
+              ]
             }
           ]
         },
