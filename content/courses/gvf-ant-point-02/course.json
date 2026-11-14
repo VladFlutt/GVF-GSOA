@@ -21,72 +21,1249 @@
   "modules": [
     {
       "id": "hardware",
-      "title": {"ru": "Оборудование и подготовка", "en": "Hardware and preparation", "el": "Εξοπλισμός και προετοιμασία"},
+      "title": {
+        "ru": "Оборудование и подготовка",
+        "en": "Hardware and preparation",
+        "el": "Εξοπλισμός και προετοιμασία"
+      },
       "objectives": [
-        {"ru": "Распознавать элементы RF-тракта и типовые дефекты разъёмов", "en": "Recognise RF-path parts and common connector defects", "el": "Αναγνωρίζετε τα μέρη RF και τα ελαττώματα συνδέσεων"},
-        {"ru": "Подготавливать и герметизировать кабель перед включением", "en": "Prepare and weatherproof a cable before powering up", "el": "Προετοιμάζετε και στεγανοποιείτε καλώδιο πριν την ενεργοποίηση"}
+        {
+          "ru": "Распознавать элементы RF-тракта и типовые дефекты разъёмов",
+          "en": "Recognise RF-path parts and common connector defects",
+          "el": "Αναγνωρίζετε τα μέρη RF και τα ελαττώματα συνδέσεων"
+        },
+        {
+          "ru": "Подготавливать и герметизировать кабель перед включением",
+          "en": "Prepare and weatherproof a cable before powering up",
+          "el": "Προετοιμάζετε και στεγανοποιείτε καλώδιο πριν την ενεργοποίηση"
+        }
       ],
       "steps": [
-        {"kind": "theory", "id": "station-hardware", "title": {"ru": "Оборудование сетевой VSAT-станции", "en": "Networked VSAT earth-station hardware", "el": "Εξοπλισμός σταθμού VSAT"}, "body": [{"ru": "Проверьте наружный блок, антенну, облучатель, передающий и приёмный тракт, кабельные вводы и точку подключения к оборудованию. Соединения должны быть закреплены, промаркированы и защищены от влаги.", "en": "Check the outdoor unit, antenna, feed, transmit and receive paths, cable entries and equipment connection. Connections must be secured, labelled and protected from moisture.", "el": "Ελέγξτε την εξωτερική μονάδα, την κεραία, τον τροφοδότη, τις διαδρομές εκπομπής και λήψης και τις εισόδους καλωδίων. Οι συνδέσεις πρέπει να είναι ασφαλισμένες και στεγανές."}], "figures": [{"src": "/courses/gvf-ant-point-02/hardware.jpg", "caption": {"ru": "Оборудование и RF-тракт станции", "en": "Station hardware and RF path", "el": "Εξοπλισμός και διαδρομή RF"}}]},
-        {"kind": "theory", "id": "connectors", "title": {"ru": "Типы и установка разъёмов", "en": "Connector types and attachment", "el": "Τύποι και τοποθέτηση συνδέσεων"}, "body": [{"ru": "Выбирайте разъём по типу кабеля и назначению. Центральная жила не должна быть повреждена, оплётка не должна касаться центрального проводника. После установки проверьте упор, фиксацию и отсутствие короткого замыкания.", "en": "Select the connector for the cable and purpose. The centre conductor must be intact and the braid must not touch it. After attachment, check seating, retention and continuity.", "el": "Επιλέξτε τη σύνδεση ανάλογα με το καλώδιο και τη χρήση. Ο κεντρικός αγωγός πρέπει να είναι άθικτος και η θωράκιση να μην τον αγγίζει."}], "figures": [{"src": "/courses/gvf-ant-point-02/connectors.jpg", "caption": {"ru": "Подготовка и проверка разъёмов", "en": "Connector preparation and inspection", "el": "Προετοιμασία και έλεγχος συνδέσεων"}}]},
-        {"kind": "theory", "id": "weatherproofing", "title": {"ru": "Герметизация и капельная петля", "en": "Weatherproofing and drip loop", "el": "Στεγανοποίηση και βρόχος αποστράγγισης"}, "body": [{"ru": "Закройте соединение погодостойким материалом без карманов для воды. Оставьте капельную петлю, чтобы вода не стекала по кабелю к разъёму. Повторно осмотрите оболочку после изгиба и крепления.", "en": "Seal the connection with weatherproof material and no water pockets. Leave a drip loop so water cannot run along the cable into the connector. Recheck the jacket after bending and securing.", "el": "Στεγανοποιήστε τη σύνδεση χωρίς θύλακες νερού και αφήστε βρόχο ώστε το νερό να μην εισέρχεται στη σύνδεση."}]},
-        {"kind": "quiz", "id": "quiz", "title": {"ru": "Тест по модулю", "en": "Module quiz", "el": "Τεστ ενότητας"}, "questions": ["q-hw-1", "q-hw-2", "q-hw-3"], "perAttempt": 3, "passMark": 2, "attempts": 2}
+        {
+          "kind": "theory",
+          "id": "station-hardware",
+          "title": {
+            "ru": "Оборудование сетевой VSAT-станции",
+            "en": "Networked VSAT earth-station hardware",
+            "el": "Εξοπλισμός σταθμού VSAT"
+          },
+          "body": [
+            {
+              "ru": "Проверьте наружный блок, антенну, облучатель, передающий и приёмный тракт, кабельные вводы и точку подключения к оборудованию. Соединения должны быть закреплены, промаркированы и защищены от влаги.",
+              "en": "Check the outdoor unit, antenna, feed, transmit and receive paths, cable entries and equipment connection. Connections must be secured, labelled and protected from moisture.",
+              "el": "Ελέγξτε την εξωτερική μονάδα, την κεραία, τον τροφοδότη, τις διαδρομές εκπομπής και λήψης και τις εισόδους καλωδίων. Οι συνδέσεις πρέπει να είναι ασφαλισμένες και στεγανές."
+            }
+          ],
+          "figures": [
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-001.jpg",
+              "caption": {
+                "ru": "Кадр 01-001",
+                "en": "Frame 01-001",
+                "el": "Καρέ 01-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-002.jpg",
+              "caption": {
+                "ru": "Кадр 01-002",
+                "en": "Frame 01-002",
+                "el": "Καρέ 01-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-003.jpg",
+              "caption": {
+                "ru": "Кадр 01-003",
+                "en": "Frame 01-003",
+                "el": "Καρέ 01-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-004.jpg",
+              "caption": {
+                "ru": "Кадр 01-004",
+                "en": "Frame 01-004",
+                "el": "Καρέ 01-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-005.jpg",
+              "caption": {
+                "ru": "Кадр 01-005",
+                "en": "Frame 01-005",
+                "el": "Καρέ 01-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-006.jpg",
+              "caption": {
+                "ru": "Кадр 01-006",
+                "en": "Frame 01-006",
+                "el": "Καρέ 01-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-007.jpg",
+              "caption": {
+                "ru": "Кадр 01-007",
+                "en": "Frame 01-007",
+                "el": "Καρέ 01-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-008.jpg",
+              "caption": {
+                "ru": "Кадр 01-008",
+                "en": "Frame 01-008",
+                "el": "Καρέ 01-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-009.jpg",
+              "caption": {
+                "ru": "Кадр 01-009",
+                "en": "Frame 01-009",
+                "el": "Καρέ 01-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-010.jpg",
+              "caption": {
+                "ru": "Кадр 01-010",
+                "en": "Frame 01-010",
+                "el": "Καρέ 01-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-011.jpg",
+              "caption": {
+                "ru": "Кадр 01-011",
+                "en": "Frame 01-011",
+                "el": "Καρέ 01-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-012.jpg",
+              "caption": {
+                "ru": "Кадр 01-012",
+                "en": "Frame 01-012",
+                "el": "Καρέ 01-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-013.jpg",
+              "caption": {
+                "ru": "Кадр 01-013",
+                "en": "Frame 01-013",
+                "el": "Καρέ 01-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-014.jpg",
+              "caption": {
+                "ru": "Кадр 01-014",
+                "en": "Frame 01-014",
+                "el": "Καρέ 01-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-015.jpg",
+              "caption": {
+                "ru": "Кадр 01-015",
+                "en": "Frame 01-015",
+                "el": "Καρέ 01-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-016.jpg",
+              "caption": {
+                "ru": "Кадр 01-016",
+                "en": "Frame 01-016",
+                "el": "Καρέ 01-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-017.jpg",
+              "caption": {
+                "ru": "Кадр 01-017",
+                "en": "Frame 01-017",
+                "el": "Καρέ 01-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-018.jpg",
+              "caption": {
+                "ru": "Кадр 01-018",
+                "en": "Frame 01-018",
+                "el": "Καρέ 01-018"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-019.jpg",
+              "caption": {
+                "ru": "Кадр 01-019",
+                "en": "Frame 01-019",
+                "el": "Καρέ 01-019"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-020.jpg",
+              "caption": {
+                "ru": "Кадр 01-020",
+                "en": "Frame 01-020",
+                "el": "Καρέ 01-020"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-001.jpg",
+              "caption": {
+                "ru": "Кадр 02-001",
+                "en": "Frame 02-001",
+                "el": "Καρέ 02-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-002.jpg",
+              "caption": {
+                "ru": "Кадр 02-002",
+                "en": "Frame 02-002",
+                "el": "Καρέ 02-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-003.jpg",
+              "caption": {
+                "ru": "Кадр 02-003",
+                "en": "Frame 02-003",
+                "el": "Καρέ 02-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-004.jpg",
+              "caption": {
+                "ru": "Кадр 02-004",
+                "en": "Frame 02-004",
+                "el": "Καρέ 02-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-005.jpg",
+              "caption": {
+                "ru": "Кадр 02-005",
+                "en": "Frame 02-005",
+                "el": "Καρέ 02-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-006.jpg",
+              "caption": {
+                "ru": "Кадр 02-006",
+                "en": "Frame 02-006",
+                "el": "Καρέ 02-006"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "connectors",
+          "title": {
+            "ru": "Типы и установка разъёмов",
+            "en": "Connector types and attachment",
+            "el": "Τύποι και τοποθέτηση συνδέσεων"
+          },
+          "body": [
+            {
+              "ru": "Выбирайте разъём по типу кабеля и назначению. Центральная жила не должна быть повреждена, оплётка не должна касаться центрального проводника. После установки проверьте упор, фиксацию и отсутствие короткого замыкания.",
+              "en": "Select the connector for the cable and purpose. The centre conductor must be intact and the braid must not touch it. After attachment, check seating, retention and continuity.",
+              "el": "Επιλέξτε τη σύνδεση ανάλογα με το καλώδιο και τη χρήση. Ο κεντρικός αγωγός πρέπει να είναι άθικτος και η θωράκιση να μην τον αγγίζει."
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "weatherproofing",
+          "title": {
+            "ru": "Герметизация и капельная петля",
+            "en": "Weatherproofing and drip loop",
+            "el": "Στεγανοποίηση και βρόχος αποστράγγισης"
+          },
+          "body": [
+            {
+              "ru": "Закройте соединение погодостойким материалом без карманов для воды. Оставьте капельную петлю, чтобы вода не стекала по кабелю к разъёму. Повторно осмотрите оболочку после изгиба и крепления.",
+              "en": "Seal the connection with weatherproof material and no water pockets. Leave a drip loop so water cannot run along the cable into the connector. Recheck the jacket after bending and securing.",
+              "el": "Στεγανοποιήστε τη σύνδεση χωρίς θύλακες νερού και αφήστε βρόχο ώστε το νερό να μην εισέρχεται στη σύνδεση."
+            }
+          ]
+        },
+        {
+          "kind": "quiz",
+          "id": "quiz",
+          "title": {
+            "ru": "Тест по модулю",
+            "en": "Module quiz",
+            "el": "Τεστ ενότητας"
+          },
+          "questions": [
+            "q-hw-1",
+            "q-hw-2",
+            "q-hw-3"
+          ],
+          "perAttempt": 3,
+          "passMark": 2,
+          "attempts": 2
+        }
       ]
     },
     {
       "id": "geometry",
-      "title": {"ru": "Геометрия и поляризация", "en": "Geometry and polarisation", "el": "Γεωμετρία και πόλωση"},
+      "title": {
+        "ru": "Геометрия и поляризация",
+        "en": "Geometry and polarisation",
+        "el": "Γεωμετρία και πόλωση"
+      },
       "objectives": [
-        {"ru": "Использовать широту, азимут и угол места как исходные данные", "en": "Use latitude, azimuth and elevation as initial data", "el": "Χρησιμοποιείτε γεωγραφικό πλάτος, αζιμούθιο και ανύψωση"},
-        {"ru": "Выбирать линейную или круговую поляризацию и рассчитывать поворот облучателя", "en": "Select polarisation and calculate feed rotation", "el": "Επιλέγετε πόλωση και υπολογίζετε την περιστροφή τροφοδότη"}
+        {
+          "ru": "Использовать широту, азимут и угол места как исходные данные",
+          "en": "Use latitude, azimuth and elevation as initial data",
+          "el": "Χρησιμοποιείτε γεωγραφικό πλάτος, αζιμούθιο και ανύψωση"
+        },
+        {
+          "ru": "Выбирать линейную или круговую поляризацию и рассчитывать поворот облучателя",
+          "en": "Select polarisation and calculate feed rotation",
+          "el": "Επιλέγετε πόλωση και υπολογίζετε την περιστροφή τροφοδότη"
+        }
       ],
       "steps": [
-        {"kind": "theory", "id": "lat-lon", "title": {"ru": "Исходная геометрия", "en": "Initial geometry", "el": "Αρχική γεωμετρία"}, "body": [{"ru": "Широта и долгота станции влияют на азимут и угол места геостационарного спутника. Расчёт даёт стартовую точку, но не заменяет поиск максимума сигнала и проверку фактического направления.", "en": "Station latitude and longitude determine the initial azimuth and elevation to a geostationary satellite. The calculation is a starting point, not a substitute for peaking and an azimuth check.", "el": "Το γεωγραφικό πλάτος και μήκος δίνουν την αρχική κατεύθυνση προς γεωστατικό δορυφόρο, αλλά δεν αντικαθιστούν τη βελτιστοποίηση σήματος."}]},
-        {"kind": "theory", "id": "polarisation", "title": {"ru": "Линейная и круговая поляризация", "en": "Linear and circular polarisation", "el": "Γραμμική και κυκλική πόλωση"}, "body": [{"ru": "При линейной поляризации поле ориентировано H или V, а при круговой меняется по вращению. Тип и направление задаются сетью; их нельзя выбирать по положению антенны на глаз. Ошибка ухудшает уровень и может создать помехи.", "en": "Linear polarisation is H or V; circular polarisation follows a rotation sense. The network defines the type and sense—never choose by eye. An error reduces level and can cause interference.", "el": "Η γραμμική πόλωση είναι H ή V, ενώ η κυκλική έχει φορά περιστροφής. Η σωστή επιλογή δίνεται από το δίκτυο και ένα λάθος μπορεί να προκαλέσει παρεμβολές."}], "figures": [{"src": "/courses/gvf-ant-point-02/polarization.jpg", "caption": {"ru": "Ориентация линейной поляризации", "en": "Linear polarisation orientation", "el": "Προσανατολισμός γραμμικής πόλωσης"}}]},
-        {"kind": "theory", "id": "feed-angle", "title": {"ru": "Поворот облучателя и LAC", "en": "Feed rotation and LAC", "el": "Περιστροφή τροφοδότη και LAC"}, "body": [{"ru": "Введите исходные данные в LAC, снимите рассчитанный угол и перенесите его на шкалу облучателя. После фиксации сверяйте шкалу и направление, затем подтвердите результат по уровню и отношению сигнал/шум.", "en": "Enter the station data in the LAC, read the calculated angle and transfer it to the feed scale. Check the scale and direction after locking, then confirm with level and signal-to-noise ratio.", "el": "Εισάγετε τα δεδομένα στο LAC, μεταφέρετε τη γωνία στην κλίμακα του τροφοδότη και επιβεβαιώστε με στάθμη και SNR."}]},
-        {"kind": "quiz", "id": "quiz", "title": {"ru": "Тест по модулю", "en": "Module quiz", "el": "Τεστ ενότητας"}, "questions": ["q-geo-1", "q-geo-2", "q-geo-3"], "perAttempt": 3, "passMark": 2, "attempts": 2}
+        {
+          "kind": "theory",
+          "id": "lat-lon",
+          "title": {
+            "ru": "Исходная геометрия",
+            "en": "Initial geometry",
+            "el": "Αρχική γεωμετρία"
+          },
+          "body": [
+            {
+              "ru": "Широта и долгота станции влияют на азимут и угол места геостационарного спутника. Расчёт даёт стартовую точку, но не заменяет поиск максимума сигнала и проверку фактического направления.",
+              "en": "Station latitude and longitude determine the initial azimuth and elevation to a geostationary satellite. The calculation is a starting point, not a substitute for peaking and an azimuth check.",
+              "el": "Το γεωγραφικό πλάτος και μήκος δίνουν την αρχική κατεύθυνση προς γεωστατικό δορυφόρο, αλλά δεν αντικαθιστούν τη βελτιστοποίηση σήματος."
+            }
+          ],
+          "figures": [
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-001.jpg",
+              "caption": {
+                "ru": "Кадр 03-001",
+                "en": "Frame 03-001",
+                "el": "Καρέ 03-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-002.jpg",
+              "caption": {
+                "ru": "Кадр 03-002",
+                "en": "Frame 03-002",
+                "el": "Καρέ 03-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-003.jpg",
+              "caption": {
+                "ru": "Кадр 03-003",
+                "en": "Frame 03-003",
+                "el": "Καρέ 03-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-004.jpg",
+              "caption": {
+                "ru": "Кадр 03-004",
+                "en": "Frame 03-004",
+                "el": "Καρέ 03-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-005.jpg",
+              "caption": {
+                "ru": "Кадр 03-005",
+                "en": "Frame 03-005",
+                "el": "Καρέ 03-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-006.jpg",
+              "caption": {
+                "ru": "Кадр 03-006",
+                "en": "Frame 03-006",
+                "el": "Καρέ 03-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-007.jpg",
+              "caption": {
+                "ru": "Кадр 03-007",
+                "en": "Frame 03-007",
+                "el": "Καρέ 03-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-008.jpg",
+              "caption": {
+                "ru": "Кадр 03-008",
+                "en": "Frame 03-008",
+                "el": "Καρέ 03-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-009.jpg",
+              "caption": {
+                "ru": "Кадр 03-009",
+                "en": "Frame 03-009",
+                "el": "Καρέ 03-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-010.jpg",
+              "caption": {
+                "ru": "Кадр 03-010",
+                "en": "Frame 03-010",
+                "el": "Καρέ 03-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-011.jpg",
+              "caption": {
+                "ru": "Кадр 03-011",
+                "en": "Frame 03-011",
+                "el": "Καρέ 03-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-012.jpg",
+              "caption": {
+                "ru": "Кадр 03-012",
+                "en": "Frame 03-012",
+                "el": "Καρέ 03-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-013.jpg",
+              "caption": {
+                "ru": "Кадр 03-013",
+                "en": "Frame 03-013",
+                "el": "Καρέ 03-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-014.jpg",
+              "caption": {
+                "ru": "Кадр 03-014",
+                "en": "Frame 03-014",
+                "el": "Καρέ 03-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-015.jpg",
+              "caption": {
+                "ru": "Кадр 03-015",
+                "en": "Frame 03-015",
+                "el": "Καρέ 03-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-016.jpg",
+              "caption": {
+                "ru": "Кадр 03-016",
+                "en": "Frame 03-016",
+                "el": "Καρέ 03-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-017.jpg",
+              "caption": {
+                "ru": "Кадр 03-017",
+                "en": "Frame 03-017",
+                "el": "Καρέ 03-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-018.jpg",
+              "caption": {
+                "ru": "Кадр 03-018",
+                "en": "Frame 03-018",
+                "el": "Καρέ 03-018"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-019.jpg",
+              "caption": {
+                "ru": "Кадр 03-019",
+                "en": "Frame 03-019",
+                "el": "Καρέ 03-019"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-020.jpg",
+              "caption": {
+                "ru": "Кадр 03-020",
+                "en": "Frame 03-020",
+                "el": "Καρέ 03-020"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-021.jpg",
+              "caption": {
+                "ru": "Кадр 03-021",
+                "en": "Frame 03-021",
+                "el": "Καρέ 03-021"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-022.jpg",
+              "caption": {
+                "ru": "Кадр 03-022",
+                "en": "Frame 03-022",
+                "el": "Καρέ 03-022"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-023.jpg",
+              "caption": {
+                "ru": "Кадр 03-023",
+                "en": "Frame 03-023",
+                "el": "Καρέ 03-023"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-024.jpg",
+              "caption": {
+                "ru": "Кадр 03-024",
+                "en": "Frame 03-024",
+                "el": "Καρέ 03-024"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-025.jpg",
+              "caption": {
+                "ru": "Кадр 03-025",
+                "en": "Frame 03-025",
+                "el": "Καρέ 03-025"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-026.jpg",
+              "caption": {
+                "ru": "Кадр 03-026",
+                "en": "Frame 03-026",
+                "el": "Καρέ 03-026"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-027.jpg",
+              "caption": {
+                "ru": "Кадр 03-027",
+                "en": "Frame 03-027",
+                "el": "Καρέ 03-027"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-028.jpg",
+              "caption": {
+                "ru": "Кадр 03-028",
+                "en": "Frame 03-028",
+                "el": "Καρέ 03-028"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-029.jpg",
+              "caption": {
+                "ru": "Кадр 03-029",
+                "en": "Frame 03-029",
+                "el": "Καρέ 03-029"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/04-001.jpg",
+              "caption": {
+                "ru": "Кадр 04-001",
+                "en": "Frame 04-001",
+                "el": "Καρέ 04-001"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "polarisation",
+          "title": {
+            "ru": "Линейная и круговая поляризация",
+            "en": "Linear and circular polarisation",
+            "el": "Γραμμική και κυκλική πόλωση"
+          },
+          "body": [
+            {
+              "ru": "При линейной поляризации поле ориентировано H или V, а при круговой меняется по вращению. Тип и направление задаются сетью; их нельзя выбирать по положению антенны на глаз. Ошибка ухудшает уровень и может создать помехи.",
+              "en": "Linear polarisation is H or V; circular polarisation follows a rotation sense. The network defines the type and sense—never choose by eye. An error reduces level and can cause interference.",
+              "el": "Η γραμμική πόλωση είναι H ή V, ενώ η κυκλική έχει φορά περιστροφής. Η σωστή επιλογή δίνεται από το δίκτυο και ένα λάθος μπορεί να προκαλέσει παρεμβολές."
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "feed-angle",
+          "title": {
+            "ru": "Поворот облучателя и LAC",
+            "en": "Feed rotation and LAC",
+            "el": "Περιστροφή τροφοδότη και LAC"
+          },
+          "body": [
+            {
+              "ru": "Введите исходные данные в LAC, снимите рассчитанный угол и перенесите его на шкалу облучателя. После фиксации сверяйте шкалу и направление, затем подтвердите результат по уровню и отношению сигнал/шум.",
+              "en": "Enter the station data in the LAC, read the calculated angle and transfer it to the feed scale. Check the scale and direction after locking, then confirm with level and signal-to-noise ratio.",
+              "el": "Εισάγετε τα δεδομένα στο LAC, μεταφέρετε τη γωνία στην κλίμακα του τροφοδότη και επιβεβαιώστε με στάθμη και SNR."
+            }
+          ]
+        },
+        {
+          "kind": "quiz",
+          "id": "quiz",
+          "title": {
+            "ru": "Тест по модулю",
+            "en": "Module quiz",
+            "el": "Τεστ ενότητας"
+          },
+          "questions": [
+            "q-geo-1",
+            "q-geo-2",
+            "q-geo-3"
+          ],
+          "perAttempt": 3,
+          "passMark": 2,
+          "attempts": 2
+        }
       ]
     },
     {
       "id": "acquisition",
-      "title": {"ru": "Первичный поиск спутника", "en": "Initial satellite acquisition", "el": "Αρχική εύρεση δορυφόρου"},
+      "title": {
+        "ru": "Первичный поиск спутника",
+        "en": "Initial satellite acquisition",
+        "el": "Αρχική εύρεση δορυφόρου"
+      },
       "objectives": [
-        {"ru": "Пользоваться peaking meter и симулятором Az-El", "en": "Use the peaking meter and Az-El simulator", "el": "Χρησιμοποιείτε μετρητή κορυφής και προσομοιωτή Az-El"},
-        {"ru": "Переходить от грубого поиска к малому шагу после обнаружения сигнала", "en": "Move from coarse search to a small step after finding signal", "el": "Μεταβαίνετε από χονδρική σε λεπτή αναζήτηση"}
+        {
+          "ru": "Пользоваться peaking meter и симулятором Az-El",
+          "en": "Use the peaking meter and Az-El simulator",
+          "el": "Χρησιμοποιείτε μετρητή κορυφής και προσομοιωτή Az-El"
+        },
+        {
+          "ru": "Переходить от грубого поиска к малому шагу после обнаружения сигнала",
+          "en": "Move from coarse search to a small step after finding signal",
+          "el": "Μεταβαίνετε από χονδρική σε λεπτή αναζήτηση"
+        }
       ],
       "steps": [
-        {"kind": "theory", "id": "peaking-meter", "title": {"ru": "Измеритель пика", "en": "The peaking meter", "el": "Μετρητής κορυφής"}, "body": [{"ru": "При наведении записывайте общий уровень и SNR. Максимум общей мощности не всегда совпадает с лучшим рабочим пиком, поэтому оба показания нужны для сравнения.", "en": "During pointing, record total level and SNR. The highest total power is not always the best operating peak, so record both values.", "el": "Κατά τη σκόπευση καταγράφετε συνολικό επίπεδο και SNR· η μέγιστη ισχύς δεν είναι πάντα η καλύτερη κορυφή."}], "figures": [{"src": "/courses/gvf-ant-point-02/peaking-meter.jpg", "caption": {"ru": "Измеритель уровня и SNR", "en": "Level and SNR peaking meter", "el": "Μετρητής επιπέδου και SNR"}}]},
-        {"kind": "theory", "id": "find-satellite", "title": {"ru": "Как быстро найти спутник", "en": "How to find the satellite fast", "el": "Γρήγορη εύρεση δορυφόρου"}, "body": [{"ru": "Проверьте частоту и поляризацию, выставьте расчётный угол места и выполните узкий проход по азимуту. При появлении сигнала уменьшите шаг, пройдите через максимум и зафиксируйте рабочие показания.", "en": "Check frequency and polarisation, set calculated elevation and make a narrow azimuth sweep. When signal appears, reduce the step, pass through the maximum and record the operating readings.", "el": "Ελέγξτε συχνότητα και πόλωση, ρυθμίστε ανύψωση και κάντε στενή σάρωση αζιμουθίου. Μόλις εμφανιστεί σήμα, μειώστε το βήμα και καταγράψτε την κορυφή."}]},
-        {"kind": "sim", "id": "sim-acquisition", "title": {"ru": "Практика: найти и зафиксировать спутник", "en": "Practice: find and lock the satellite", "el": "Πρακτική: εύρεση και κλείδωμα δορυφόρου"}, "intro": {"ru": "Выполните грубый поиск, затем точный проход и заполните карточку azimuth / elevation / polarization / total power / SNR.", "en": "Perform a coarse search, then a fine pass and complete the azimuth / elevation / polarisation / total power / SNR card.", "el": "Κάντε χονδρική και λεπτή αναζήτηση και συμπληρώστε την κάρτα μετρήσεων."}, "simulator": "acu-panel", "scenario": "find-satellite", "task": {"ru": "Найти устойчивый пик и сохранить показания", "en": "Find a stable peak and save the readings", "el": "Βρείτε σταθερή κορυφή και αποθηκεύστε τις ενδείξεις"}},
-        {"kind": "quiz", "id": "quiz", "title": {"ru": "Тест по модулю", "en": "Module quiz", "el": "Τεστ ενότητας"}, "questions": ["q-acq-1", "q-acq-2", "q-acq-3"], "perAttempt": 3, "passMark": 2, "attempts": 2}
+        {
+          "kind": "theory",
+          "id": "peaking-meter",
+          "title": {
+            "ru": "Измеритель пика",
+            "en": "The peaking meter",
+            "el": "Μετρητής κορυφής"
+          },
+          "body": [
+            {
+              "ru": "При наведении записывайте общий уровень и SNR. Максимум общей мощности не всегда совпадает с лучшим рабочим пиком, поэтому оба показания нужны для сравнения.",
+              "en": "During pointing, record total level and SNR. The highest total power is not always the best operating peak, so record both values.",
+              "el": "Κατά τη σκόπευση καταγράφετε συνολικό επίπεδο και SNR· η μέγιστη ισχύς δεν είναι πάντα η καλύτερη κορυφή."
+            }
+          ],
+          "figures": [
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-001.jpg",
+              "caption": {
+                "ru": "Кадр 05-001",
+                "en": "Frame 05-001",
+                "el": "Καρέ 05-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-002.jpg",
+              "caption": {
+                "ru": "Кадр 05-002",
+                "en": "Frame 05-002",
+                "el": "Καρέ 05-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-003.jpg",
+              "caption": {
+                "ru": "Кадр 05-003",
+                "en": "Frame 05-003",
+                "el": "Καρέ 05-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-004.jpg",
+              "caption": {
+                "ru": "Кадр 05-004",
+                "en": "Frame 05-004",
+                "el": "Καρέ 05-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-005.jpg",
+              "caption": {
+                "ru": "Кадр 05-005",
+                "en": "Frame 05-005",
+                "el": "Καρέ 05-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-001.jpg",
+              "caption": {
+                "ru": "Кадр 06-001",
+                "en": "Frame 06-001",
+                "el": "Καρέ 06-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-002.jpg",
+              "caption": {
+                "ru": "Кадр 06-002",
+                "en": "Frame 06-002",
+                "el": "Καρέ 06-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-003.jpg",
+              "caption": {
+                "ru": "Кадр 06-003",
+                "en": "Frame 06-003",
+                "el": "Καρέ 06-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-004.jpg",
+              "caption": {
+                "ru": "Кадр 06-004",
+                "en": "Frame 06-004",
+                "el": "Καρέ 06-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-001.jpg",
+              "caption": {
+                "ru": "Кадр 07-001",
+                "en": "Frame 07-001",
+                "el": "Καρέ 07-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-002.jpg",
+              "caption": {
+                "ru": "Кадр 07-002",
+                "en": "Frame 07-002",
+                "el": "Καρέ 07-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-003.jpg",
+              "caption": {
+                "ru": "Кадр 07-003",
+                "en": "Frame 07-003",
+                "el": "Καρέ 07-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-004.jpg",
+              "caption": {
+                "ru": "Кадр 07-004",
+                "en": "Frame 07-004",
+                "el": "Καρέ 07-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-005.jpg",
+              "caption": {
+                "ru": "Кадр 07-005",
+                "en": "Frame 07-005",
+                "el": "Καρέ 07-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-006.jpg",
+              "caption": {
+                "ru": "Кадр 07-006",
+                "en": "Frame 07-006",
+                "el": "Καρέ 07-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-007.jpg",
+              "caption": {
+                "ru": "Кадр 07-007",
+                "en": "Frame 07-007",
+                "el": "Καρέ 07-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-008.jpg",
+              "caption": {
+                "ru": "Кадр 07-008",
+                "en": "Frame 07-008",
+                "el": "Καρέ 07-008"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "find-satellite",
+          "title": {
+            "ru": "Как быстро найти спутник",
+            "en": "How to find the satellite fast",
+            "el": "Γρήγορη εύρεση δορυφόρου"
+          },
+          "body": [
+            {
+              "ru": "Проверьте частоту и поляризацию, выставьте расчётный угол места и выполните узкий проход по азимуту. При появлении сигнала уменьшите шаг, пройдите через максимум и зафиксируйте рабочие показания.",
+              "en": "Check frequency and polarisation, set calculated elevation and make a narrow azimuth sweep. When signal appears, reduce the step, pass through the maximum and record the operating readings.",
+              "el": "Ελέγξτε συχνότητα και πόλωση, ρυθμίστε ανύψωση και κάντε στενή σάρωση αζιμουθίου. Μόλις εμφανιστεί σήμα, μειώστε το βήμα και καταγράψτε την κορυφή."
+            }
+          ]
+        },
+        {
+          "kind": "sim",
+          "id": "sim-acquisition",
+          "title": {
+            "ru": "Практика: найти и зафиксировать спутник",
+            "en": "Practice: find and lock the satellite",
+            "el": "Πρακτική: εύρεση και κλείδωμα δορυφόρου"
+          },
+          "intro": {
+            "ru": "Выполните грубый поиск, затем точный проход и заполните карточку azimuth / elevation / polarization / total power / SNR.",
+            "en": "Perform a coarse search, then a fine pass and complete the azimuth / elevation / polarisation / total power / SNR card.",
+            "el": "Κάντε χονδρική και λεπτή αναζήτηση και συμπληρώστε την κάρτα μετρήσεων."
+          },
+          "simulator": "acu-panel",
+          "scenario": "find-satellite",
+          "task": {
+            "ru": "Найти устойчивый пик и сохранить показания",
+            "en": "Find a stable peak and save the readings",
+            "el": "Βρείτε σταθερή κορυφή και αποθηκεύστε τις ενδείξεις"
+          }
+        },
+        {
+          "kind": "quiz",
+          "id": "quiz",
+          "title": {
+            "ru": "Тест по модулю",
+            "en": "Module quiz",
+            "el": "Τεστ ενότητας"
+          },
+          "questions": [
+            "q-acq-1",
+            "q-acq-2",
+            "q-acq-3"
+          ],
+          "perAttempt": 3,
+          "passMark": 2,
+          "attempts": 2
+        }
       ]
     },
     {
       "id": "fine-pointing",
-      "title": {"ru": "Точная наводка и beam balance", "en": "Fine pointing and beam balance", "el": "Λεπτή σκόπευση και beam balance"},
+      "title": {
+        "ru": "Точная наводка и beam balance",
+        "en": "Fine pointing and beam balance",
+        "el": "Λεπτή σκόπευση και beam balance"
+      },
       "objectives": [
-        {"ru": "Учитывать люфт при подходе к максимуму", "en": "Account for backlash when approaching the maximum", "el": "Λαμβάνετε υπόψη το backlash"},
-        {"ru": "Уравнивать уровни по обе стороны пика на двух осях", "en": "Balance levels on both sides of the peak on both axes", "el": "Ισορροπείτε τα επίπεδα γύρω από την κορυφή"}
+        {
+          "ru": "Учитывать люфт при подходе к максимуму",
+          "en": "Account for backlash when approaching the maximum",
+          "el": "Λαμβάνετε υπόψη το backlash"
+        },
+        {
+          "ru": "Уравнивать уровни по обе стороны пика на двух осях",
+          "en": "Balance levels on both sides of the peak on both axes",
+          "el": "Ισορροπείτε τα επίπεδα γύρω από την κορυφή"
+        }
       ],
       "steps": [
-        {"kind": "theory", "id": "backlash", "title": {"ru": "Люфт и повторяемость", "en": "Backlash and repeatability", "el": "Backlash και επαναληψιμότητα"}, "body": [{"ru": "Механический люфт даёт разные показания при подходе к пику с разных сторон. Убирайте люфт одинаковым направлением движения и не меняйте направление без необходимости.", "en": "Mechanical backlash produces different readings when approaching from opposite directions. Take up backlash consistently and avoid unnecessary direction changes.", "el": "Το μηχανικό backlash δίνει διαφορετικές ενδείξεις από αντίθετες κατευθύνσεις. Κρατήστε σταθερή κατεύθυνση κίνησης."}], "figures": [{"src": "/courses/gvf-ant-point-02/backlash.jpg", "caption": {"ru": "Механический люфт при наведении", "en": "Mechanical backlash during pointing", "el": "Μηχανικό backlash κατά τη σκόπευση"}}]},
-        {"kind": "theory", "id": "beam-balance", "title": {"ru": "Алгоритм beam balance", "en": "The beam-balance method", "el": "Μέθοδος beam balance"}, "body": [{"ru": "Сначала найдите пик. Затем отойдите на одинаковое число шагов влево и вправо, запишите уровни и сместите ось к стороне с меньшим уровнем. Повторяйте, пока уровни не сравняются, затем подтвердите пик повторным проходом.", "en": "Find the peak first. Move the same number of steps to each side, record levels and move the axis toward the weaker side. Repeat until levels balance, then confirm with another pass.", "el": "Βρείτε πρώτα την κορυφή. Κινηθείτε ίσα δεξιά και αριστερά, καταγράψτε επίπεδα και διορθώστε προς την ασθενέστερη πλευρά μέχρι να ισορροπήσουν."}], "figures": [{"src": "/courses/gvf-ant-point-02/beam-balance.jpg", "caption": {"ru": "Сравнение уровней по обе стороны пика", "en": "Balancing levels on both sides of the peak", "el": "Ισορρόπηση επιπέδων γύρω από την κορυφή"}}]},
-        {"kind": "sim", "id": "sim-beam-balance", "title": {"ru": "Практика: Az-El start-to-finish", "en": "Practice: Az-El start-to-finish", "el": "Πρακτική: Az-El από την αρχή ως το τέλος"}, "intro": {"ru": "Пройдите от исходной установки до финального пика, запишите полные и половинные шаги и нажмите SHOW MY RESULTS.", "en": "Go from the initial setup to the final peak, record full and half steps and press SHOW MY RESULTS.", "el": "Πηγαίνετε από την αρχική ρύθμιση στην τελική κορυφή, καταγράψτε τα βήματα και πατήστε SHOW MY RESULTS."}, "simulator": "acu-panel", "scenario": "beam-balance", "task": {"ru": "Получить устойчивый пик по азимуту и углу места", "en": "Obtain a stable peak in azimuth and elevation", "el": "Πετύχετε σταθερή κορυφή σε αζιμούθιο και ανύψωση"}},
-        {"kind": "quiz", "id": "quiz", "title": {"ru": "Тест по модулю", "en": "Module quiz", "el": "Τεστ ενότητας"}, "questions": ["q-fine-1", "q-fine-2", "q-fine-3"], "perAttempt": 3, "passMark": 2, "attempts": 2}
+        {
+          "kind": "theory",
+          "id": "backlash",
+          "title": {
+            "ru": "Люфт и повторяемость",
+            "en": "Backlash and repeatability",
+            "el": "Backlash και επαναληψιμότητα"
+          },
+          "body": [
+            {
+              "ru": "Механический люфт даёт разные показания при подходе к пику с разных сторон. Убирайте люфт одинаковым направлением движения и не меняйте направление без необходимости.",
+              "en": "Mechanical backlash produces different readings when approaching from opposite directions. Take up backlash consistently and avoid unnecessary direction changes.",
+              "el": "Το μηχανικό backlash δίνει διαφορετικές ενδείξεις από αντίθετες κατευθύνσεις. Κρατήστε σταθερή κατεύθυνση κίνησης."
+            }
+          ],
+          "figures": [
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/08-001.jpg",
+              "caption": {
+                "ru": "Кадр 08-001",
+                "en": "Frame 08-001",
+                "el": "Καρέ 08-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-001.jpg",
+              "caption": {
+                "ru": "Кадр 09-001",
+                "en": "Frame 09-001",
+                "el": "Καρέ 09-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-002.jpg",
+              "caption": {
+                "ru": "Кадр 09-002",
+                "en": "Frame 09-002",
+                "el": "Καρέ 09-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-003.jpg",
+              "caption": {
+                "ru": "Кадр 09-003",
+                "en": "Frame 09-003",
+                "el": "Καρέ 09-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-004.jpg",
+              "caption": {
+                "ru": "Кадр 09-004",
+                "en": "Frame 09-004",
+                "el": "Καρέ 09-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-005.jpg",
+              "caption": {
+                "ru": "Кадр 09-005",
+                "en": "Frame 09-005",
+                "el": "Καρέ 09-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-006.jpg",
+              "caption": {
+                "ru": "Кадр 09-006",
+                "en": "Frame 09-006",
+                "el": "Καρέ 09-006"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "beam-balance",
+          "title": {
+            "ru": "Алгоритм beam balance",
+            "en": "The beam-balance method",
+            "el": "Μέθοδος beam balance"
+          },
+          "body": [
+            {
+              "ru": "Сначала найдите пик. Затем отойдите на одинаковое число шагов влево и вправо, запишите уровни и сместите ось к стороне с меньшим уровнем. Повторяйте, пока уровни не сравняются, затем подтвердите пик повторным проходом.",
+              "en": "Find the peak first. Move the same number of steps to each side, record levels and move the axis toward the weaker side. Repeat until levels balance, then confirm with another pass.",
+              "el": "Βρείτε πρώτα την κορυφή. Κινηθείτε ίσα δεξιά και αριστερά, καταγράψτε επίπεδα και διορθώστε προς την ασθενέστερη πλευρά μέχρι να ισορροπήσουν."
+            }
+          ]
+        },
+        {
+          "kind": "sim",
+          "id": "sim-beam-balance",
+          "title": {
+            "ru": "Практика: Az-El start-to-finish",
+            "en": "Practice: Az-El start-to-finish",
+            "el": "Πρακτική: Az-El από την αρχή ως το τέλος"
+          },
+          "intro": {
+            "ru": "Пройдите от исходной установки до финального пика, запишите полные и половинные шаги и нажмите SHOW MY RESULTS.",
+            "en": "Go from the initial setup to the final peak, record full and half steps and press SHOW MY RESULTS.",
+            "el": "Πηγαίνετε από την αρχική ρύθμιση στην τελική κορυφή, καταγράψτε τα βήματα και πατήστε SHOW MY RESULTS."
+          },
+          "simulator": "acu-panel",
+          "scenario": "beam-balance",
+          "task": {
+            "ru": "Получить устойчивый пик по азимуту и углу места",
+            "en": "Obtain a stable peak in azimuth and elevation",
+            "el": "Πετύχετε σταθερή κορυφή σε αζιμούθιο και ανύψωση"
+          }
+        },
+        {
+          "kind": "quiz",
+          "id": "quiz",
+          "title": {
+            "ru": "Тест по модулю",
+            "en": "Module quiz",
+            "el": "Τεστ ενότητας"
+          },
+          "questions": [
+            "q-fine-1",
+            "q-fine-2",
+            "q-fine-3"
+          ],
+          "perAttempt": 3,
+          "passMark": 2,
+          "attempts": 2
+        }
       ]
     },
     {
       "id": "cross-pol-closeout",
-      "title": {"ru": "Cross-pol и завершение работ", "en": "Cross-pol and closeout", "el": "Cross-pol και ολοκλήρωση"},
+      "title": {
+        "ru": "Cross-pol и завершение работ",
+        "en": "Cross-pol and closeout",
+        "el": "Cross-pol και ολοκλήρωση"
+      },
       "objectives": [
-        {"ru": "Понимать риск помех соседней поляризации", "en": "Understand interference risk to the adjacent polarisation", "el": "Κατανοείτε τον κίνδυνο παρεμβολών"},
-        {"ru": "Безопасно завершать демонтаж и документировать результат", "en": "Close out a de-installation safely and document the result", "el": "Ολοκληρώνετε με ασφάλεια και τεκμηριώνετε το αποτέλεσμα"}
+        {
+          "ru": "Понимать риск помех соседней поляризации",
+          "en": "Understand interference risk to the adjacent polarisation",
+          "el": "Κατανοείτε τον κίνδυνο παρεμβολών"
+        },
+        {
+          "ru": "Безопасно завершать демонтаж и документировать результат",
+          "en": "Close out a de-installation safely and document the result",
+          "el": "Ολοκληρώνετε με ασφάλεια και τεκμηριώνετε το αποτέλεσμα"
+        }
       ],
       "steps": [
-        {"kind": "theory", "id": "cross-pol", "title": {"ru": "Cross-pol alignment", "en": "Cross-pol alignment", "el": "Ευθυγράμμιση cross-pol"}, "body": [{"ru": "Перед измерением убедитесь, что азимут и угол места уже на рабочем пике. В измерительном режиме выполните малую коррекцию облучателя, зафиксируйте показания и верните рабочий уровень согласно регламенту оператора сети.", "en": "Before measuring, make sure azimuth and elevation are already at the operating peak. In measurement mode, make a small feed correction, record the result and restore the operating level according to the network procedure.", "el": "Πριν από τη μέτρηση βεβαιωθείτε ότι αζιμούθιο και ανύψωση είναι στην κορυφή. Κάντε μικρή διόρθωση τροφοδότη, καταγράψτε και επαναφέρετε το επίπεδο."}], "figures": [{"src": "/courses/gvf-ant-point-02/cross-pol.jpg", "caption": {"ru": "Проверка cross-pol", "en": "Cross-pol verification", "el": "Επαλήθευση cross-pol"}}]},
-        {"kind": "theory", "id": "interference", "title": {"ru": "Почему важны помехи", "en": "Why interference matters", "el": "Γιατί οι παρεμβολές είναι κρίσιμες"}, "body": [{"ru": "Неверная поляризация, плохая сборка или незавершённый кабель могут утекать в соседнюю поляризацию и мешать другим пользователям. После деинсталляции отключите всё оборудование и корректно завершите или снимите кабели.", "en": "Wrong polarisation, poor assembly or an unterminated cable can leak into the adjacent polarisation and affect other users. After de-installation, power down all equipment and terminate or remove cables correctly.", "el": "Λάθος πόλωση, κακή συναρμολόγηση ή ανολοκλήρωτο καλώδιο μπορεί να προκαλέσουν παρεμβολές. Μετά την αποσυναρμολόγηση απενεργοποιήστε τον εξοπλισμό και τερματίστε ή αφαιρέστε τα καλώδια."}]},
-        {"kind": "theory", "id": "closeout", "title": {"ru": "Итоговый чек-лист", "en": "Final checklist", "el": "Τελική λίστα ελέγχου"}, "body": [{"ru": "Сохраните расчётные и фактические значения, результат beam balance и cross-pol, состояние кабелей и замечания по площадке. Не оставляйте забытый терминал подключённым к сети.", "en": "Save calculated and measured values, beam-balance and cross-pol results, cable condition and site notes. Never leave a forgotten terminal connected to the network.", "el": "Αποθηκεύστε τις υπολογισμένες και μετρημένες τιμές, τα αποτελέσματα beam balance και cross-pol και τις σημειώσεις εγκατάστασης."}], "figures": [{"src": "/courses/gvf-ant-point-02/decommissioning.jpg", "caption": {"ru": "Безопасное завершение работ", "en": "Safe decommissioning closeout", "el": "Ασφαλής ολοκλήρωση εργασιών"}}]},
-        {"kind": "quiz", "id": "quiz", "title": {"ru": "Итоговый тест", "en": "Final quiz", "el": "Τελικό τεστ"}, "questions": ["q-close-1", "q-close-2", "q-close-3"], "perAttempt": 3, "passMark": 2, "attempts": 2}
+        {
+          "kind": "theory",
+          "id": "cross-pol",
+          "title": {
+            "ru": "Cross-pol alignment",
+            "en": "Cross-pol alignment",
+            "el": "Ευθυγράμμιση cross-pol"
+          },
+          "body": [
+            {
+              "ru": "Перед измерением убедитесь, что азимут и угол места уже на рабочем пике. В измерительном режиме выполните малую коррекцию облучателя, зафиксируйте показания и верните рабочий уровень согласно регламенту оператора сети.",
+              "en": "Before measuring, make sure azimuth and elevation are already at the operating peak. In measurement mode, make a small feed correction, record the result and restore the operating level according to the network procedure.",
+              "el": "Πριν από τη μέτρηση βεβαιωθείτε ότι αζιμούθιο και ανύψωση είναι στην κορυφή. Κάντε μικρή διόρθωση τροφοδότη, καταγράψτε και επαναφέρετε το επίπεδο."
+            }
+          ],
+          "figures": [
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-001.jpg",
+              "caption": {
+                "ru": "Кадр 10-001",
+                "en": "Frame 10-001",
+                "el": "Καρέ 10-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-002.jpg",
+              "caption": {
+                "ru": "Кадр 10-002",
+                "en": "Frame 10-002",
+                "el": "Καρέ 10-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-003.jpg",
+              "caption": {
+                "ru": "Кадр 10-003",
+                "en": "Frame 10-003",
+                "el": "Καρέ 10-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-004.jpg",
+              "caption": {
+                "ru": "Кадр 10-004",
+                "en": "Frame 10-004",
+                "el": "Καρέ 10-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-005.jpg",
+              "caption": {
+                "ru": "Кадр 10-005",
+                "en": "Frame 10-005",
+                "el": "Καρέ 10-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-006.jpg",
+              "caption": {
+                "ru": "Кадр 10-006",
+                "en": "Frame 10-006",
+                "el": "Καρέ 10-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-007.jpg",
+              "caption": {
+                "ru": "Кадр 10-007",
+                "en": "Frame 10-007",
+                "el": "Καρέ 10-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-008.jpg",
+              "caption": {
+                "ru": "Кадр 10-008",
+                "en": "Frame 10-008",
+                "el": "Καρέ 10-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-009.jpg",
+              "caption": {
+                "ru": "Кадр 10-009",
+                "en": "Frame 10-009",
+                "el": "Καρέ 10-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-010.jpg",
+              "caption": {
+                "ru": "Кадр 10-010",
+                "en": "Frame 10-010",
+                "el": "Καρέ 10-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-011.jpg",
+              "caption": {
+                "ru": "Кадр 10-011",
+                "en": "Frame 10-011",
+                "el": "Καρέ 10-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-012.jpg",
+              "caption": {
+                "ru": "Кадр 10-012",
+                "en": "Frame 10-012",
+                "el": "Καρέ 10-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-013.jpg",
+              "caption": {
+                "ru": "Кадр 10-013",
+                "en": "Frame 10-013",
+                "el": "Καρέ 10-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-014.jpg",
+              "caption": {
+                "ru": "Кадр 10-014",
+                "en": "Frame 10-014",
+                "el": "Καρέ 10-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-015.jpg",
+              "caption": {
+                "ru": "Кадр 10-015",
+                "en": "Frame 10-015",
+                "el": "Καρέ 10-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-016.jpg",
+              "caption": {
+                "ru": "Кадр 10-016",
+                "en": "Frame 10-016",
+                "el": "Καρέ 10-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-017.jpg",
+              "caption": {
+                "ru": "Кадр 10-017",
+                "en": "Frame 10-017",
+                "el": "Καρέ 10-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/11-001.jpg",
+              "caption": {
+                "ru": "Кадр 11-001",
+                "en": "Frame 11-001",
+                "el": "Καρέ 11-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/11-002.jpg",
+              "caption": {
+                "ru": "Кадр 11-002",
+                "en": "Frame 11-002",
+                "el": "Καρέ 11-002"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "interference",
+          "title": {
+            "ru": "Почему важны помехи",
+            "en": "Why interference matters",
+            "el": "Γιατί οι παρεμβολές είναι κρίσιμες"
+          },
+          "body": [
+            {
+              "ru": "Неверная поляризация, плохая сборка или незавершённый кабель могут утекать в соседнюю поляризацию и мешать другим пользователям. После деинсталляции отключите всё оборудование и корректно завершите или снимите кабели.",
+              "en": "Wrong polarisation, poor assembly or an unterminated cable can leak into the adjacent polarisation and affect other users. After de-installation, power down all equipment and terminate or remove cables correctly.",
+              "el": "Λάθος πόλωση, κακή συναρμολόγηση ή ανολοκλήρωτο καλώδιο μπορεί να προκαλέσουν παρεμβολές. Μετά την αποσυναρμολόγηση απενεργοποιήστε τον εξοπλισμό και τερματίστε ή αφαιρέστε τα καλώδια."
+            }
+          ]
+        },
+        {
+          "kind": "theory",
+          "id": "closeout",
+          "title": {
+            "ru": "Итоговый чек-лист",
+            "en": "Final checklist",
+            "el": "Τελική λίστα ελέγχου"
+          },
+          "body": [
+            {
+              "ru": "Сохраните расчётные и фактические значения, результат beam balance и cross-pol, состояние кабелей и замечания по площадке. Не оставляйте забытый терминал подключённым к сети.",
+              "en": "Save calculated and measured values, beam-balance and cross-pol results, cable condition and site notes. Never leave a forgotten terminal connected to the network.",
+              "el": "Αποθηκεύστε τις υπολογισμένες και μετρημένες τιμές, τα αποτελέσματα beam balance και cross-pol και τις σημειώσεις εγκατάστασης."
+            }
+          ]
+        },
+        {
+          "kind": "quiz",
+          "id": "quiz",
+          "title": {
+            "ru": "Итоговый тест",
+            "en": "Final quiz",
+            "el": "Τελικό τεστ"
+          },
+          "questions": [
+            "q-close-1",
+            "q-close-2",
+            "q-close-3"
+          ],
+          "perAttempt": 3,
+          "passMark": 2,
+          "attempts": 2
+        }
       ]
     }
   ]
