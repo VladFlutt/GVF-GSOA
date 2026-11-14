@@ -56,19 +56,211 @@
           ],
           "figures": [
             {
-              "src": "/courses/gvf-ant-point-02/hardware.jpg",
+              "src": "/courses/gvf-ant-point-02/scenes/01-001.jpg",
               "caption": {
-                "ru": "Оборудование и RF-тракт станции",
-                "en": "Station hardware and RF path",
-                "el": "Εξοπλισμός και διαδρομή RF"
+                "ru": "Кадр 01-001",
+                "en": "Frame 01-001",
+                "el": "Καρέ 01-001"
               }
             },
             {
-              "src": "/courses/gvf-ant-point-02/localized/01-cables-ru.png",
+              "src": "/courses/gvf-ant-point-02/scenes/01-002.jpg",
               "caption": {
-                "ru": "Локализованный кадр: кабели и разъёмы",
-                "en": "Localised frame: cables and connectors",
-                "el": "Τοπικοποιημένο καρέ: καλώδια και συνδέσεις"
+                "ru": "Кадр 01-002",
+                "en": "Frame 01-002",
+                "el": "Καρέ 01-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-003.jpg",
+              "caption": {
+                "ru": "Кадр 01-003",
+                "en": "Frame 01-003",
+                "el": "Καρέ 01-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-004.jpg",
+              "caption": {
+                "ru": "Кадр 01-004",
+                "en": "Frame 01-004",
+                "el": "Καρέ 01-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-005.jpg",
+              "caption": {
+                "ru": "Кадр 01-005",
+                "en": "Frame 01-005",
+                "el": "Καρέ 01-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-006.jpg",
+              "caption": {
+                "ru": "Кадр 01-006",
+                "en": "Frame 01-006",
+                "el": "Καρέ 01-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-007.jpg",
+              "caption": {
+                "ru": "Кадр 01-007",
+                "en": "Frame 01-007",
+                "el": "Καρέ 01-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-008.jpg",
+              "caption": {
+                "ru": "Кадр 01-008",
+                "en": "Frame 01-008",
+                "el": "Καρέ 01-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-009.jpg",
+              "caption": {
+                "ru": "Кадр 01-009",
+                "en": "Frame 01-009",
+                "el": "Καρέ 01-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-010.jpg",
+              "caption": {
+                "ru": "Кадр 01-010",
+                "en": "Frame 01-010",
+                "el": "Καρέ 01-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-011.jpg",
+              "caption": {
+                "ru": "Кадр 01-011",
+                "en": "Frame 01-011",
+                "el": "Καρέ 01-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-012.jpg",
+              "caption": {
+                "ru": "Кадр 01-012",
+                "en": "Frame 01-012",
+                "el": "Καρέ 01-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-013.jpg",
+              "caption": {
+                "ru": "Кадр 01-013",
+                "en": "Frame 01-013",
+                "el": "Καρέ 01-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-014.jpg",
+              "caption": {
+                "ru": "Кадр 01-014",
+                "en": "Frame 01-014",
+                "el": "Καρέ 01-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-015.jpg",
+              "caption": {
+                "ru": "Кадр 01-015",
+                "en": "Frame 01-015",
+                "el": "Καρέ 01-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-016.jpg",
+              "caption": {
+                "ru": "Кадр 01-016",
+                "en": "Frame 01-016",
+                "el": "Καρέ 01-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-017.jpg",
+              "caption": {
+                "ru": "Кадр 01-017",
+                "en": "Frame 01-017",
+                "el": "Καρέ 01-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-018.jpg",
+              "caption": {
+                "ru": "Кадр 01-018",
+                "en": "Frame 01-018",
+                "el": "Καρέ 01-018"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-019.jpg",
+              "caption": {
+                "ru": "Кадр 01-019",
+                "en": "Frame 01-019",
+                "el": "Καρέ 01-019"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/01-020.jpg",
+              "caption": {
+                "ru": "Кадр 01-020",
+                "en": "Frame 01-020",
+                "el": "Καρέ 01-020"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-001.jpg",
+              "caption": {
+                "ru": "Кадр 02-001",
+                "en": "Frame 02-001",
+                "el": "Καρέ 02-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-002.jpg",
+              "caption": {
+                "ru": "Кадр 02-002",
+                "en": "Frame 02-002",
+                "el": "Καρέ 02-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-003.jpg",
+              "caption": {
+                "ru": "Кадр 02-003",
+                "en": "Frame 02-003",
+                "el": "Καρέ 02-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-004.jpg",
+              "caption": {
+                "ru": "Кадр 02-004",
+                "en": "Frame 02-004",
+                "el": "Καρέ 02-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-005.jpg",
+              "caption": {
+                "ru": "Кадр 02-005",
+                "en": "Frame 02-005",
+                "el": "Καρέ 02-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/02-006.jpg",
+              "caption": {
+                "ru": "Кадр 02-006",
+                "en": "Frame 02-006",
+                "el": "Καρέ 02-006"
               }
             }
           ]
@@ -87,16 +279,6 @@
               "en": "Select the connector for the cable and purpose. The centre conductor must be intact and the braid must not touch it. After attachment, check seating, retention and continuity.",
               "el": "Επιλέξτε τη σύνδεση ανάλογα με το καλώδιο και τη χρήση. Ο κεντρικός αγωγός πρέπει να είναι άθικτος και η θωράκιση να μην τον αγγίζει."
             }
-          ],
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/connectors.jpg",
-              "caption": {
-                "ru": "Подготовка и проверка разъёмов",
-                "en": "Connector preparation and inspection",
-                "el": "Προετοιμασία και έλεγχος συνδέσεων"
-              }
-            }
           ]
         },
         {
@@ -112,16 +294,6 @@
               "ru": "Закройте соединение погодостойким материалом без карманов для воды. Оставьте капельную петлю, чтобы вода не стекала по кабелю к разъёму. Повторно осмотрите оболочку после изгиба и крепления.",
               "en": "Seal the connection with weatherproof material and no water pockets. Leave a drip loop so water cannot run along the cable into the connector. Recheck the jacket after bending and securing.",
               "el": "Στεγανοποιήστε τη σύνδεση χωρίς θύλακες νερού και αφήστε βρόχο ώστε το νερό να μην εισέρχεται στη σύνδεση."
-            }
-          ],
-          "figures": [
-            {
-          "src": "/courses/gvf-ant-point-02/curated/weatherproofing.jpg",
-              "caption": {
-                "ru": "Герметизация соединения",
-                "en": "Weatherproofing a connection",
-                "el": "Στεγανοποίηση σύνδεσης"
-              }
             }
           ]
         },
@@ -181,11 +353,243 @@
           ],
           "figures": [
             {
-          "src": "/courses/gvf-ant-point-02/curated/geometry.jpg",
+              "src": "/courses/gvf-ant-point-02/scenes/03-001.jpg",
               "caption": {
-                "ru": "Исходные данные для наведения",
-                "en": "Pointing inputs",
-                "el": "Δεδομένα σκόπευσης"
+                "ru": "Кадр 03-001",
+                "en": "Frame 03-001",
+                "el": "Καρέ 03-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-002.jpg",
+              "caption": {
+                "ru": "Кадр 03-002",
+                "en": "Frame 03-002",
+                "el": "Καρέ 03-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-003.jpg",
+              "caption": {
+                "ru": "Кадр 03-003",
+                "en": "Frame 03-003",
+                "el": "Καρέ 03-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-004.jpg",
+              "caption": {
+                "ru": "Кадр 03-004",
+                "en": "Frame 03-004",
+                "el": "Καρέ 03-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-005.jpg",
+              "caption": {
+                "ru": "Кадр 03-005",
+                "en": "Frame 03-005",
+                "el": "Καρέ 03-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-006.jpg",
+              "caption": {
+                "ru": "Кадр 03-006",
+                "en": "Frame 03-006",
+                "el": "Καρέ 03-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-007.jpg",
+              "caption": {
+                "ru": "Кадр 03-007",
+                "en": "Frame 03-007",
+                "el": "Καρέ 03-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-008.jpg",
+              "caption": {
+                "ru": "Кадр 03-008",
+                "en": "Frame 03-008",
+                "el": "Καρέ 03-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-009.jpg",
+              "caption": {
+                "ru": "Кадр 03-009",
+                "en": "Frame 03-009",
+                "el": "Καρέ 03-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-010.jpg",
+              "caption": {
+                "ru": "Кадр 03-010",
+                "en": "Frame 03-010",
+                "el": "Καρέ 03-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-011.jpg",
+              "caption": {
+                "ru": "Кадр 03-011",
+                "en": "Frame 03-011",
+                "el": "Καρέ 03-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-012.jpg",
+              "caption": {
+                "ru": "Кадр 03-012",
+                "en": "Frame 03-012",
+                "el": "Καρέ 03-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-013.jpg",
+              "caption": {
+                "ru": "Кадр 03-013",
+                "en": "Frame 03-013",
+                "el": "Καρέ 03-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-014.jpg",
+              "caption": {
+                "ru": "Кадр 03-014",
+                "en": "Frame 03-014",
+                "el": "Καρέ 03-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-015.jpg",
+              "caption": {
+                "ru": "Кадр 03-015",
+                "en": "Frame 03-015",
+                "el": "Καρέ 03-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-016.jpg",
+              "caption": {
+                "ru": "Кадр 03-016",
+                "en": "Frame 03-016",
+                "el": "Καρέ 03-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-017.jpg",
+              "caption": {
+                "ru": "Кадр 03-017",
+                "en": "Frame 03-017",
+                "el": "Καρέ 03-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-018.jpg",
+              "caption": {
+                "ru": "Кадр 03-018",
+                "en": "Frame 03-018",
+                "el": "Καρέ 03-018"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-019.jpg",
+              "caption": {
+                "ru": "Кадр 03-019",
+                "en": "Frame 03-019",
+                "el": "Καρέ 03-019"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-020.jpg",
+              "caption": {
+                "ru": "Кадр 03-020",
+                "en": "Frame 03-020",
+                "el": "Καρέ 03-020"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-021.jpg",
+              "caption": {
+                "ru": "Кадр 03-021",
+                "en": "Frame 03-021",
+                "el": "Καρέ 03-021"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-022.jpg",
+              "caption": {
+                "ru": "Кадр 03-022",
+                "en": "Frame 03-022",
+                "el": "Καρέ 03-022"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-023.jpg",
+              "caption": {
+                "ru": "Кадр 03-023",
+                "en": "Frame 03-023",
+                "el": "Καρέ 03-023"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-024.jpg",
+              "caption": {
+                "ru": "Кадр 03-024",
+                "en": "Frame 03-024",
+                "el": "Καρέ 03-024"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-025.jpg",
+              "caption": {
+                "ru": "Кадр 03-025",
+                "en": "Frame 03-025",
+                "el": "Καρέ 03-025"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-026.jpg",
+              "caption": {
+                "ru": "Кадр 03-026",
+                "en": "Frame 03-026",
+                "el": "Καρέ 03-026"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-027.jpg",
+              "caption": {
+                "ru": "Кадр 03-027",
+                "en": "Frame 03-027",
+                "el": "Καρέ 03-027"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-028.jpg",
+              "caption": {
+                "ru": "Кадр 03-028",
+                "en": "Frame 03-028",
+                "el": "Καρέ 03-028"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/03-029.jpg",
+              "caption": {
+                "ru": "Кадр 03-029",
+                "en": "Frame 03-029",
+                "el": "Καρέ 03-029"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/04-001.jpg",
+              "caption": {
+                "ru": "Кадр 04-001",
+                "en": "Frame 04-001",
+                "el": "Καρέ 04-001"
               }
             }
           ]
@@ -204,16 +608,6 @@
               "en": "Linear polarisation is H or V; circular polarisation follows a rotation sense. The network defines the type and sense—never choose by eye. An error reduces level and can cause interference.",
               "el": "Η γραμμική πόλωση είναι H ή V, ενώ η κυκλική έχει φορά περιστροφής. Η σωστή επιλογή δίνεται από το δίκτυο και ένα λάθος μπορεί να προκαλέσει παρεμβολές."
             }
-          ],
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/polarization.jpg",
-              "caption": {
-                "ru": "Ориентация линейной поляризации",
-                "en": "Linear polarisation orientation",
-                "el": "Προσανατολισμός γραμμικής πόλωσης"
-              }
-            }
           ]
         },
         {
@@ -229,16 +623,6 @@
               "ru": "Введите исходные данные в LAC, снимите рассчитанный угол и перенесите его на шкалу облучателя. После фиксации сверяйте шкалу и направление, затем подтвердите результат по уровню и отношению сигнал/шум.",
               "en": "Enter the station data in the LAC, read the calculated angle and transfer it to the feed scale. Check the scale and direction after locking, then confirm with level and signal-to-noise ratio.",
               "el": "Εισάγετε τα δεδομένα στο LAC, μεταφέρετε τη γωνία στην κλίμακα του τροφοδότη και επιβεβαιώστε με στάθμη και SNR."
-            }
-          ],
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/feed-rotation.jpg",
-              "caption": {
-                "ru": "Поворот облучателя по расчётному углу",
-                "en": "Feed rotation by calculated angle",
-                "el": "Περιστροφή τροφοδότη"
-              }
             }
           ]
         },
@@ -298,11 +682,139 @@
           ],
           "figures": [
             {
-              "src": "/courses/gvf-ant-point-02/peaking-meter.jpg",
+              "src": "/courses/gvf-ant-point-02/scenes/05-001.jpg",
               "caption": {
-                "ru": "Измеритель уровня и SNR",
-                "en": "Level and SNR peaking meter",
-                "el": "Μετρητής επιπέδου και SNR"
+                "ru": "Кадр 05-001",
+                "en": "Frame 05-001",
+                "el": "Καρέ 05-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-002.jpg",
+              "caption": {
+                "ru": "Кадр 05-002",
+                "en": "Frame 05-002",
+                "el": "Καρέ 05-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-003.jpg",
+              "caption": {
+                "ru": "Кадр 05-003",
+                "en": "Frame 05-003",
+                "el": "Καρέ 05-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-004.jpg",
+              "caption": {
+                "ru": "Кадр 05-004",
+                "en": "Frame 05-004",
+                "el": "Καρέ 05-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/05-005.jpg",
+              "caption": {
+                "ru": "Кадр 05-005",
+                "en": "Frame 05-005",
+                "el": "Καρέ 05-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-001.jpg",
+              "caption": {
+                "ru": "Кадр 06-001",
+                "en": "Frame 06-001",
+                "el": "Καρέ 06-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-002.jpg",
+              "caption": {
+                "ru": "Кадр 06-002",
+                "en": "Frame 06-002",
+                "el": "Καρέ 06-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-003.jpg",
+              "caption": {
+                "ru": "Кадр 06-003",
+                "en": "Frame 06-003",
+                "el": "Καρέ 06-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/06-004.jpg",
+              "caption": {
+                "ru": "Кадр 06-004",
+                "en": "Frame 06-004",
+                "el": "Καρέ 06-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-001.jpg",
+              "caption": {
+                "ru": "Кадр 07-001",
+                "en": "Frame 07-001",
+                "el": "Καρέ 07-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-002.jpg",
+              "caption": {
+                "ru": "Кадр 07-002",
+                "en": "Frame 07-002",
+                "el": "Καρέ 07-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-003.jpg",
+              "caption": {
+                "ru": "Кадр 07-003",
+                "en": "Frame 07-003",
+                "el": "Καρέ 07-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-004.jpg",
+              "caption": {
+                "ru": "Кадр 07-004",
+                "en": "Frame 07-004",
+                "el": "Καρέ 07-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-005.jpg",
+              "caption": {
+                "ru": "Кадр 07-005",
+                "en": "Frame 07-005",
+                "el": "Καρέ 07-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-006.jpg",
+              "caption": {
+                "ru": "Кадр 07-006",
+                "en": "Frame 07-006",
+                "el": "Καρέ 07-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-007.jpg",
+              "caption": {
+                "ru": "Кадр 07-007",
+                "en": "Frame 07-007",
+                "el": "Καρέ 07-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/07-008.jpg",
+              "caption": {
+                "ru": "Кадр 07-008",
+                "en": "Frame 07-008",
+                "el": "Καρέ 07-008"
               }
             }
           ]
@@ -320,16 +832,6 @@
               "ru": "Проверьте частоту и поляризацию, выставьте расчётный угол места и выполните узкий проход по азимуту. При появлении сигнала уменьшите шаг, пройдите через максимум и зафиксируйте рабочие показания.",
               "en": "Check frequency and polarisation, set calculated elevation and make a narrow azimuth sweep. When signal appears, reduce the step, pass through the maximum and record the operating readings.",
               "el": "Ελέγξτε συχνότητα και πόλωση, ρυθμίστε ανύψωση και κάντε στενή σάρωση αζιμουθίου. Μόλις εμφανιστεί σήμα, μειώστε το βήμα και καταγράψτε την κορυφή."
-            }
-          ],
-          "figures": [
-            {
-          "src": "/courses/gvf-ant-point-02/curated/satellite-search.jpg",
-              "caption": {
-                "ru": "Поиск спутника малым шагом",
-                "en": "Fine-step satellite search",
-                "el": "Αναζήτηση δορυφόρου με μικρό βήμα"
-              }
             }
           ]
         },
@@ -352,17 +854,7 @@
             "ru": "Найти устойчивый пик и сохранить показания",
             "en": "Find a stable peak and save the readings",
             "el": "Βρείτε σταθερή κορυφή και αποθηκεύστε τις ενδείξεις"
-          },
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/localized/03-controls-ru.png",
-              "caption": {
-                "ru": "Локализованный экран управления Az-El",
-                "en": "Localised Az-El control screen",
-                "el": "Τοπικοποιημένη οθόνη ελέγχου Az-El"
-              }
-            }
-          ]
+          }
         },
         {
           "kind": "quiz",
@@ -420,11 +912,59 @@
           ],
           "figures": [
             {
-              "src": "/courses/gvf-ant-point-02/backlash.jpg",
+              "src": "/courses/gvf-ant-point-02/scenes/08-001.jpg",
               "caption": {
-                "ru": "Механический люфт при наведении",
-                "en": "Mechanical backlash during pointing",
-                "el": "Μηχανικό backlash κατά τη σκόπευση"
+                "ru": "Кадр 08-001",
+                "en": "Frame 08-001",
+                "el": "Καρέ 08-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-001.jpg",
+              "caption": {
+                "ru": "Кадр 09-001",
+                "en": "Frame 09-001",
+                "el": "Καρέ 09-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-002.jpg",
+              "caption": {
+                "ru": "Кадр 09-002",
+                "en": "Frame 09-002",
+                "el": "Καρέ 09-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-003.jpg",
+              "caption": {
+                "ru": "Кадр 09-003",
+                "en": "Frame 09-003",
+                "el": "Καρέ 09-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-004.jpg",
+              "caption": {
+                "ru": "Кадр 09-004",
+                "en": "Frame 09-004",
+                "el": "Καρέ 09-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-005.jpg",
+              "caption": {
+                "ru": "Кадр 09-005",
+                "en": "Frame 09-005",
+                "el": "Καρέ 09-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/09-006.jpg",
+              "caption": {
+                "ru": "Кадр 09-006",
+                "en": "Frame 09-006",
+                "el": "Καρέ 09-006"
               }
             }
           ]
@@ -442,16 +982,6 @@
               "ru": "Сначала найдите пик. Затем отойдите на одинаковое число шагов влево и вправо, запишите уровни и сместите ось к стороне с меньшим уровнем. Повторяйте, пока уровни не сравняются, затем подтвердите пик повторным проходом.",
               "en": "Find the peak first. Move the same number of steps to each side, record levels and move the axis toward the weaker side. Repeat until levels balance, then confirm with another pass.",
               "el": "Βρείτε πρώτα την κορυφή. Κινηθείτε ίσα δεξιά και αριστερά, καταγράψτε επίπεδα και διορθώστε προς την ασθενέστερη πλευρά μέχρι να ισορροπήσουν."
-            }
-          ],
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/beam-balance.jpg",
-              "caption": {
-                "ru": "Сравнение уровней по обе стороны пика",
-                "en": "Balancing levels on both sides of the peak",
-                "el": "Ισορρόπηση επιπέδων γύρω από την κορυφή"
-              }
             }
           ]
         },
@@ -474,17 +1004,7 @@
             "ru": "Получить устойчивый пик по азимуту и углу места",
             "en": "Obtain a stable peak in azimuth and elevation",
             "el": "Πετύχετε σταθερή κορυφή σε αζιμούθιο και ανύψωση"
-          },
-          "figures": [
-            {
-          "src": "/courses/gvf-ant-point-02/curated/beam-balance-practice.jpg",
-              "caption": {
-                "ru": "Практика beam balance",
-                "en": "Beam-balance practice",
-                "el": "Πρακτική beam balance"
-              }
-            }
-          ]
+          }
         },
         {
           "kind": "quiz",
@@ -542,11 +1062,155 @@
           ],
           "figures": [
             {
-              "src": "/courses/gvf-ant-point-02/cross-pol.jpg",
+              "src": "/courses/gvf-ant-point-02/scenes/10-001.jpg",
               "caption": {
-                "ru": "Проверка cross-pol",
-                "en": "Cross-pol verification",
-                "el": "Επαλήθευση cross-pol"
+                "ru": "Кадр 10-001",
+                "en": "Frame 10-001",
+                "el": "Καρέ 10-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-002.jpg",
+              "caption": {
+                "ru": "Кадр 10-002",
+                "en": "Frame 10-002",
+                "el": "Καρέ 10-002"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-003.jpg",
+              "caption": {
+                "ru": "Кадр 10-003",
+                "en": "Frame 10-003",
+                "el": "Καρέ 10-003"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-004.jpg",
+              "caption": {
+                "ru": "Кадр 10-004",
+                "en": "Frame 10-004",
+                "el": "Καρέ 10-004"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-005.jpg",
+              "caption": {
+                "ru": "Кадр 10-005",
+                "en": "Frame 10-005",
+                "el": "Καρέ 10-005"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-006.jpg",
+              "caption": {
+                "ru": "Кадр 10-006",
+                "en": "Frame 10-006",
+                "el": "Καρέ 10-006"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-007.jpg",
+              "caption": {
+                "ru": "Кадр 10-007",
+                "en": "Frame 10-007",
+                "el": "Καρέ 10-007"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-008.jpg",
+              "caption": {
+                "ru": "Кадр 10-008",
+                "en": "Frame 10-008",
+                "el": "Καρέ 10-008"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-009.jpg",
+              "caption": {
+                "ru": "Кадр 10-009",
+                "en": "Frame 10-009",
+                "el": "Καρέ 10-009"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-010.jpg",
+              "caption": {
+                "ru": "Кадр 10-010",
+                "en": "Frame 10-010",
+                "el": "Καρέ 10-010"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-011.jpg",
+              "caption": {
+                "ru": "Кадр 10-011",
+                "en": "Frame 10-011",
+                "el": "Καρέ 10-011"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-012.jpg",
+              "caption": {
+                "ru": "Кадр 10-012",
+                "en": "Frame 10-012",
+                "el": "Καρέ 10-012"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-013.jpg",
+              "caption": {
+                "ru": "Кадр 10-013",
+                "en": "Frame 10-013",
+                "el": "Καρέ 10-013"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-014.jpg",
+              "caption": {
+                "ru": "Кадр 10-014",
+                "en": "Frame 10-014",
+                "el": "Καρέ 10-014"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-015.jpg",
+              "caption": {
+                "ru": "Кадр 10-015",
+                "en": "Frame 10-015",
+                "el": "Καρέ 10-015"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-016.jpg",
+              "caption": {
+                "ru": "Кадр 10-016",
+                "en": "Frame 10-016",
+                "el": "Καρέ 10-016"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/10-017.jpg",
+              "caption": {
+                "ru": "Кадр 10-017",
+                "en": "Frame 10-017",
+                "el": "Καρέ 10-017"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/11-001.jpg",
+              "caption": {
+                "ru": "Кадр 11-001",
+                "en": "Frame 11-001",
+                "el": "Καρέ 11-001"
+              }
+            },
+            {
+              "src": "/courses/gvf-ant-point-02/scenes/11-002.jpg",
+              "caption": {
+                "ru": "Кадр 11-002",
+                "en": "Frame 11-002",
+                "el": "Καρέ 11-002"
               }
             }
           ]
@@ -565,16 +1229,6 @@
               "en": "Wrong polarisation, poor assembly or an unterminated cable can leak into the adjacent polarisation and affect other users. After de-installation, power down all equipment and terminate or remove cables correctly.",
               "el": "Λάθος πόλωση, κακή συναρμολόγηση ή ανολοκλήρωτο καλώδιο μπορεί να προκαλέσουν παρεμβολές. Μετά την αποσυναρμολόγηση απενεργοποιήστε τον εξοπλισμό και τερματίστε ή αφαιρέστε τα καλώδια."
             }
-          ],
-          "figures": [
-            {
-          "src": "/courses/gvf-ant-point-02/curated/interference.jpg",
-              "caption": {
-                "ru": "Риск помех соседней поляризации",
-                "en": "Adjacent-polarisation interference risk",
-                "el": "Κίνδυνος παρεμβολών"
-              }
-            }
           ]
         },
         {
@@ -590,24 +1244,6 @@
               "ru": "Сохраните расчётные и фактические значения, результат beam balance и cross-pol, состояние кабелей и замечания по площадке. Не оставляйте забытый терминал подключённым к сети.",
               "en": "Save calculated and measured values, beam-balance and cross-pol results, cable condition and site notes. Never leave a forgotten terminal connected to the network.",
               "el": "Αποθηκεύστε τις υπολογισμένες και μετρημένες τιμές, τα αποτελέσματα beam balance και cross-pol και τις σημειώσεις εγκατάστασης."
-            }
-          ],
-          "figures": [
-            {
-              "src": "/courses/gvf-ant-point-02/decommissioning.jpg",
-              "caption": {
-                "ru": "Безопасное завершение работ",
-                "en": "Safe decommissioning closeout",
-                "el": "Ασφαλής ολοκλήρωση εργασιών"
-              }
-            },
-            {
-              "src": "/courses/gvf-ant-point-02/localized/10-decommissioning-ru.png",
-              "caption": {
-                "ru": "Локализованный кадр демонтажа",
-                "en": "Localised decommissioning frame",
-                "el": "Τοπικοποιημένο καρέ αποσυναρμολόγησης"
-              }
             }
           ]
         },
